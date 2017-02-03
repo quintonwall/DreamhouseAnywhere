@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C7F1E452D8D006C847A /* AppDelegate.swift */; };
+		5A107C821E452D8D006C847A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C811E452D8D006C847A /* RootViewController.swift */; };
+		5A107C841E452D8D006C847A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C831E452D8D006C847A /* DataViewController.swift */; };
+		5A107C861E452D8D006C847A /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C851E452D8D006C847A /* ModelController.swift */; };
+		5A107C891E452D8D006C847A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C871E452D8D006C847A /* Main.storyboard */; };
+		5A107C8B1E452D8D006C847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C8A1E452D8D006C847A /* Assets.xcassets */; };
+		5A107C8E1E452D8D006C847A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */; };
+		5A107C9C1E452DB1006C847A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107C9B1E452DB1006C847A /* NotificationCenter.framework */; };
+		5A107C9F1E452DB1006C847A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C9E1E452DB1006C847A /* TodayViewController.swift */; };
+		5A107CA21E452DB1006C847A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CA01E452DB1006C847A /* MainInterface.storyboard */; };
+		5A107CA61E452DB1006C847A /* DreamhouseToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A107C991E452DB1006C847A /* DreamhouseToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A107CB01E452DDB006C847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CAF1E452DDB006C847A /* Assets.xcassets */; };
+		5A107CB71E452DDB006C847A /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A107CB61E452DDB006C847A /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A107CBB1E452DDB006C847A /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CBA1E452DDB006C847A /* Messages.framework */; };
+		5A107CBE1E452DDB006C847A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CBD1E452DDB006C847A /* MessagesViewController.swift */; };
+		5A107CC11E452DDB006C847A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CBF1E452DDB006C847A /* MainInterface.storyboard */; };
+		5A107CC31E452DDB006C847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CC21E452DDB006C847A /* Assets.xcassets */; };
+		5A107CE51E453924006C847A /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CE41E453924006C847A /* PropertyTableViewCell.swift */; };
+		5A107CF31E454451006C847A /* DreamhouseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A107CF11E454451006C847A /* DreamhouseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A107CF61E454451006C847A /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
+		5A107CF71E454451006C847A /* DreamhouseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A107CFC1E45447B006C847A /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CFB1E45447B006C847A /* PropertyData.swift */; };
+		5A107CFD1E454632006C847A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CE01E452F96006C847A /* Property.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A107CA41E452DB1006C847A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A107C741E452D8D006C847A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A107C981E452DB1006C847A;
+			remoteInfo = DreamhouseToday;
+		};
+		5A107CB81E452DDB006C847A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A107C741E452D8D006C847A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A107CB51E452DDB006C847A;
+			remoteInfo = MessagesExtension;
+		};
+		5A107D031E454BAA006C847A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A107C741E452D8D006C847A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A107CEE1E454451006C847A;
+			remoteInfo = DreamhouseKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A107CAA1E452DB1006C847A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A107CA61E452DB1006C847A /* DreamhouseToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CC81E452DDB006C847A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A107CB71E452DDB006C847A /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CDD1E452EF3006C847A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A107CF71E454451006C847A /* DreamhouseKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A107C7C1E452D8D006C847A /* DreamhouseAnywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamhouseAnywhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A107C7F1E452D8D006C847A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A107C811E452D8D006C847A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5A107C831E452D8D006C847A /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		5A107C851E452D8D006C847A /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		5A107C881E452D8D006C847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A107C8A1E452D8D006C847A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A107C8D1E452D8D006C847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A107C8F1E452D8D006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A107C991E452DB1006C847A /* DreamhouseToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DreamhouseToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A107C9B1E452DB1006C847A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5A107C9E1E452DB1006C847A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		5A107CA11E452DB1006C847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5A107CA31E452DB1006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A107CAD1E452DDB006C847A /* DreamhouseMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamhouseMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A107CAF1E452DDB006C847A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A107CB11E452DDB006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A107CB61E452DDB006C847A /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A107CBA1E452DDB006C847A /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		5A107CBD1E452DDB006C847A /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		5A107CC01E452DDB006C847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5A107CC21E452DDB006C847A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A107CC41E452DDB006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A107CE01E452F96006C847A /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		5A107CE41E453924006C847A /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		5A107CEF1E454451006C847A /* DreamhouseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DreamhouseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A107CF11E454451006C847A /* DreamhouseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DreamhouseKit.h; sourceTree = "<group>"; };
+		5A107CF21E454451006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A107CFB1E45447B006C847A /* PropertyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A107C791E452D8D006C847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CF61E454451006C847A /* DreamhouseKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107C961E452DB1006C847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107C9C1E452DB1006C847A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CB31E452DDB006C847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CBB1E452DDB006C847A /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CEB1E454451006C847A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A107C731E452D8D006C847A = {
+			isa = PBXGroup;
+			children = (
+				5A107C7E1E452D8D006C847A /* DreamhouseAnywhere */,
+				5A107C9D1E452DB1006C847A /* DreamhouseToday */,
+				5A107CAE1E452DDB006C847A /* DreamhouseMessages */,
+				5A107CBC1E452DDB006C847A /* MessagesExtension */,
+				5A107CF01E454451006C847A /* DreamhouseKit */,
+				5A107C9A1E452DB1006C847A /* Frameworks */,
+				5A107C7D1E452D8D006C847A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A107C7D1E452D8D006C847A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A107C7C1E452D8D006C847A /* DreamhouseAnywhere.app */,
+				5A107C991E452DB1006C847A /* DreamhouseToday.appex */,
+				5A107CAD1E452DDB006C847A /* DreamhouseMessages.app */,
+				5A107CB61E452DDB006C847A /* MessagesExtension.appex */,
+				5A107CEF1E454451006C847A /* DreamhouseKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A107C7E1E452D8D006C847A /* DreamhouseAnywhere */ = {
+			isa = PBXGroup;
+			children = (
+				5A107C7F1E452D8D006C847A /* AppDelegate.swift */,
+				5A107C811E452D8D006C847A /* RootViewController.swift */,
+				5A107C831E452D8D006C847A /* DataViewController.swift */,
+				5A107C851E452D8D006C847A /* ModelController.swift */,
+				5A107C871E452D8D006C847A /* Main.storyboard */,
+				5A107C8A1E452D8D006C847A /* Assets.xcassets */,
+				5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */,
+				5A107C8F1E452D8D006C847A /* Info.plist */,
+			);
+			path = DreamhouseAnywhere;
+			sourceTree = "<group>";
+		};
+		5A107C9A1E452DB1006C847A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A107C9B1E452DB1006C847A /* NotificationCenter.framework */,
+				5A107CBA1E452DDB006C847A /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A107C9D1E452DB1006C847A /* DreamhouseToday */ = {
+			isa = PBXGroup;
+			children = (
+				5A107C9E1E452DB1006C847A /* TodayViewController.swift */,
+				5A107CA01E452DB1006C847A /* MainInterface.storyboard */,
+				5A107CA31E452DB1006C847A /* Info.plist */,
+			);
+			path = DreamhouseToday;
+			sourceTree = "<group>";
+		};
+		5A107CAE1E452DDB006C847A /* DreamhouseMessages */ = {
+			isa = PBXGroup;
+			children = (
+				5A107CAF1E452DDB006C847A /* Assets.xcassets */,
+				5A107CB11E452DDB006C847A /* Info.plist */,
+			);
+			path = DreamhouseMessages;
+			sourceTree = "<group>";
+		};
+		5A107CBC1E452DDB006C847A /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5A107CBD1E452DDB006C847A /* MessagesViewController.swift */,
+				5A107CBF1E452DDB006C847A /* MainInterface.storyboard */,
+				5A107CC21E452DDB006C847A /* Assets.xcassets */,
+				5A107CC41E452DDB006C847A /* Info.plist */,
+				5A107CE41E453924006C847A /* PropertyTableViewCell.swift */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		5A107CF01E454451006C847A /* DreamhouseKit */ = {
+			isa = PBXGroup;
+			children = (
+				5A107CE01E452F96006C847A /* Property.swift */,
+				5A107CF11E454451006C847A /* DreamhouseKit.h */,
+				5A107CF21E454451006C847A /* Info.plist */,
+				5A107CFB1E45447B006C847A /* PropertyData.swift */,
+			);
+			path = DreamhouseKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A107CEC1E454451006C847A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CF31E454451006C847A /* DreamhouseKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5A107C7B1E452D8D006C847A /* DreamhouseAnywhere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A107C921E452D8D006C847A /* Build configuration list for PBXNativeTarget "DreamhouseAnywhere" */;
+			buildPhases = (
+				5A107C781E452D8D006C847A /* Sources */,
+				5A107C791E452D8D006C847A /* Frameworks */,
+				5A107C7A1E452D8D006C847A /* Resources */,
+				5A107CAA1E452DB1006C847A /* Embed App Extensions */,
+				5A107CDD1E452EF3006C847A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A107CA51E452DB1006C847A /* PBXTargetDependency */,
+			);
+			name = DreamhouseAnywhere;
+			productName = DreamhouseAnywhere;
+			productReference = 5A107C7C1E452D8D006C847A /* DreamhouseAnywhere.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A107C981E452DB1006C847A /* DreamhouseToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A107CA71E452DB1006C847A /* Build configuration list for PBXNativeTarget "DreamhouseToday" */;
+			buildPhases = (
+				5A107C951E452DB1006C847A /* Sources */,
+				5A107C961E452DB1006C847A /* Frameworks */,
+				5A107C971E452DB1006C847A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamhouseToday;
+			productName = DreamhouseToday;
+			productReference = 5A107C991E452DB1006C847A /* DreamhouseToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5A107CAC1E452DDB006C847A /* DreamhouseMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A107CC91E452DDB006C847A /* Build configuration list for PBXNativeTarget "DreamhouseMessages" */;
+			buildPhases = (
+				5A107CAB1E452DDB006C847A /* Resources */,
+				5A107CC81E452DDB006C847A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A107CB91E452DDB006C847A /* PBXTargetDependency */,
+			);
+			name = DreamhouseMessages;
+			productName = DreamhouseMessages;
+			productReference = 5A107CAD1E452DDB006C847A /* DreamhouseMessages.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		5A107CB51E452DDB006C847A /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A107CC51E452DDB006C847A /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				5A107CB21E452DDB006C847A /* Sources */,
+				5A107CB31E452DDB006C847A /* Frameworks */,
+				5A107CB41E452DDB006C847A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A107D041E454BAA006C847A /* PBXTargetDependency */,
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = 5A107CB61E452DDB006C847A /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+		5A107CEE1E454451006C847A /* DreamhouseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A107CF81E454451006C847A /* Build configuration list for PBXNativeTarget "DreamhouseKit" */;
+			buildPhases = (
+				5A107CEA1E454451006C847A /* Sources */,
+				5A107CEB1E454451006C847A /* Frameworks */,
+				5A107CEC1E454451006C847A /* Headers */,
+				5A107CED1E454451006C847A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamhouseKit;
+			productName = DreamhouseKit;
+			productReference = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A107C741E452D8D006C847A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = me.quinton;
+				TargetAttributes = {
+					5A107C7B1E452D8D006C847A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4X564CR95Y;
+						ProvisioningStyle = Automatic;
+					};
+					5A107C981E452DB1006C847A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4X564CR95Y;
+						ProvisioningStyle = Automatic;
+					};
+					5A107CAC1E452DDB006C847A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4X564CR95Y;
+						ProvisioningStyle = Automatic;
+					};
+					5A107CB51E452DDB006C847A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4X564CR95Y;
+						ProvisioningStyle = Automatic;
+					};
+					5A107CEE1E454451006C847A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4X564CR95Y;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5A107C771E452D8D006C847A /* Build configuration list for PBXProject "DreamhouseAnywhere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A107C731E452D8D006C847A;
+			productRefGroup = 5A107C7D1E452D8D006C847A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A107C7B1E452D8D006C847A /* DreamhouseAnywhere */,
+				5A107C981E452DB1006C847A /* DreamhouseToday */,
+				5A107CAC1E452DDB006C847A /* DreamhouseMessages */,
+				5A107CB51E452DDB006C847A /* MessagesExtension */,
+				5A107CEE1E454451006C847A /* DreamhouseKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A107C7A1E452D8D006C847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107C8E1E452D8D006C847A /* LaunchScreen.storyboard in Resources */,
+				5A107C8B1E452D8D006C847A /* Assets.xcassets in Resources */,
+				5A107C891E452D8D006C847A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107C971E452DB1006C847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CA21E452DB1006C847A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CAB1E452DDB006C847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CB01E452DDB006C847A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CB41E452DDB006C847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CC31E452DDB006C847A /* Assets.xcassets in Resources */,
+				5A107CC11E452DDB006C847A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CED1E454451006C847A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A107C781E452D8D006C847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107C821E452D8D006C847A /* RootViewController.swift in Sources */,
+				5A107C861E452D8D006C847A /* ModelController.swift in Sources */,
+				5A107C841E452D8D006C847A /* DataViewController.swift in Sources */,
+				5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107C951E452DB1006C847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107C9F1E452DB1006C847A /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CB21E452DDB006C847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CE51E453924006C847A /* PropertyTableViewCell.swift in Sources */,
+				5A107CBE1E452DDB006C847A /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A107CEA1E454451006C847A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A107CFD1E454632006C847A /* Property.swift in Sources */,
+				5A107CFC1E45447B006C847A /* PropertyData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A107CA51E452DB1006C847A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A107C981E452DB1006C847A /* DreamhouseToday */;
+			targetProxy = 5A107CA41E452DB1006C847A /* PBXContainerItemProxy */;
+		};
+		5A107CB91E452DDB006C847A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A107CB51E452DDB006C847A /* MessagesExtension */;
+			targetProxy = 5A107CB81E452DDB006C847A /* PBXContainerItemProxy */;
+		};
+		5A107D041E454BAA006C847A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A107CEE1E454451006C847A /* DreamhouseKit */;
+			targetProxy = 5A107D031E454BAA006C847A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A107C871E452D8D006C847A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A107C881E452D8D006C847A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A107C8D1E452D8D006C847A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5A107CA01E452DB1006C847A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A107CA11E452DB1006C847A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		5A107CBF1E452DDB006C847A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A107CC01E452DDB006C847A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A107C901E452D8D006C847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A107C911E452D8D006C847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A107C931E452D8D006C847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A107C941E452D8D006C847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A107CA81E452DB1006C847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = DreamhouseToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere.DreamhouseToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A107CA91E452DB1006C847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = DreamhouseToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere.DreamhouseToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A107CC61E452DDB006C847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A107CC71E452DDB006C847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A107CCA1E452DDB006C847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = DreamhouseMessages/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5A107CCB1E452DDB006C847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				INFOPLIST_FILE = DreamhouseMessages/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5A107CF91E454451006C847A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DreamhouseKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5A107CFA1E454451006C847A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4X564CR95Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DreamhouseKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A107C771E452D8D006C847A /* Build configuration list for PBXProject "DreamhouseAnywhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A107C901E452D8D006C847A /* Debug */,
+				5A107C911E452D8D006C847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A107C921E452D8D006C847A /* Build configuration list for PBXNativeTarget "DreamhouseAnywhere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A107C931E452D8D006C847A /* Debug */,
+				5A107C941E452D8D006C847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A107CA71E452DB1006C847A /* Build configuration list for PBXNativeTarget "DreamhouseToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A107CA81E452DB1006C847A /* Debug */,
+				5A107CA91E452DB1006C847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A107CC51E452DDB006C847A /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A107CC61E452DDB006C847A /* Debug */,
+				5A107CC71E452DDB006C847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A107CC91E452DDB006C847A /* Build configuration list for PBXNativeTarget "DreamhouseMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A107CCA1E452DDB006C847A /* Debug */,
+				5A107CCB1E452DDB006C847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A107CF81E454451006C847A /* Build configuration list for PBXNativeTarget "DreamhouseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A107CF91E454451006C847A /* Debug */,
+				5A107CFA1E454451006C847A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A107C741E452D8D006C847A /* Project object */;
+}
