@@ -14,6 +14,7 @@ import DreamhouseKit
 class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource,UITableViewDelegate {
     
     private var propertySet: [Property] = PropertyData.propertySet
+    private var selectedProperty: Property?
     
     
     
@@ -101,4 +102,39 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        requestPresentationStyle(.compact)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        
+        let p = propertySet[indexPath.row]
+        if let conversation = activeConversation {
+            let messageLayout = MSMessageTemplateLayout()
+            messageLayout.caption = p.title
+            messageLayout.subcaption = "$\(p.price)"
+            messageLayout.image = UIImage(named: p.mainImageName)
+        
+            let message = MSMessage()
+            message.layout = messageLayout
+            
+            //if var components = URLComponents(string: "http://dreamhouseapp.io") {
+             //   components.queryItems
+           // }
+       
+            conversation.insert(message, completionHandler: { (error) in
+                if let error = error {
+                    print(error)
+                }
+            })
+        }
+ 
+    }
 }
+
+
+
+
+
+
+
