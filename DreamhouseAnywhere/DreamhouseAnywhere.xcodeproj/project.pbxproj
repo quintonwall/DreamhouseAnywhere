@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17AA5E44D218F7DC9DE80938 /* Pods_DreamhouseAnywhere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */; };
 		5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C7F1E452D8D006C847A /* AppDelegate.swift */; };
-		5A107C821E452D8D006C847A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C811E452D8D006C847A /* RootViewController.swift */; };
-		5A107C841E452D8D006C847A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C831E452D8D006C847A /* DataViewController.swift */; };
-		5A107C861E452D8D006C847A /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107C851E452D8D006C847A /* ModelController.swift */; };
-		5A107C891E452D8D006C847A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C871E452D8D006C847A /* Main.storyboard */; };
 		5A107C8B1E452D8D006C847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C8A1E452D8D006C847A /* Assets.xcassets */; };
 		5A107C8E1E452D8D006C847A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */; };
 		5A107C9C1E452DB1006C847A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107C9B1E452DB1006C847A /* NotificationCenter.framework */; };
@@ -30,6 +27,12 @@
 		5A107CF71E454451006C847A /* DreamhouseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A107CFC1E45447B006C847A /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CFB1E45447B006C847A /* PropertyData.swift */; };
 		5A107CFD1E454632006C847A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CE01E452F96006C847A /* Property.swift */; };
+		5A6AD4971E4A38DC00D5AA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AD4921E4A38DC00D5AA30 /* Main.storyboard */; };
+		5A6AD4981E4A38DC00D5AA30 /* PropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4931E4A38DC00D5AA30 /* PropertiesTableViewController.swift */; };
+		5A6AD4991E4A38DC00D5AA30 /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4941E4A38DC00D5AA30 /* PropertiesTableViewCell.swift */; };
+		5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4951E4A38DC00D5AA30 /* MenuTableViewCell.swift */; };
+		5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4961E4A38DC00D5AA30 /* MenuTableViewController.swift */; };
+		5A6AD49D1E4A406000D5AA30 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,12 +96,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16CC69CCD2742401EA759180 /* Pods-DreamhouseAnywhere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.debug.xcconfig"; sourceTree = "<group>"; };
 		5A107C7C1E452D8D006C847A /* DreamhouseAnywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamhouseAnywhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A107C7F1E452D8D006C847A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A107C811E452D8D006C847A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		5A107C831E452D8D006C847A /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		5A107C851E452D8D006C847A /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		5A107C881E452D8D006C847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A107C8A1E452D8D006C847A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A107C8D1E452D8D006C847A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A107C8F1E452D8D006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +122,14 @@
 		5A107CF11E454451006C847A /* DreamhouseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DreamhouseKit.h; sourceTree = "<group>"; };
 		5A107CF21E454451006C847A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A107CFB1E45447B006C847A /* PropertyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
+		5A6AD4921E4A38DC00D5AA30 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5A6AD4931E4A38DC00D5AA30 /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
+		5A6AD4941E4A38DC00D5AA30 /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
+		5A6AD4951E4A38DC00D5AA30 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		5A6AD4961E4A38DC00D5AA30 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A107CF61E454451006C847A /* DreamhouseKit.framework in Frameworks */,
+				17AA5E44D218F7DC9DE80938 /* Pods_DreamhouseAnywhere.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +165,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70D2EABBE353FA4FF609731B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -169,6 +185,7 @@
 				5A107CF01E454451006C847A /* DreamhouseKit */,
 				5A107C9A1E452DB1006C847A /* Frameworks */,
 				5A107C7D1E452D8D006C847A /* Products */,
+				D1777BC83C5A7B1A7DFE18F1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,12 +204,12 @@
 		5A107C7E1E452D8D006C847A /* DreamhouseAnywhere */ = {
 			isa = PBXGroup;
 			children = (
+				5A6AD49E1E4A446B00D5AA30 /* Menu */,
 				5A107C7F1E452D8D006C847A /* AppDelegate.swift */,
-				5A107C811E452D8D006C847A /* RootViewController.swift */,
-				5A107C831E452D8D006C847A /* DataViewController.swift */,
-				5A107C851E452D8D006C847A /* ModelController.swift */,
-				5A107C871E452D8D006C847A /* Main.storyboard */,
 				5A107C8A1E452D8D006C847A /* Assets.xcassets */,
+				5A6AD4921E4A38DC00D5AA30 /* Main.storyboard */,
+				5A6AD4931E4A38DC00D5AA30 /* PropertiesTableViewController.swift */,
+				5A6AD4941E4A38DC00D5AA30 /* PropertiesTableViewCell.swift */,
 				5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */,
 				5A107C8F1E452D8D006C847A /* Info.plist */,
 			);
@@ -204,6 +221,7 @@
 			children = (
 				5A107C9B1E452DB1006C847A /* NotificationCenter.framework */,
 				5A107CBA1E452DDB006C847A /* Messages.framework */,
+				5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,6 +268,25 @@
 			path = DreamhouseKit;
 			sourceTree = "<group>";
 		};
+		5A6AD49E1E4A446B00D5AA30 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AD4951E4A38DC00D5AA30 /* MenuTableViewCell.swift */,
+				5A6AD4961E4A38DC00D5AA30 /* MenuTableViewController.swift */,
+				5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		D1777BC83C5A7B1A7DFE18F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16CC69CCD2742401EA759180 /* Pods-DreamhouseAnywhere.debug.xcconfig */,
+				E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,11 +305,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A107C921E452D8D006C847A /* Build configuration list for PBXNativeTarget "DreamhouseAnywhere" */;
 			buildPhases = (
+				B1FF08F7E103216806DBEDE8 /* [CP] Check Pods Manifest.lock */,
 				5A107C781E452D8D006C847A /* Sources */,
 				5A107C791E452D8D006C847A /* Frameworks */,
 				5A107C7A1E452D8D006C847A /* Resources */,
 				5A107CAA1E452DB1006C847A /* Embed App Extensions */,
 				5A107CDD1E452EF3006C847A /* Embed Frameworks */,
+				7E31F94B524F6330DD4424CD /* [CP] Embed Pods Frameworks */,
+				434A0A8680BE48EACA28ABD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,6 +347,7 @@
 			buildPhases = (
 				5A107CAB1E452DDB006C847A /* Resources */,
 				5A107CC81E452DDB006C847A /* Embed App Extensions */,
+				70D2EABBE353FA4FF609731B /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,9 +460,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6AD4971E4A38DC00D5AA30 /* Main.storyboard in Resources */,
 				5A107C8E1E452D8D006C847A /* LaunchScreen.storyboard in Resources */,
 				5A107C8B1E452D8D006C847A /* Assets.xcassets in Resources */,
-				5A107C891E452D8D006C847A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,15 +500,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		434A0A8680BE48EACA28ABD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E31F94B524F6330DD4424CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1FF08F7E103216806DBEDE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A107C781E452D8D006C847A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A107C821E452D8D006C847A /* RootViewController.swift in Sources */,
-				5A107C861E452D8D006C847A /* ModelController.swift in Sources */,
-				5A107C841E452D8D006C847A /* DataViewController.swift in Sources */,
+				5A6AD4981E4A38DC00D5AA30 /* PropertiesTableViewController.swift in Sources */,
+				5A6AD49D1E4A406000D5AA30 /* MenuTransitionManager.swift in Sources */,
 				5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */,
+				5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */,
+				5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */,
+				5A6AD4991E4A38DC00D5AA30 /* PropertiesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5A107C871E452D8D006C847A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A107C881E452D8D006C847A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -648,13 +731,14 @@
 		};
 		5A107C931E452D8D006C847A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16CC69CCD2742401EA759180 /* Pods-DreamhouseAnywhere.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseAnywhere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -662,13 +746,14 @@
 		};
 		5A107C941E452D8D006C847A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseAnywhere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -680,7 +765,7 @@
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere.DreamhouseToday;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseAnywhere.DreamhouseToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -693,7 +778,7 @@
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseToday/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseAnywhere.DreamhouseToday;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseAnywhere.DreamhouseToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -707,7 +792,7 @@
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseMessages.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -721,7 +806,7 @@
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages.MessagesExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseMessages.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -735,7 +820,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseMessages/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseMessages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -748,7 +833,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseMessages/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseMessages;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseMessages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -769,7 +854,7 @@
 				INFOPLIST_FILE = DreamhouseKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -794,7 +879,7 @@
 				INFOPLIST_FILE = DreamhouseKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.quinton..DreamhouseKit;
+				PRODUCT_BUNDLE_IDENTIFIER = me.quinton.DreamhouseKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -822,6 +907,7 @@
 				5A107C941E452D8D006C847A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A107CA71E452DB1006C847A /* Build configuration list for PBXNativeTarget "DreamhouseToday" */ = {
 			isa = XCConfigurationList;
@@ -830,6 +916,7 @@
 				5A107CA91E452DB1006C847A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A107CC51E452DDB006C847A /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
 			isa = XCConfigurationList;
@@ -838,6 +925,7 @@
 				5A107CC71E452DDB006C847A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A107CC91E452DDB006C847A /* Build configuration list for PBXNativeTarget "DreamhouseMessages" */ = {
 			isa = XCConfigurationList;
@@ -846,6 +934,7 @@
 				5A107CCB1E452DDB006C847A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A107CF81E454451006C847A /* Build configuration list for PBXNativeTarget "DreamhouseKit" */ = {
 			isa = XCConfigurationList;
@@ -854,6 +943,7 @@
 				5A107CFA1E454451006C847A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

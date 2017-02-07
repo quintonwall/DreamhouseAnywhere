@@ -58,18 +58,6 @@
       "filename" : "icon-messages-app-store-1024x768.png",
       "scale" : "1x",
       "platform" : "ios"
-    },
-    {
-      "filename" : "icon-messages-app-27x20@1x.png",
-      "unassigned" : true
-    },
-    {
-      "filename" : "icon-messages-app-iPhone-60x45@1x.png",
-      "unassigned" : true
-    },
-    {
-      "filename" : "icon-messages-transcript-32x24@1x.png",
-      "unassigned" : true
     }
   ],
   "info" : {
