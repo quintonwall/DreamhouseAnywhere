@@ -11,6 +11,13 @@ import UIKit
 class PropertiesTableViewController: UITableViewController, MenuTransitionManagerDelegate {
     
     let menuTransitionManger = MenuTransitionManager()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughController") as? WalkthroughPageViewController {
+            
+            present(pageViewController, animated: true, completion: nil)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

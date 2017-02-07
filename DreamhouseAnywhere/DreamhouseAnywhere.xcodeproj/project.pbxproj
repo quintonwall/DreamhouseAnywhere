@@ -33,6 +33,8 @@
 		5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4951E4A38DC00D5AA30 /* MenuTableViewCell.swift */; };
 		5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4961E4A38DC00D5AA30 /* MenuTableViewController.swift */; };
 		5A6AD49D1E4A406000D5AA30 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */; };
+		5A6AD4A11E4A4FE500D5AA30 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */; };
+		5A6AD4A31E4A50D400D5AA30 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +130,8 @@
 		5A6AD4951E4A38DC00D5AA30 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		5A6AD4961E4A38DC00D5AA30 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +208,7 @@
 		5A107C7E1E452D8D006C847A /* DreamhouseAnywhere */ = {
 			isa = PBXGroup;
 			children = (
+				5A6AD49F1E4A4FC600D5AA30 /* Walkthrough */,
 				5A6AD49E1E4A446B00D5AA30 /* Menu */,
 				5A107C7F1E452D8D006C847A /* AppDelegate.swift */,
 				5A107C8A1E452D8D006C847A /* Assets.xcassets */,
@@ -276,6 +281,15 @@
 				5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		5A6AD49F1E4A4FC600D5AA30 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */,
+				5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */,
+			);
+			name = Walkthrough;
 			sourceTree = "<group>";
 		};
 		D1777BC83C5A7B1A7DFE18F1 /* Pods */ = {
@@ -555,6 +569,8 @@
 			files = (
 				5A6AD4981E4A38DC00D5AA30 /* PropertiesTableViewController.swift in Sources */,
 				5A6AD49D1E4A406000D5AA30 /* MenuTransitionManager.swift in Sources */,
+				5A6AD4A31E4A50D400D5AA30 /* WalkthroughPageViewController.swift in Sources */,
+				5A6AD4A11E4A4FE500D5AA30 /* WalkthroughContentViewController.swift in Sources */,
 				5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */,
 				5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */,
 				5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */,
