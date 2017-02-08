@@ -30,8 +30,8 @@ class PropertiesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
-        hotPropertyImageView.layer.cornerRadius = hotPropertyImageView.frame.width / 2
-        hotPropertyImageView.layer.masksToBounds = true
+        //hotPropertyImageView.layer.cornerRadius = hotPropertyImageView.frame.width / 2
+       // hotPropertyImageView.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

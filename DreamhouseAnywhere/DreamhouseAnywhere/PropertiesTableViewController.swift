@@ -58,7 +58,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertiesTableViewCell
         
         let property : Property = properties[indexPath.row]
-        cell.hotPropertyImageView.image = UIImage(named: property.mainImageName)
+        cell.propertyImageView.image = UIImage(named: property.mainImageName)
         cell.shortTitle.text = property.title
         cell.price.text = "$\(property.price)"
         cell.longDescription.text = property.description
