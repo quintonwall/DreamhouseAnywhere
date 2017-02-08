@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E144f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="921-23-usG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E154a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="921-23-usG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -50,13 +50,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyD-z3-dry">
+                                <rect key="frame" x="328" y="626" width="31" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTappedWithSender:" destination="YgF-YP-TLz" eventType="touchUpInside" id="uaj-co-qka"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47205656769999998" green="0.75315743680000002" blue="0.79187244180000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4xb-je-gx1" firstAttribute="top" secondItem="rO8-aj-JyR" secondAttribute="bottom" constant="39" id="2Gm-vL-S4h"/>
                             <constraint firstItem="4xb-je-gx1" firstAttribute="centerX" secondItem="T5X-rg-jIR" secondAttribute="centerX" id="3xg-gs-djN"/>
                             <constraint firstItem="gRQ-L5-ifS" firstAttribute="width" secondItem="T5X-rg-jIR" secondAttribute="width" multiplier="0.7" id="NnC-bb-jya"/>
+                            <constraint firstItem="OnG-qE-u1Q" firstAttribute="top" secondItem="UyD-z3-dry" secondAttribute="bottom" constant="8" id="XtE-bz-49l"/>
                             <constraint firstItem="gRQ-L5-ifS" firstAttribute="centerX" secondItem="T5X-rg-jIR" secondAttribute="centerX" id="bZT-42-92Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UyD-z3-dry" secondAttribute="trailing" id="mea-Qu-NgM"/>
                             <constraint firstItem="JQz-1U-T9W" firstAttribute="top" secondItem="4xb-je-gx1" secondAttribute="bottom" constant="30" id="pyb-4Z-COx"/>
                             <constraint firstItem="JQz-1U-T9W" firstAttribute="centerX" secondItem="T5X-rg-jIR" secondAttribute="centerX" id="uK3-OE-rmr"/>
                             <constraint firstItem="gRQ-L5-ifS" firstAttribute="top" secondItem="JQz-1U-T9W" secondAttribute="bottom" constant="20" id="xpi-h5-AlP"/>
@@ -66,6 +78,7 @@
                         <outlet property="contentImageView" destination="JQz-1U-T9W" id="Qvu-9b-Qtz"/>
                         <outlet property="contentLabel" destination="gRQ-L5-ifS" id="YJG-kg-rwO"/>
                         <outlet property="headingLabel" destination="4xb-je-gx1" id="quz-3B-gP8"/>
+                        <outlet property="skipButton" destination="UyD-z3-dry" id="1dv-s7-i3A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sph-gb-PDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,29 +153,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="303"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2v-dL-qwv">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2v-dL-qwv" userLabel="Property Image View">
                                             <rect key="frame" x="15" y="8" width="345" height="203"/>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ige-2S-Suj">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hot-property" translatesAutoresizingMaskIntoConstraints="NO" id="Ige-2S-Suj" userLabel="Hotproperty">
                                             <rect key="frame" x="15" y="255" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="SAz-0O-47i"/>
                                                 <constraint firstAttribute="height" constant="40" id="f2E-V0-RJa"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCp-Yy-dj4">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beachside Hideaway" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCp-Yy-dj4" userLabel="Short Title">
                                             <rect key="frame" x="15" y="219" width="345" height="28"/>
                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAO-n9-5ot">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$850,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAO-n9-5ot" userLabel="Price">
                                             <rect key="frame" x="63" y="255" width="297" height="21"/>
                                             <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
                                             <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="an hour ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY8-OY-Tyx">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nestled amongst the dunes this property is amazing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AY8-OY-Tyx" userLabel="Long Description">
                                             <rect key="frame" x="63" y="274" width="297" height="21"/>
                                             <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
                                             <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -191,10 +204,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="authorImageView" destination="Ige-2S-Suj" id="vra-19-xnV"/>
-                                    <outlet property="postAuthor" destination="TAO-n9-5ot" id="AMm-9U-SxD"/>
-                                    <outlet property="postImageView" destination="e2v-dL-qwv" id="exs-so-BVl"/>
-                                    <outlet property="postTitle" destination="RCp-Yy-dj4" id="Ewe-US-kf2"/>
+                                    <outlet property="hotPropertyImageView" destination="Ige-2S-Suj" id="voM-Ta-Am1"/>
+                                    <outlet property="longDescription" destination="AY8-OY-Tyx" id="Ohr-it-831"/>
+                                    <outlet property="price" destination="TAO-n9-5ot" id="iIC-CP-g0t"/>
+                                    <outlet property="propertyImageView" destination="e2v-dL-qwv" id="3oX-oU-cMR"/>
+                                    <outlet property="shortTitle" destination="RCp-Yy-dj4" id="LWe-yo-qir"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -236,6 +250,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hot-property" width="40" height="37"/>
         <image name="menu" width="22" height="22"/>
     </resources>
 </document>

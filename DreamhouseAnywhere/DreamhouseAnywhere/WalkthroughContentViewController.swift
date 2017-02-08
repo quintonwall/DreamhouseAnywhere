@@ -13,6 +13,8 @@ class WalkthroughContentViewController: UIViewController {
     @IBOutlet var headingLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var contentImageView: UIImageView!
+    @IBOutlet var skipButton: UIButton!
+    
     
     
     var index = 0
@@ -34,7 +36,11 @@ class WalkthroughContentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func skipButtonTapped(sender: UIButton) {
+            UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
+            dismiss(animated: true, completion: nil)
+        }
+    
     /*
     // MARK: - Navigation
 

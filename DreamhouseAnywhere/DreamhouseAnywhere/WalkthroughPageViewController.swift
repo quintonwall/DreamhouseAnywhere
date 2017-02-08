@@ -13,9 +13,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     var pageHeadings = ["Heading1", "Heading2", "Heading3"]
     var pageImages = ["red-lights-lisbon", "summer-beach-huts", "taxis-nyc"]
-    var pageContent = ["Pin your favorite restaurants and create your own food guide",
-        "Search and locate your favourite restaurant on Maps",
-        "Find restaurants pinned by your friends and other foodies around the world"]
+    var pageContent = ["Exciting message1",
+        "Exciting message2",
+        "Exciting message3"]
     
     
     
@@ -58,18 +58,25 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
             return nil
         }
         
-        // Create a new view controller and pass suitable data.
-        if let pageContentViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {
-            
-            pageContentViewController.imageFile = pageImages[index]
-            pageContentViewController.heading = pageHeadings[index]
-            pageContentViewController.content = pageContent[index]
-            pageContentViewController.index = index
-            
-            return pageContentViewController
+       
+            if let pageContentViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {
+                
+                pageContentViewController.imageFile = pageImages[index]
+                pageContentViewController.heading = pageHeadings[index]
+                pageContentViewController.content = pageContent[index]
+                pageContentViewController.index = index
+                
+                return pageContentViewController
         }
         
         return nil
+    }
+    
+    
+    func forward(index: Int) {
+        if let nextViewController = contentViewController(at: index + 1) {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {

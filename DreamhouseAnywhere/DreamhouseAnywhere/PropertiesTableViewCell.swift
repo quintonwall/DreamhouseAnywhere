@@ -10,17 +10,28 @@ import UIKit
 
 class PropertiesTableViewCell: UITableViewCell {
 
-    @IBOutlet var postImageView:UIImageView!
-    @IBOutlet var postTitle:UILabel!
-    @IBOutlet var postAuthor:UILabel!
-    @IBOutlet var authorImageView:UIImageView!
+    @IBOutlet var propertyImageView:UIImageView!
+    @IBOutlet var shortTitle:UILabel!
+    @IBOutlet var price:UILabel!
+    @IBOutlet var longDescription:UILabel!
+    @IBOutlet var hotPropertyImageView:UIImageView!
+    
+    var isHotProperty: Bool = false
+    
+    var numOfFavorites  = 0 {
+        didSet {
+            if (numOfFavorites > 5) {
+                isHotProperty = true
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         // Initialization code
-        authorImageView.layer.cornerRadius = authorImageView.frame.width / 2
-        authorImageView.layer.masksToBounds = true
+        hotPropertyImageView.layer.cornerRadius = hotPropertyImageView.frame.width / 2
+        hotPropertyImageView.layer.masksToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
