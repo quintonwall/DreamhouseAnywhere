@@ -4,5 +4,5 @@ use_frameworks!
 target 'DreamhouseAnywhere' do
 	pod 'SwiftlySalesforce'
 	pod 'SwiftyJSON'
-	#pod 'LGSideMenuController'
+	pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 end
