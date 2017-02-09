@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Spring
 
 class WalkthroughContentViewController: UIViewController {
     
     @IBOutlet var headingLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
     @IBOutlet var contentImageView: UIImageView!
-    @IBOutlet var skipButton: UIButton!
+    @IBOutlet weak var getStartedButton: SpringButton!
+   
+    @IBOutlet weak var pageControl: UIPageControl!
     
     
     
@@ -26,6 +29,7 @@ class WalkthroughContentViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        pageControl.currentPage = index
         headingLabel.text = heading
         contentLabel.text = content
         contentImageView.image = UIImage(named: imageFile)
@@ -36,10 +40,14 @@ class WalkthroughContentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func skipButtonTapped(sender: UIButton) {
-            UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-            dismiss(animated: true, completion: nil)
-        }
+    @IBAction func getStartedButtonTapped(_ sender: Any) {
+    
+        getStartedButton.animation = "pop"
+        getStartedButton.animate()
+        //UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
+      
+        dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

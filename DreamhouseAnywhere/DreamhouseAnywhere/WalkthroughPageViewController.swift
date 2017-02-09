@@ -11,11 +11,11 @@ import UIKit
 class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
     
-    var pageHeadings = ["Heading1", "Heading2", "Heading3"]
-    var pageImages = ["red-lights-lisbon", "summer-beach-huts", "taxis-nyc"]
-    var pageContent = ["Exciting message1",
-        "Exciting message2",
-        "Exciting message3"]
+    var pageHeadings = ["Diamond in the Rough?", "Shop Smart", "Let's Get Started"]
+    var pageImages = ["diamond_welcome", "map_welcome", "key_welcome"]
+    var pageContent = ["Whatever home are looking for, Dreamhouse will find that hidden gem!",
+        "We use state of the art artificial intelligence to have your dream home find you.",
+        "Tap Get Started below to login."]
     
     
     
@@ -79,6 +79,8 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         }
     }
     
+    
+    /*
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return pageHeadings.count
     }
@@ -91,6 +93,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
         
         return 0
     }
+ */
     
        /*
     // MARK: - Navigation
