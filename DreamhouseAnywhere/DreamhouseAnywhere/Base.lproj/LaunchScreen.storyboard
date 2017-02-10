@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E144f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E154a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,25 +22,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dh" translatesAutoresizingMaskIntoConstraints="NO" id="TQn-sw-HdN">
-                                <rect key="frame" x="87" y="120" width="200" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billiards_ball_L " translatesAutoresizingMaskIntoConstraints="NO" id="TQn-sw-HdN">
+                                <rect key="frame" x="127" y="172" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="50n-9H-Nex"/>
-                                    <constraint firstAttribute="height" constant="200" id="ef0-iF-Kyg"/>
+                                    <constraint firstAttribute="width" constant="120" id="50n-9H-Nex"/>
+                                    <constraint firstAttribute="height" constant="120" id="ef0-iF-Kyg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let your dream home find you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEp-mk-XVC">
-                                <rect key="frame" x="36" y="389" width="302" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop house hunting. Let your dream home find you with Dreamhouse." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HEp-mk-XVC">
+                                <rect key="frame" x="47" y="389" width="281" height="90.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.26815411449999998" green="0.3496003151" blue="0.33347296710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SFDC_logo" translatesAutoresizingMaskIntoConstraints="NO" id="L6g-Ja-CTv">
+                                <rect key="frame" x="157" y="597" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4bK-Vy-yfk"/>
+                                    <constraint firstAttribute="width" constant="60" id="Cxe-zV-IMk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agn-le-ygV">
+                                <rect key="frame" x="155" y="577.5" width="64.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" red="0.6425701976" green="0.66308099030000001" blue="0.65064257380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.44117847084999084" green="0.6564096212387085" blue="0.21670567989349365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98418599370000004" green="0.98881345990000002" blue="0.95956486460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="HEp-mk-XVC" firstAttribute="top" secondItem="TQn-sw-HdN" secondAttribute="bottom" constant="69" id="I5X-BL-Du2"/>
-                            <constraint firstItem="HEp-mk-XVC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="d4n-zd-U0W"/>
-                            <constraint firstItem="TQn-sw-HdN" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="100" id="w2y-ea-6ew"/>
+                            <constraint firstItem="L6g-Ja-CTv" firstAttribute="top" secondItem="agn-le-ygV" secondAttribute="bottom" constant="3" id="5dU-nh-brU"/>
+                            <constraint firstItem="L6g-Ja-CTv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Uv-sh-tSh"/>
+                            <constraint firstItem="HEp-mk-XVC" firstAttribute="top" secondItem="TQn-sw-HdN" secondAttribute="bottom" constant="97" id="I5X-BL-Du2"/>
+                            <constraint firstItem="TQn-sw-HdN" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="152" id="LkR-r3-zDI"/>
+                            <constraint firstItem="HEp-mk-XVC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XYB-Er-bAf"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="L6g-Ja-CTv" secondAttribute="bottom" constant="10" id="axG-1I-C4S"/>
+                            <constraint firstItem="HEp-mk-XVC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.75" id="iWo-ie-GCk"/>
+                            <constraint firstItem="agn-le-ygV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nyo-Oq-Mx4"/>
                             <constraint firstItem="TQn-sw-HdN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yPY-nt-OLg"/>
                         </constraints>
                     </view>
@@ -50,6 +69,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dh" width="512" height="512"/>
+        <image name="SFDC_logo" width="287" height="201"/>
+        <image name="billiards_ball_L " width="120" height="120"/>
     </resources>
 </document>
