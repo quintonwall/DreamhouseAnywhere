@@ -8,6 +8,7 @@
 
 import UIKit
 import Spring
+import SwiftlySalesforce
 
 class WalkthroughContentViewController: UIViewController {
     
@@ -45,7 +46,8 @@ class WalkthroughContentViewController: UIViewController {
         getStartedButton.animation = "pop"
         getStartedButton.animate()
         //UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-      
+        
+       salesforce.identity()
         dismiss(animated: true, completion: nil)
     }
     

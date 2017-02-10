@@ -7,15 +7,39 @@
 //
 
 import UIKit
+import SwiftlySalesforce
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
 
     var window: UIWindow?
+    
+    //salesforce connected app properties
+    let consumerKey = "3MVG9uudbyLbNPZORlx5pdNbXe.eo_dVK0WlmqUuSbXszEw7gEIKzXkMdZC2IRCPPAJZYZkdeB.Ed0JDG8YSv"
+    let redirectURL = URL(string: "sfdc://success")
+    let communityLoginHost = "dreamhousenative-developer-edition.na30.force.com/consumerapp"
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+       let salesforceConfig : AuthManager.Configuration = AuthManager.Configuration(consumerKey: consumerKey, redirectURL: redirectURL!, loginHost: communityLoginHost, loginDelegate: self)
+        salesforce.authManager.configuration = salesforceConfig
+        
+        
+        //configureSalesforce(consumerKey: consumerKey, redirectURL: redirectURL!)
+        
+        
+        
+        
+        
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        handleRedirectURL(url: url)
         return true
     }
 
