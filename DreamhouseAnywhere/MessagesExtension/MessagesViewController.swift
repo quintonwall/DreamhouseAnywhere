@@ -9,12 +9,13 @@
 import UIKit
 import Messages
 import DreamhouseKit
+import SwiftlySalesforce
 
 
 class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource,UITableViewDelegate {
     
-   /// private var propertySet: [Property] = PropertyData.propertySet
     private var selectedProperty: Property?
+    var properties : [Property] = []
     
     
     
@@ -25,6 +26,24 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        fetchProperties()
+    }
+    
+    
+    func fetchProperties() {
+        first {
+            PropertyData.shared.getAllProperties()
+            
+            }.then {
+                (results) -> () in
+                self.properties = results
+                self.tableView.reloadData()
+            }.catch {
+                (error) -> () in
+                print("error: \(error)")  //todo: handle this better
+        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,34 +106,37 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return properties.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
         
-        /*
-        let p = propertySet[indexPath.row]
-        cell.titleLabel.text = p.title
-        cell.descriptionLabel.text = p.description
-        cell.priceLabel.text = "$\(p.price)"
-        cell.propertyImageView.image = UIImage(named: p.mainImageName)
-        */
+        
+        let property : Property = properties[indexPath.row]
+        cell.titleLabel.text = property.title
+        cell.descriptionLabel.text = property.description
+        cell.priceLabel.text =  "$\(property.price)"
+        cell.propertyImageURLString = property.propertyImageURLString
+        
         return cell
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         requestPresentationStyle(.compact)
         tableView.deselectRow(at: indexPath, animated: true)
-        /*
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
         
-        let p = propertySet[indexPath.row]
+        
+       let p : Property = properties[indexPath.row]
         if let conversation = activeConversation {
             let messageLayout = MSMessageTemplateLayout()
             messageLayout.caption = p.title
             messageLayout.subcaption = "$\(p.price)"
-            messageLayout.image = UIImage(named: p.mainImageName)
+            messageLayout.image = cell.propertyImageView.image
         
             let message = MSMessage()
             message.layout = messageLayout
@@ -129,7 +151,7 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
                 }
             })
         }
-         */
+      
     }
 }
 

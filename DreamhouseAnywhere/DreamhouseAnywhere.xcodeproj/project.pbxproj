@@ -28,6 +28,7 @@
 		5A107CFC1E45447B006C847A /* PropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CFB1E45447B006C847A /* PropertyData.swift */; };
 		5A107CFD1E454632006C847A /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CE01E452F96006C847A /* Property.swift */; };
 		5A10AC711E4E8BEE00782991 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A10AC701E4E8BEE00782991 /* SDWebImage.framework */; };
+		5A10AC751E4E99E300782991 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A10AC701E4E8BEE00782991 /* SDWebImage.framework */; };
 		5A6787FD1E4E8185001AC9F0 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
 		5A6788001E4E81FF001AC9F0 /* DreamhouseKit.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A6AD4971E4A38DC00D5AA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AD4921E4A38DC00D5AA30 /* Main.storyboard */; };
@@ -43,6 +44,8 @@
 		5AD0ADA01E4CEAE8003A00E5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */; };
 		5AD0ADA11E4CEAE8003A00E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9C1E4CEAE8003A00E5 /* UIView.swift */; };
 		8420DED3BABDA06F999DEC6C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58BA7926BDC7D346E4DC90 /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */; };
+		CB08C367B86FEB42EDADEE75 /* Pods_DreamhouseAnywhere_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */; };
+		F253AE92EBDAE5000561B98D /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,7 @@
 
 /* Begin PBXFileReference section */
 		16CC69CCD2742401EA759180 /* Pods-DreamhouseAnywhere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.debug.xcconfig"; sourceTree = "<group>"; };
+		16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B5F937FF70072E97D77866 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseKit/Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig"; sourceTree = "<group>"; };
 		5A107C7C1E452D8D006C847A /* DreamhouseAnywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamhouseAnywhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A107C7F1E452D8D006C847A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,10 +153,15 @@
 		5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		5AD0AD9C1E4CEAE8003A00E5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795D052FF9AB1B5721B67145 /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig"; sourceTree = "<group>"; };
 		8B58BA7926BDC7D346E4DC90 /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9652542C030741F91821D6D6 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		A34987584F42DF89D77D0DF4 /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseKit/Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A544C227661B49424938D4 /* Pods_DreamhouseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDF32C951F3F112A71D1ABD8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig"; sourceTree = "<group>"; };
 		E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.release.xcconfig"; sourceTree = "<group>"; };
+		EBA9F24A987B87F4100C9EFD /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A107CBB1E452DDB006C847A /* Messages.framework in Frameworks */,
+				CB08C367B86FEB42EDADEE75 /* Pods_DreamhouseAnywhere_MessagesExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +204,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A10AC751E4E99E300782991 /* SDWebImage.framework in Frameworks */,
 				5A6787FD1E4E8185001AC9F0 /* DreamhouseKit.framework in Frameworks */,
+				F253AE92EBDAE5000561B98D /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +265,8 @@
 				5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */,
 				B5A544C227661B49424938D4 /* Pods_DreamhouseKit.framework */,
 				8B58BA7926BDC7D346E4DC90 /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */,
+				16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */,
+				5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -337,6 +351,10 @@
 				E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */,
 				A34987584F42DF89D77D0DF4 /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */,
 				34B5F937FF70072E97D77866 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */,
+				CDF32C951F3F112A71D1ABD8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */,
+				795D052FF9AB1B5721B67145 /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */,
+				9652542C030741F91821D6D6 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */,
+				EBA9F24A987B87F4100C9EFD /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -399,9 +417,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A107CC91E452DDB006C847A /* Build configuration list for PBXNativeTarget "DreamhouseMessages" */;
 			buildPhases = (
+				41D59F94F450ED9A45F3CC08 /* [CP] Check Pods Manifest.lock */,
 				5A107CAB1E452DDB006C847A /* Resources */,
 				5A107CC81E452DDB006C847A /* Embed App Extensions */,
 				70D2EABBE353FA4FF609731B /* Frameworks */,
+				229B650320691E350FBE49AB /* [CP] Embed Pods Frameworks */,
+				21EA786A1AE5349EE5F62500 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -417,9 +438,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A107CC51E452DDB006C847A /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
 			buildPhases = (
+				B0D879D24196EE4095122647 /* [CP] Check Pods Manifest.lock */,
 				5A107CB21E452DDB006C847A /* Sources */,
 				5A107CB31E452DDB006C847A /* Frameworks */,
 				5A107CB41E452DDB006C847A /* Resources */,
+				791F26E978AA22A011EDEDB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -557,6 +580,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		21EA786A1AE5349EE5F62500 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		229B650320691E350FBE49AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41D59F94F450ED9A45F3CC08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		434A0A8680BE48EACA28ABD0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +638,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		791F26E978AA22A011EDEDB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Pods-DreamhouseAnywhere-MessagesExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7E31F94B524F6330DD4424CD /* [CP] Embed Pods Frameworks */ = {
@@ -588,6 +671,21 @@
 			showEnvVarsInLog = 0;
 		};
 		A916A435D350A3D8959BEB7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D879D24196EE4095122647 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -883,6 +981,7 @@
 		};
 		5A107CC61E452DDB006C847A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9652542C030741F91821D6D6 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -898,6 +997,7 @@
 		};
 		5A107CC71E452DDB006C847A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA9F24A987B87F4100C9EFD /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -913,6 +1013,7 @@
 		};
 		5A107CCA1E452DDB006C847A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF32C951F3F112A71D1ABD8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -926,6 +1027,7 @@
 		};
 		5A107CCB1E452DDB006C847A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795D052FF9AB1B5721B67145 /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

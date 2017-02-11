@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class PropertyTableViewCell: UITableViewCell {
     
@@ -14,6 +16,12 @@ class PropertyTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    var propertyImageURLString = "" {
+        didSet {
+            self.propertyImageView.sd_setImage(with: URL(string: propertyImageURLString))
+        }
+    }
+    
 
 
     override func awakeFromNib() {

@@ -21,8 +21,8 @@
 		0BFB63762681D021F5B32D2FACAA34A3 /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCFD8A0C1F6E61136A7600CAA739D94 /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C56BB1AA2BA505E21D7C5CA4A7894F8 /* CALayer+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = FE673EB6FA2B417DE37DC2CE199AD3D4 /* CALayer+AnyPromise.m */; };
 		0F9815B5A80FEB4587882D7E1651A47C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10368CAA19E71FB212BC6F95C4EFA1D /* LoadingView.swift */; };
-		0FEFF4BB218B0E8D9EF997E7EC9792E0 /* Pods-DreamhouseAnywhere-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 600DB606016E0C23B392B7A7226CB9DF /* Pods-DreamhouseAnywhere-dummy.m */; };
-		1044A399CE9997250115971D31EE55CD /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD342E35A2A3FF41F2330276DE1A754B /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m */; };
+		0FEFF4BB218B0E8D9EF997E7EC9792E0 /* Pods-DreamhouseAnywhere-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F634E8987ADDA5261C8B77906B9B4215 /* Pods-DreamhouseAnywhere-dummy.m */; };
+		1044A399CE9997250115971D31EE55CD /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96798F93FCEDDF6A227CC9BDC59E6431 /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7764623B14BD0CBCFC194A094950461A /* Timeline.swift */; };
 		115B134D323A6E3CD6E00FB53321DCE5 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = C57A225D90A0A0A3EB97BFA599793C24 /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1261ED0C5A9C474762A667832EBF117D /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D8069F835561A7DD95EDB467B12731 /* NSNotificationCenter+Promise.swift */; };
@@ -34,12 +34,14 @@
 		1C2E8227A0700613A7D0C07A05A431B0 /* wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0AB723D18103DCF1818B37F10997F3 /* wrap.swift */; };
 		1EF54CAC821BDA4B43A54FCA7141CFAE /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A62603FCC52A287D8080ACD48959409 /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F0855EF3FCF0EFE13C50CA329A2156B /* LocksmithAccessibleOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2E39AEECD4392988898853F59D17F /* LocksmithAccessibleOption.swift */; };
+		1FBED52EA7901A062E5F7B871C56AE81 /* Pods-DreamhouseAnywhere-MessagesExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF24E65ABEF0DDD5153E02B7A2EA82F /* Pods-DreamhouseAnywhere-MessagesExtension-dummy.m */; };
 		252ECCB9E209F89FD530C9F3FE54A21E /* Zalgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEA3CB379EA3EF2F6C98CE4ADE922 /* Zalgo.swift */; };
 		27D889D317A485E463FE504E54F451FF /* Locksmith.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA33CBF29C29305015A28ED81AF3ABC /* Locksmith.swift */; };
 		27FBAE5F99C43B371E6C96314AA84438 /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = F951C73F23027880B44C19EF5804F940 /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BFD1C1715B88C5F3C6DE4DF3C1C8D4D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4881D8EC488FECF55FAB9DF1A90DCA98 /* ImageIO.framework */; };
 		2C256C71665368E7E1767C8759BF0E1D /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E48EF73708858304771869CF0B67682 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D684B8A53FA516F731546EEB5FA930D /* Promise+AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF56E4362838F17ACB0AB4916492C62 /* Promise+AnyPromise.swift */; };
+		2E6E4C11DDF06B23274B979744BA4C0B /* Pods-DreamhouseAnywhere-MessagesExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CFD9D45880563A944EEA8BA3C26D15 /* Pods-DreamhouseAnywhere-MessagesExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F0C406D71185D2198C5EB71C5E1ECB8 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2CCBC906D335DC40E7E14E92AFEB81 /* Misc.swift */; };
 		309AE73AF20549489792B5531A81B53A /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77997A5A491B3FD35C0D56F1E1BF679A /* UIView+WebCacheOperation.m */; };
 		31F81D54B50FE06ACCFB28EE739915B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C837DD63BC09E3FF79EAB337B341CD95 /* Model.swift */; };
@@ -54,6 +56,7 @@
 		3E2F88AC7DB322E4ACA94520D09ADC8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B72516CBD1795A81FEB9600CF905EE /* Foundation.framework */; };
 		417C99C5706F5EB15E9402CC14114BF6 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D03AA30C8F8AC2D166737B05E075D4F /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		423343CAE1AFC24583E5296DCD3C9719 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E201BC98DDEF7C35C612A66A045F3235 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		483F9E79C08AE0D84C1A86BE5EA4F4AB /* Pods-DreamhouseAnywhere-DreamhouseMessages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F36F77B1A32E596AFB47DF20FD873912 /* Pods-DreamhouseAnywhere-DreamhouseMessages-dummy.m */; };
 		486CA4FAB4ACC791942766A5EC87A8E2 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AFB5A59990A42A93EB5AA048A493F1 /* SDWebImageDownloaderOperation.m */; };
 		49E63E17DCA30E780399F96BFF3E7074 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B09E88C54C25D817C1C56F2C7F998 /* PromiseKit.framework */; };
 		4A61403EE23366FB5C758C76DC4DA3DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B72516CBD1795A81FEB9600CF905EE /* Foundation.framework */; };
@@ -66,6 +69,7 @@
 		55BD7BD2FFE9B0978F3B0C6D617D4EA5 /* SwiftlySalesforce-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A33B213138D596DC41183F9EF678281 /* SwiftlySalesforce-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57431774F36D7DDAADF4762FA948BFE7 /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A2539DE5D8C829D129C2D73F02456D /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		59190D1E90E11BBB52A8A4D66F5C4269 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD116A9A117FC8BE646BE6D5514BE8A /* SpringTextView.swift */; };
+		5EDD49563F5EF4867193929A46278638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B72516CBD1795A81FEB9600CF905EE /* Foundation.framework */; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B977AFE3576BB48AE48FCA62A1B4F91 /* DispatchQueue+Alamofire.swift */; };
 		622CF301D17DAF0746EE177886CFC9A8 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711CCFFDB0F75A38F07376697C72923 /* DesignableTabBarController.swift */; };
 		62C159484F260EC36C3F202009FDBA30 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C07CB66342C2ED49886193F398A209D /* UIImageView+WebCache.m */; };
@@ -116,7 +120,7 @@
 		99BED18A7AA07599ACF24DB48DC8FB3D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE23550C843AC778634F8330B2481B58 /* Router.swift */; };
 		9A4B7E4D23F81498F437E391DCF05134 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A03631D2CDC80F9125090A68FF2A63 /* SDImageCache.m */; };
 		9DA16446F9DA88A41519B020F98DCF15 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0C6F6402E3D351BEA77675C915C0E /* NSNotificationCenter+AnyPromise.m */; };
-		9DD9AE4B1CFB6146B6CB6F8C42852FAF /* Pods-DreamhouseAnywhere-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12162F25E6B0BDD544D575D96C40CD80 /* Pods-DreamhouseAnywhere-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DD9AE4B1CFB6146B6CB6F8C42852FAF /* Pods-DreamhouseAnywhere-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D52AD940CB20ED30999F2DA067B7D0 /* Pods-DreamhouseAnywhere-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F23349F0A4423067383A10A68952899 /* AFError.swift */; };
 		9FA21B7937BB19A609AFDD273F5310EB /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = D0EBC01C492B7CCC80B8A22DC6604CAE /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0248494777A7484428405C298910F95 /* Promise+Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7CF556DA7DE6052FC83E329DF78461 /* Promise+Properties.swift */; };
@@ -130,10 +134,11 @@
 		A94A4135542A9D0FC5A1C415F2B01E2B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB884D538DC93E1581D9C3B48D846EF /* UIImageView+HighlightedWebCache.m */; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 517CC94736A5AA264FCA8C01C2E97689 /* Alamofire-dummy.m */; };
 		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE7DD441614E2EB30B72689B8799960 /* SessionManager.swift */; };
+		AEC9D2F0D306701056E6C88089DF74FD /* Pods-DreamhouseAnywhere-DreamhouseMessages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 102DDC77F7A9AE4328BDCF41E9356F0A /* Pods-DreamhouseAnywhere-DreamhouseMessages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0F918BEC34E1C53DE0153988768FB56 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340548B1DADFE40189E97A13039E656E /* SoundPlayer.swift */; };
 		B1017895419DA304C270F4109D56CF81 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585FA945BECE2BE28CC05639DC6C154E /* Spring.swift */; };
 		B51B1BFF5FF370A7F5D17842E5FBBAC3 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE43ADE50738385CAD4A71BBA75261 /* Promise.swift */; };
-		B5DF902F6AE697376D0FC7B0B178B3A8 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD8E3C332D5DFC286D4F62B8DD5A548 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5DF902F6AE697376D0FC7B0B178B3A8 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D404A2EC1548EA9119237CFEF64B83 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FD2C0E040BB8F1B57B1294D1C32AF9 /* MultipartFormData.swift */; };
 		B8096C24B3392902C6AC90FB483C711D /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C9BD60EFDC42309802ED649F3BCE /* GlobalState.m */; };
 		B80F2DDF5FD4E802193845061D9715F2 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF2881E5EBA48635640CC5AA7331C37 /* SDWebImage-dummy.m */; };
@@ -166,6 +171,7 @@
 		D9D4FA3BDB384167A81D5595E5B9D866 /* SalesforceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B8F92D2AD9B347D45AE3EDC1A941B6 /* SalesforceError.swift */; };
 		DEF1958D0D3C07534074DBD301654B0E /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1014A19F51361FB2F41E5EEB93777F2 /* SDWebImageManager.m */; };
 		E1608C111AB031B824548BA2BFB07D71 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FBE865DC4AE13714FB88DDAF9C2656 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1CDDE9BB82D945EF055258BE4A50BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B72516CBD1795A81FEB9600CF905EE /* Foundation.framework */; };
 		E340DE6E6274DBCABA43170181E4B21F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8D869964392325CA152BCA17B7F1D0 /* Alamofire.framework */; };
 		E4F3222227B4E41E83BAF1A9DFFEB936 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8FEED671CDD4C8BD5DBA80EBE98BC3 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E51D55BE7E36F0F18771D8186B5AC02F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5889A8EE045F38FB7829FB7BFB204A47 /* ImageLoader.swift */; };
@@ -200,12 +206,33 @@
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
 		};
+		07EB2E15BD319E14853CF1E835589E9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77351BD51E31E584F52B03CA4D0E0ECD;
+			remoteInfo = SDWebImage;
+		};
 		09EDE59357307FBBC6953194637ECB06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
 			remoteInfo = Alamofire;
+		};
+		0FEC793A5AD52AA607493D42C3919AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
+			remoteInfo = Locksmith;
+		};
+		35EB4A92D3F8886EA9099CBCD51D7E5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B478850CD8C1CD86F525DABED096DBF3;
+			remoteInfo = SwiftlySalesforce;
 		};
 		39427A5C10C59B9F2A04194D4699A6C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -220,6 +247,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5CCF04285611177A7322636EE21C8D50;
 			remoteInfo = PromiseKit;
+		};
+		48673C742CBEDB0B0CCAAA23613128C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F536CED61E973D2D22611F23FF591920;
+			remoteInfo = Spring;
+		};
+		495EB09E68A83DC7AC2740CA70811E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77351BD51E31E584F52B03CA4D0E0ECD;
+			remoteInfo = SDWebImage;
+		};
+		5113C98C90791CFF7B938A2EE570889D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F224A17931FD1954491872FD5DE53C;
+			remoteInfo = SwiftyJSON;
+		};
+		556829B5DF5FE725724D7EBEBA566F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
 		};
 		5778B00DC1C802E0589BDCF99835AD7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -256,12 +311,40 @@
 			remoteGlobalIDString = 77351BD51E31E584F52B03CA4D0E0ECD;
 			remoteInfo = SDWebImage;
 		};
+		85D2231E716426ECA00E61AA76B7698A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B478850CD8C1CD86F525DABED096DBF3;
+			remoteInfo = SwiftlySalesforce;
+		};
+		92DF33AD65C5CC6C6C86E987BD7FA5C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CCF04285611177A7322636EE21C8D50;
+			remoteInfo = PromiseKit;
+		};
 		963C63B909AF0268511CD63AF2FBC22F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D6F224A17931FD1954491872FD5DE53C;
 			remoteInfo = SwiftyJSON;
+		};
+		A4335A505192319A4BBF90FE8A515A98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
+			remoteInfo = Locksmith;
+		};
+		A5D91130B288E9757312B72BB96B8821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F536CED61E973D2D22611F23FF591920;
+			remoteInfo = Spring;
 		};
 		ABEE3CB4750A19942B0E54EA6EE3A55B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -270,12 +353,26 @@
 			remoteGlobalIDString = 5CCF04285611177A7322636EE21C8D50;
 			remoteInfo = PromiseKit;
 		};
+		AC5369F27A1A29366167C3BCC3FC814E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6F224A17931FD1954491872FD5DE53C;
+			remoteInfo = SwiftyJSON;
+		};
 		B6081E4D44C8017BCFB0F0BA299975E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F536CED61E973D2D22611F23FF591920;
 			remoteInfo = Spring;
+		};
+		C7524E901C688AA45018BB503F1EADF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CCF04285611177A7322636EE21C8D50;
+			remoteInfo = PromiseKit;
 		};
 		CC51720D9EB771B4322CA0821C4E7A91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -305,51 +402,58 @@
 			remoteGlobalIDString = C7F727D48928BF47D913AFC48BB6A978;
 			remoteInfo = Locksmith;
 		};
+		FA254DBE6129BF0D313260BEFD0F1CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		009CC615DE87B32F3FCDA9BC024131D5 /* AAA-CocoaPods-Hack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AAA-CocoaPods-Hack.h"; path = "Sources/AAA-CocoaPods-Hack.h"; sourceTree = "<group>"; };
 		0185C56ED8B0CFD0D5E7D19093BBBB95 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		02AAFE933BFFC878E764BFB6F03A2DA0 /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
+		0309B7AA559F5B5FDFC45E4E390C67F8 /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftlySalesforce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B0C3F0F593ADB2B4B6D3E841B48048 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		072CA8365E57511350D86965243CC95D /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D52AD940CB20ED30999F2DA067B7D0 /* Pods-DreamhouseAnywhere-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DreamhouseAnywhere-umbrella.h"; sourceTree = "<group>"; };
 		07B72516CBD1795A81FEB9600CF905EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		095BFE8B93745A0BC5AB1AC92A6F5A80 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
 		0A33B213138D596DC41183F9EF678281 /* SwiftlySalesforce-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftlySalesforce-umbrella.h"; sourceTree = "<group>"; };
-		0CA2B012E1594D5E5365A9FC546EE37D /* Pods-DreamhouseAnywhere-DreamhouseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DreamhouseAnywhere-DreamhouseKit.modulemap"; sourceTree = "<group>"; };
+		102DDC77F7A9AE4328BDCF41E9356F0A /* Pods-DreamhouseAnywhere-DreamhouseMessages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DreamhouseAnywhere-DreamhouseMessages-umbrella.h"; sourceTree = "<group>"; };
 		10C7EF829AE6D4FC22A3E793E7AA97E0 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
-		12162F25E6B0BDD544D575D96C40CD80 /* Pods-DreamhouseAnywhere-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DreamhouseAnywhere-umbrella.h"; sourceTree = "<group>"; };
 		127AC1DDD4E0B3E1B94030C37E74B7A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pod/Classes/Info.plist; sourceTree = "<group>"; };
 		13954380AF6CE063C4362356F4E260B9 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		14A0C6F6402E3D351BEA77675C915C0E /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
-		14A87CC434A6075451BBF7EE45EDC38B /* Pods-DreamhouseAnywhere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere.debug.xcconfig"; sourceTree = "<group>"; };
 		14CE51C31024253EFB3DF0912009D48B /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		16E171CA4A8F17B268274743692B3C37 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		177BC082DE3CDA59386296B996473130 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		17BBA587473EA9621871005B0A39824B /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PromiseKit.modulemap; sourceTree = "<group>"; };
-		18250719EB2DFE708625057BDB1C9A5D /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CFD5CFE6D62C703F0BE34DFFB9CC04C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B963AA363713D89326743C33D427FEB /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E48EF73708858304771869CF0B67682 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
-		1E5D8FCB35F5722B82A6C30068D594BA /* Pods-DreamhouseAnywhere.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DreamhouseAnywhere.modulemap"; sourceTree = "<group>"; };
 		1EF56E4362838F17ACB0AB4916492C62 /* Promise+AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+AnyPromise.swift"; path = "Sources/Promise+AnyPromise.swift"; sourceTree = "<group>"; };
-		1F456AA0F9BE484ACCF1201984805E82 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8052BEACA608EE2E409CE179C591CB /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		1FF081062D4497C27FA891E2DD24FD02 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D532F48BE826C763AEA731017C33F7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		22B8F92D2AD9B347D45AE3EDC1A941B6 /* SalesforceError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SalesforceError.swift; path = Pod/Classes/SalesforceError.swift; sourceTree = "<group>"; };
+		232BB5FC5CBB9BC5109234A71880C82A /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig"; sourceTree = "<group>"; };
 		23E2E39AEECD4392988898853F59D17F /* LocksmithAccessibleOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithAccessibleOption.swift; path = Source/LocksmithAccessibleOption.swift; sourceTree = "<group>"; };
 		248CF50681F51C1080BF4A31FC9CF09C /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
 		248ED5293673D83539CF5E9658404737 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
 		251DED689F875EC68DB07A6A6FE9B679 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		26BC22F077A97BBB9F0949B7DE4F7218 /* Pods-DreamhouseAnywhere.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DreamhouseAnywhere.modulemap"; sourceTree = "<group>"; };
 		26D2679C579C9B71F62110054A1237E6 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		2711CCFFDB0F75A38F07376697C72923 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
 		276B09E88C54C25D817C1C56F2C7F998 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		287FEC1A2D38CA2FA6009ACC21EAE6D3 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		28F685B2CBAD8B972F459540E7A009C8 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		2A7CDC7C2ABF51A45C68497CC79A4334 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
-		2B01037F98DCEC1C17CCD612893AA535 /* Pods-DreamhouseAnywhere-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-frameworks.sh"; sourceTree = "<group>"; };
 		2B977AFE3576BB48AE48FCA62A1B4F91 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		2E7686A020629FED1F2D5AF65B564C14 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		2E9CAD34748805AA4235946EB04122F0 /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig"; sourceTree = "<group>"; };
 		2FCFD8A0C1F6E61136A7600CAA739D94 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
+		30C5D30B7D5D731114323C08582002F2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E80F10F689F217813913EE39FAAAA8 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		340548B1DADFE40189E97A13039E656E /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
 		35D7133155D5A0120C614853DA3AF625 /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
@@ -357,12 +461,9 @@
 		371312B03DE506C5B78CBEFC3AFD26AF /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		396DAB99EE362C4F7520E145C2F8DD21 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		39A62033A67B9A546B8053FFCE7B65C0 /* LoginDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = Pod/Classes/LoginDelegate.swift; sourceTree = "<group>"; };
-		3B11FB2B527A404039E40A4AE8C47775 /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftlySalesforce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1E7352BF9E87199506F030E54D8CD6 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		3B8FEED671CDD4C8BD5DBA80EBE98BC3 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		3CEE99E44E8DC79C3067F48118E66EB3 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		3D1720958B48BC5F55F99BBB5697A6B2 /* Pods-DreamhouseAnywhere-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DreamhouseAnywhere-acknowledgements.plist"; sourceTree = "<group>"; };
-		3D392FF8AAE8C7A701D43950F43BDD49 /* Pods-DreamhouseAnywhere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere.release.xcconfig"; sourceTree = "<group>"; };
 		3EB2FBCF058E3D0F473E2C2195D7954E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		3F422CB8451F67E7700DB5F97BE9D871 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE3A60067B2A18106D4CFE1B36AA89F /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
@@ -370,64 +471,77 @@
 		42955A936481E0785FA2A48D5117ED91 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
 		42BDF0DAC02987ABE6597669BB07F7E0 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		4301F5E1E4006628EE5CB8D89C81B13A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4359A547B1C3ECB7CC154F51B58EDB92 /* Pods-DreamhouseAnywhere-MessagesExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DreamhouseAnywhere-MessagesExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		4614FAA2E8AE24447CD509E4088C66FD /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
 		465D61090BAF43182346513FC5CB647E /* LocksmithInternetProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetProtocol.swift; path = Source/LocksmithInternetProtocol.swift; sourceTree = "<group>"; };
+		47FE4E16BFB23E12B0A53BB14EE80EF8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig"; sourceTree = "<group>"; };
 		4881D8EC488FECF55FAB9DF1A90DCA98 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		48AB11EB3AB990922A7223292F6AC0EC /* Locksmith.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Locksmith.modulemap; sourceTree = "<group>"; };
+		48E7F427281D7422295F617E239C99FB /* Pods-DreamhouseAnywhere-MessagesExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DreamhouseAnywhere-MessagesExtension.modulemap"; sourceTree = "<group>"; };
 		4A62603FCC52A287D8080ACD48959409 /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
+		4ABDBCF1DB42EFF692EAC1CC2F71FB08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B21C9B7031A1302F9BF3E6AAA57D317 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		4D3D0D6652E8A0EE50569070E615BB78 /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
+		50A09B30F01EBCECA753B0A566397D42 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		517CC94736A5AA264FCA8C01C2E97689 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		52075812706207C48D2C7258F7EA06B5 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
 		520CEA3CB379EA3EF2F6C98CE4ADE922 /* Zalgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zalgo.swift; path = Sources/Zalgo.swift; sourceTree = "<group>"; };
 		5239801B465584CF4BAA8997D250282B /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F03D9B117EB63B8A55B1CF688B40C6 /* join.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = join.swift; path = Sources/join.swift; sourceTree = "<group>"; };
-		53E3D2001B08D788D81EC655BAD1E759 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54CFD9D45880563A944EEA8BA3C26D15 /* Pods-DreamhouseAnywhere-MessagesExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DreamhouseAnywhere-MessagesExtension-umbrella.h"; sourceTree = "<group>"; };
 		57A2539DE5D8C829D129C2D73F02456D /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
 		585FA945BECE2BE28CC05639DC6C154E /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
 		5889A8EE045F38FB7829FB7BFB204A47 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
 		5901A04ED58875C7928D650161232362 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		59A03631D2CDC80F9125090A68FF2A63 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		5A933D0F95E7BFC44CFAF3471C142288 /* Pods-DreamhouseAnywhere-DreamhouseMessages-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-DreamhouseMessages-frameworks.sh"; sourceTree = "<group>"; };
 		5A9DEFF94E835CFAFE26A6AE48598431 /* CALayer+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+AnyPromise.h"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.h"; sourceTree = "<group>"; };
 		5AE8100594EB7A6579C383CEE2624F11 /* SwiftlySalesforce-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftlySalesforce-prefix.pch"; sourceTree = "<group>"; };
 		5BFE43ADE50738385CAD4A71BBA75261 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
 		5DA6FD7A147C54F66E2BC58CA7158EAC /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
 		5E33DBAA135618A49D76EA98C5F95CB9 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
 		5F23349F0A4423067383A10A68952899 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		600DB606016E0C23B392B7A7226CB9DF /* Pods-DreamhouseAnywhere-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DreamhouseAnywhere-dummy.m"; sourceTree = "<group>"; };
 		616D98D02400B0FD9280F1E70DE0A8A7 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		61AFB5A59990A42A93EB5AA048A493F1 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		68361FD6C94167A7FE3838CE87211B03 /* Pods-DreamhouseAnywhere-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DreamhouseAnywhere-acknowledgements.plist"; sourceTree = "<group>"; };
 		69BE9CE87442D9CD99F7E69E537F377F /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
-		6B2F5CBF218206E5FF4AE25B178B6770 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AAA7DB7B764812D820E4FDFF25843EE /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig"; sourceTree = "<group>"; };
 		6C5F35E302C69DE56CDCA8C33CCD164D /* Salesforce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Salesforce.swift; path = Pod/Classes/Salesforce.swift; sourceTree = "<group>"; };
 		6C71F193F0119D625A860DDD8199B1E5 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
 		6D0B07B8A08CB1FB334EA6E2DEEC83FC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		6D5D983853569DE26FAEB5949EEAC818 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E6653513B462BE2CE99E67F329495A7 /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
 		6F12F4FD9E68F1115C68870FBC853370 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
+		711116C420B75D5D28DC9699698BA5F2 /* Pods-DreamhouseAnywhere-DreamhouseMessages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DreamhouseAnywhere-DreamhouseMessages.modulemap"; sourceTree = "<group>"; };
 		71D8069F835561A7DD95EDB467B12731 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
 		74F86E0F69023D39E47224BBE8B603C2 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		75BDE47E77FA1B6F37FE5361403E97E7 /* Pods-DreamhouseAnywhere-DreamhouseKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-DreamhouseKit-resources.sh"; sourceTree = "<group>"; };
 		7764623B14BD0CBCFC194A094950461A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		776495F1BB9A2162F71EF15414720DD7 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
 		77997A5A491B3FD35C0D56F1E1BF679A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		77FD2C0E040BB8F1B57B1294D1C32AF9 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		7A669787D7DD32D010AB7046F8A24CAF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2AE067AE8AB6965584142377F979C3 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
 		7D03AA30C8F8AC2D166737B05E075D4F /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		7D7091918E05419B7992E57B5FEA5012 /* URLDataPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLDataPromise.swift; path = Extensions/Foundation/Sources/URLDataPromise.swift; sourceTree = "<group>"; };
 		7D87AFD62EEB7579E8E3A13856A304C4 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
+		7DF0FB16A6BDC0E89CFCEEA0CB907F34 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		8134B552DCBE7D14AA670A8C18BC450C /* Pods-DreamhouseAnywhere-MessagesExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DreamhouseAnywhere-MessagesExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8186856497E02F0A6CBA0FD30B00B0AC /* SwiftlySalesforce.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftlySalesforce.xcconfig; sourceTree = "<group>"; };
-		847DBD253FB82140771457D6198CB560 /* Pods_DreamhouseAnywhere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		835CA3E6DE5D79740CE24A50BB5A1962 /* Pods-DreamhouseAnywhere-MessagesExtension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-MessagesExtension-resources.sh"; sourceTree = "<group>"; };
+		83747D943B1F80C75F01A1C9F36A80F6 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AF264D6122B24BCD1B2B8B67F472CC /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
-		89F5588995A99431F5BBEA3088D16EBF /* Pods-DreamhouseAnywhere-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-resources.sh"; sourceTree = "<group>"; };
+		89C26549C3BFCC874EBC56E445DEAF1A /* Pods_DreamhouseAnywhere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9041B403F85FC59771B7CC23E637A8C1 /* AuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = Pod/Classes/AuthManager.swift; sourceTree = "<group>"; };
+		905E9140EC61AC2008968DDB8DEEDE21 /* Pods-DreamhouseAnywhere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere.debug.xcconfig"; sourceTree = "<group>"; };
 		90B9842ACDAB9570AE1D79D0E4296A86 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
 		91AAC30515A3C524C1545BF39C8F3D2A /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		91ECE91159CD37E5CB155125D06C3528 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
 		92EA9432EA5334A884C7FEDB19D5A555 /* Locksmith-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Locksmith-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94E2200CF14A68F05A536DEF35BAEEC3 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		950ADD19C1C76D20ED02CA67B9AB14CF /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
 		9545173933CEE63B7AB4275575ECAAEA /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		96798F93FCEDDF6A227CC9BDC59E6431 /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m"; sourceTree = "<group>"; };
 		96F3EE80E616A31D9EAB6A0BFC049F8E /* DispatchQueue+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Promise.swift"; path = "Sources/DispatchQueue+Promise.swift"; sourceTree = "<group>"; };
 		98EBC5D8D1E5395FF4744EE69DA72164 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		9A1527DEDA7B426C96F4DCC87453E20B /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
@@ -438,29 +552,31 @@
 		A1A7FC856F40C38673841BB11F5322C9 /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		A2883BF106DF22F66B7F691204B4DD16 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
 		A3D513018716A167668BE314DC47E6D0 /* LocksmithInternetAuthenticationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithInternetAuthenticationType.swift; path = Source/LocksmithInternetAuthenticationType.swift; sourceTree = "<group>"; };
+		A4635023F885B089EA339653B6E7709A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A54729E99318CFD79CBBE703433009BD /* Pods-DreamhouseAnywhere-DreamhouseMessages-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DreamhouseAnywhere-DreamhouseMessages-acknowledgements.plist"; sourceTree = "<group>"; };
 		A60DDD7191107400B968EAC9D0201FED /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		A6F994EEA94117FF18A9EDEF22489D16 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		A75319F3BB905FC1CF682B092EBDB753 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		A81E032BBEBEB5AF5E6EBC97E72F7D2F /* LocksmithError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocksmithError.swift; path = Source/LocksmithError.swift; sourceTree = "<group>"; };
 		AB15A0D35517021C662F3C49CF41E13C /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Spring.modulemap; sourceTree = "<group>"; };
-		AB20DF6A9194A4EBDA82B1DFEB2367D7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB651A46BAC8A993BE87910D3EF2919F /* Pods-DreamhouseAnywhere-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-frameworks.sh"; sourceTree = "<group>"; };
 		AB65AD557EA9C9385991031F3D0B8E7C /* AuthData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthData.swift; path = Pod/Classes/AuthData.swift; sourceTree = "<group>"; };
 		AC9CF6134B146C7784748008D68322D3 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		AD342E35A2A3FF41F2330276DE1A754B /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m"; sourceTree = "<group>"; };
 		AE8094884EF63914A1752007141D3855 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		AFA1473BD85BFD04A3B1AF18AB4396D5 /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
 		B06F9900BDFB5FDB72CDDFAF48841BD2 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		B10368CAA19E71FB212BC6F95C4EFA1D /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
 		B1C8414C56DD86573443E48A660C838C /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		B225949540A43A463238A6FB73597116 /* Pods-DreamhouseAnywhere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere.release.xcconfig"; sourceTree = "<group>"; };
 		B239CF1FE192F5C602ACB4DCBED62E5E /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
-		B4490F4E2EA64B25E32DF5D6875E6E1F /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B467C55D11FF6FA8C2BADE36F7BFC325 /* Locksmith-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-umbrella.h"; sourceTree = "<group>"; };
 		B4930440AF9784C8CD4E5BE817F9054B /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		B5C7BA0DEC08BD58B9C3AE878B27BABA /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
 		B69A37BA95C83878623E16520EAE9723 /* PMKQuartzCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKQuartzCore.h; path = Extensions/QuartzCore/Sources/PMKQuartzCore.h; sourceTree = "<group>"; };
 		B726569C3966A83B821BD84CF7BF0378 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		B85A9083E085B8D896B15077E616F669 /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
-		B96EF137B9A7C39B39FBF848A6C7E139 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig"; sourceTree = "<group>"; };
 		B994C0CD059089212EA0EE8A1E3EF730 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
+		B9D404A2EC1548EA9119237CFEF64B83 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h"; sourceTree = "<group>"; };
 		B9F3DBCE11BBB871FA3F8CD9EC93181B /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
 		BCD116A9A117FC8BE646BE6D5514BE8A /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
 		BCF2881E5EBA48635640CC5AA7331C37 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
@@ -471,6 +587,7 @@
 		BE3AC1B399218F77C9F5A321388EDAB6 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
 		BF28CCE675BDCE5AA1871821315257BE /* Locksmith.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Locksmith.xcconfig; sourceTree = "<group>"; };
 		C1507747A2B2EB114BA644441E566B26 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		C1606652AD04472CA8ADF20E78D4591D /* Pods-DreamhouseAnywhere-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DreamhouseAnywhere-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C1FF30C1D8EB6ECB4D1D193013EF7740 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C26C39AAAD8B49EA385CE05CADBE54FC /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
 		C28E47A9FB89A68B7D0A8F5B5E988137 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
@@ -482,8 +599,10 @@
 		C9637863A918C45F86A6ABE1EB15B1AF /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		C9FC1CDB432BAEBA651FDB40D2BF970D /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
 		CA88B06591A0F3F20DF1A79EF6A36423 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		CAF24E65ABEF0DDD5153E02B7A2EA82F /* Pods-DreamhouseAnywhere-MessagesExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DreamhouseAnywhere-MessagesExtension-dummy.m"; sourceTree = "<group>"; };
 		CB59A9CE251EEA8E46BEBEE0C0904F4F /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
 		CCA33CBF29C29305015A28ED81AF3ABC /* Locksmith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locksmith.swift; path = Source/Locksmith.swift; sourceTree = "<group>"; };
+		CE612001D3C459C7A68E771876376F82 /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
 		CF0AB723D18103DCF1818B37F10997F3 /* wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = wrap.swift; path = Sources/wrap.swift; sourceTree = "<group>"; };
 		CF0F805B847D1F155DAD05193A9C6D19 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		CF2978DD75F2CFDFE2C28BE860BB9C07 /* Locksmith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Locksmith.h; path = Source/Locksmith.h; sourceTree = "<group>"; };
@@ -491,29 +610,36 @@
 		D043315A7D16B3A5AB28976D30361D84 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		D0EBC01C492B7CCC80B8A22DC6604CAE /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
 		D18509ABFA0BC67B66E0EED3D0F0BCBD /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
+		D18C825458533DE5AE3ED26217981A4A /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D3CE841B8F96C35CA470BABFFCD135 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56FFECAD8777FBCBD754365D4A48208 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D79DB965D4FBC8A0B0E908DC9CFEF7E3 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
 		D7CE968753D13A38F9D6CC609EA9CCA9 /* Globals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = Pod/Classes/Globals.swift; sourceTree = "<group>"; };
+		D7D1181F2D0E900DAFF435E51B145298 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAB884D538DC93E1581D9C3B48D846EF /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		DD7CDF408F38FF7BF4C6D22BF9040AFA /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
 		DE23550C843AC778634F8330B2481B58 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Pod/Classes/Router.swift; sourceTree = "<group>"; };
+		DFBC773A6542CE81E25E047F6C8495D8 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E04B5B573B9C50E183E7B634DCA00391 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		E05A71ED9963309459588EA36870D4C2 /* Pods-DreamhouseAnywhere-DreamhouseMessages-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-DreamhouseMessages-resources.sh"; sourceTree = "<group>"; };
 		E1014A19F51361FB2F41E5EEB93777F2 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
 		E201BC98DDEF7C35C612A66A045F3235 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		E2088CC743D12D02AA5E1C4B517832DA /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
 		E2930F1D89B5A09EDF41E7692F9EBD76 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		E3EC4DCD702584DE8F346FFFAC13D920 /* AuthDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthDataStore.swift; path = Pod/Classes/AuthDataStore.swift; sourceTree = "<group>"; };
-		E6A51744134F4EAEA363833E672812A3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91FB31693394C026F1AF2ED8329CE14 /* Locksmith-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Locksmith-prefix.pch"; sourceTree = "<group>"; };
-		EBD8E3C332D5DFC286D4F62B8DD5A548 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h"; sourceTree = "<group>"; };
-		EC5829E5D5750356176E34E962F2AE96 /* Pods-DreamhouseAnywhere-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DreamhouseAnywhere-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EADB52A78D56476BAA51098676037CEF /* Pods-DreamhouseAnywhere-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-resources.sh"; sourceTree = "<group>"; };
+		EC9B84AA7826D20A305464DDD54BB240 /* Locksmith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locksmith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED05A0A3DF6FD450E08B48D73F7C465E /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
 		EE2CCBC906D335DC40E7E14E92AFEB81 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		EF5482809596F8BCE2464EBFDA3E5A4D /* Pods-DreamhouseAnywhere-DreamhouseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DreamhouseAnywhere-DreamhouseKit.modulemap"; sourceTree = "<group>"; };
 		F0797813855413D9905B44E06DF43679 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0C3E94441DD5F95DA19BC76007DE54A /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F143261F33C905C8C8FCA44F720FC9F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F36F77B1A32E596AFB47DF20FD873912 /* Pods-DreamhouseAnywhere-DreamhouseMessages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DreamhouseAnywhere-DreamhouseMessages-dummy.m"; sourceTree = "<group>"; };
 		F3FBE865DC4AE13714FB88DDAF9C2656 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		F4A89DC908AAB1068C3C89BBAE92770F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F414D47D9A1AFFE8307BD7F158D4BC86 /* Pods-DreamhouseAnywhere-DreamhouseMessages-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DreamhouseAnywhere-DreamhouseMessages-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F634E8987ADDA5261C8B77906B9B4215 /* Pods-DreamhouseAnywhere-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DreamhouseAnywhere-dummy.m"; sourceTree = "<group>"; };
+		F656FDDA73FFDE199F99CC7805DDD0EE /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66B5FCB5DF525DE2A6B40B9EAF6FDE5 /* UIViewController+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewController+Promise.swift"; sourceTree = "<group>"; };
 		F6ADB0C65CD618B27F82B757A513D3CE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		F753A793DC06F61FF43E4B2CB8A0070A /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
@@ -525,7 +651,6 @@
 		FB6ABD77A3CFDF7F5CB8E3E06C59F6CC /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Sources/State.swift; sourceTree = "<group>"; };
 		FC6D4CB69A8C8F828B98431BEF3AE0F2 /* SwiftlySalesforce-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftlySalesforce-dummy.m"; sourceTree = "<group>"; };
 		FCAB999331E12D91B3A9555DDC43104B /* SwiftlySalesforce.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftlySalesforce.modulemap; sourceTree = "<group>"; };
-		FD1F6DA7E7F7E3F7018A87B73C557D1D /* Pods-DreamhouseAnywhere-DreamhouseKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DreamhouseAnywhere-DreamhouseKit-resources.sh"; sourceTree = "<group>"; };
 		FD4C8AE4103AE2A497ADEB1792896113 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		FE673EB6FA2B417DE37DC2CE199AD3D4 /* CALayer+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+AnyPromise.m"; path = "Extensions/QuartzCore/Sources/CALayer+AnyPromise.m"; sourceTree = "<group>"; };
 		FF3B30DB78BD6135F8788D0375F1828B /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
@@ -545,6 +670,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				00DBA4B3E86F3AF93770DA2C974F87FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637D42BE0DE4CCA42FD04976B416BC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDD49563F5EF4867193929A46278638 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,24 +744,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB5D95BDF8F84DD364445DFA5C80847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CDDE9BB82D945EF055258BE4A50BAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0776D1735233FAB4CA1E5F20741C582B /* Pods-DreamhouseAnywhere-DreamhouseKit */ = {
+		0073B8D8EDD32B1960CBBDC87CDACA59 /* Pods-DreamhouseAnywhere-DreamhouseMessages */ = {
 			isa = PBXGroup;
 			children = (
-				AB20DF6A9194A4EBDA82B1DFEB2367D7 /* Info.plist */,
-				0CA2B012E1594D5E5365A9FC546EE37D /* Pods-DreamhouseAnywhere-DreamhouseKit.modulemap */,
-				6B2F5CBF218206E5FF4AE25B178B6770 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.markdown */,
-				94E2200CF14A68F05A536DEF35BAEEC3 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.plist */,
-				AD342E35A2A3FF41F2330276DE1A754B /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m */,
-				FD1F6DA7E7F7E3F7018A87B73C557D1D /* Pods-DreamhouseAnywhere-DreamhouseKit-resources.sh */,
-				EBD8E3C332D5DFC286D4F62B8DD5A548 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h */,
-				F0C3E94441DD5F95DA19BC76007DE54A /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */,
-				B96EF137B9A7C39B39FBF848A6C7E139 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */,
+				4ABDBCF1DB42EFF692EAC1CC2F71FB08 /* Info.plist */,
+				711116C420B75D5D28DC9699698BA5F2 /* Pods-DreamhouseAnywhere-DreamhouseMessages.modulemap */,
+				F414D47D9A1AFFE8307BD7F158D4BC86 /* Pods-DreamhouseAnywhere-DreamhouseMessages-acknowledgements.markdown */,
+				A54729E99318CFD79CBBE703433009BD /* Pods-DreamhouseAnywhere-DreamhouseMessages-acknowledgements.plist */,
+				F36F77B1A32E596AFB47DF20FD873912 /* Pods-DreamhouseAnywhere-DreamhouseMessages-dummy.m */,
+				5A933D0F95E7BFC44CFAF3471C142288 /* Pods-DreamhouseAnywhere-DreamhouseMessages-frameworks.sh */,
+				E05A71ED9963309459588EA36870D4C2 /* Pods-DreamhouseAnywhere-DreamhouseMessages-resources.sh */,
+				102DDC77F7A9AE4328BDCF41E9356F0A /* Pods-DreamhouseAnywhere-DreamhouseMessages-umbrella.h */,
+				47FE4E16BFB23E12B0A53BB14EE80EF8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */,
+				232BB5FC5CBB9BC5109234A71880C82A /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */,
 			);
-			name = "Pods-DreamhouseAnywhere-DreamhouseKit";
-			path = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseKit";
+			name = "Pods-DreamhouseAnywhere-DreamhouseMessages";
+			path = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages";
 			sourceTree = "<group>";
 		};
 		0799E6CEEFD06DA3F6950AC1E907DD9F /* Support Files */ = {
@@ -657,15 +799,6 @@
 				992ADDB1769F607CCEBA9137C9E5C82F /* SwiftyJSON */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		1D6C5499E5E0DA33A985E8F0405E2393 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E2B301E4F4D788D64DA270AFA73B29DE /* Pods-DreamhouseAnywhere */,
-				0776D1735233FAB4CA1E5F20741C582B /* Pods-DreamhouseAnywhere-DreamhouseKit */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		248A9C6FD4BFEBBFF764A80AE09A9992 /* Resources */ = {
@@ -824,6 +957,23 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		538659870DE0876A4348946AA1444504 /* Pods-DreamhouseAnywhere-DreamhouseKit */ = {
+			isa = PBXGroup;
+			children = (
+				50A09B30F01EBCECA753B0A566397D42 /* Info.plist */,
+				EF5482809596F8BCE2464EBFDA3E5A4D /* Pods-DreamhouseAnywhere-DreamhouseKit.modulemap */,
+				DFBC773A6542CE81E25E047F6C8495D8 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.markdown */,
+				A75319F3BB905FC1CF682B092EBDB753 /* Pods-DreamhouseAnywhere-DreamhouseKit-acknowledgements.plist */,
+				96798F93FCEDDF6A227CC9BDC59E6431 /* Pods-DreamhouseAnywhere-DreamhouseKit-dummy.m */,
+				75BDE47E77FA1B6F37FE5361403E97E7 /* Pods-DreamhouseAnywhere-DreamhouseKit-resources.sh */,
+				B9D404A2EC1548EA9119237CFEF64B83 /* Pods-DreamhouseAnywhere-DreamhouseKit-umbrella.h */,
+				2E9CAD34748805AA4235946EB04122F0 /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */,
+				6AAA7DB7B764812D820E4FDFF25843EE /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */,
+			);
+			name = "Pods-DreamhouseAnywhere-DreamhouseKit";
+			path = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseKit";
+			sourceTree = "<group>";
+		};
 		584029E072C877EEDA3F18869CCD3E4A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,20 +1002,15 @@
 			path = "../Target Support Files/SwiftlySalesforce";
 			sourceTree = "<group>";
 		};
-		60B36DAB2567F3C9284D150CFFAD8DC4 /* Products */ = {
+		6109983DA3708B948A03C02526D67109 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				53E3D2001B08D788D81EC655BAD1E759 /* Alamofire.framework */,
-				1F456AA0F9BE484ACCF1201984805E82 /* Locksmith.framework */,
-				847DBD253FB82140771457D6198CB560 /* Pods_DreamhouseAnywhere.framework */,
-				1CFD5CFE6D62C703F0BE34DFFB9CC04C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */,
-				072CA8365E57511350D86965243CC95D /* PromiseKit.framework */,
-				18250719EB2DFE708625057BDB1C9A5D /* SDWebImage.framework */,
-				B4490F4E2EA64B25E32DF5D6875E6E1F /* Spring.framework */,
-				3B11FB2B527A404039E40A4AE8C47775 /* SwiftlySalesforce.framework */,
-				E6A51744134F4EAEA363833E672812A3 /* SwiftyJSON.framework */,
+				95A0CC4F3486250BF83CD703354008F1 /* Pods-DreamhouseAnywhere */,
+				538659870DE0876A4348946AA1444504 /* Pods-DreamhouseAnywhere-DreamhouseKit */,
+				0073B8D8EDD32B1960CBBDC87CDACA59 /* Pods-DreamhouseAnywhere-DreamhouseMessages */,
+				AE694F5C5D67EBDA974C6A54319A78D5 /* Pods-DreamhouseAnywhere-MessagesExtension */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		6B51A8AD66325571AAFC16AD45983760 /* QuartzCore */ = {
@@ -904,8 +1049,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				84E98D7B10D02E0D97FD33F66787FE54 /* Frameworks */,
 				09CFA677D5BA5ECE9CB25AB6685FFE04 /* Pods */,
-				60B36DAB2567F3C9284D150CFFAD8DC4 /* Products */,
-				1D6C5499E5E0DA33A985E8F0405E2393 /* Targets Support Files */,
+				BFE1FF692476FB0F5B1D47E081DEADB1 /* Products */,
+				6109983DA3708B948A03C02526D67109 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -930,6 +1075,24 @@
 				3BE95AA3F1E87CA94C3D7CA410478580 /* UIKit */,
 			);
 			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		95A0CC4F3486250BF83CD703354008F1 /* Pods-DreamhouseAnywhere */ = {
+			isa = PBXGroup;
+			children = (
+				A4635023F885B089EA339653B6E7709A /* Info.plist */,
+				26BC22F077A97BBB9F0949B7DE4F7218 /* Pods-DreamhouseAnywhere.modulemap */,
+				C1606652AD04472CA8ADF20E78D4591D /* Pods-DreamhouseAnywhere-acknowledgements.markdown */,
+				68361FD6C94167A7FE3838CE87211B03 /* Pods-DreamhouseAnywhere-acknowledgements.plist */,
+				F634E8987ADDA5261C8B77906B9B4215 /* Pods-DreamhouseAnywhere-dummy.m */,
+				AB651A46BAC8A993BE87910D3EF2919F /* Pods-DreamhouseAnywhere-frameworks.sh */,
+				EADB52A78D56476BAA51098676037CEF /* Pods-DreamhouseAnywhere-resources.sh */,
+				04D52AD940CB20ED30999F2DA067B7D0 /* Pods-DreamhouseAnywhere-umbrella.h */,
+				905E9140EC61AC2008968DDB8DEEDE21 /* Pods-DreamhouseAnywhere.debug.xcconfig */,
+				B225949540A43A463238A6FB73597116 /* Pods-DreamhouseAnywhere.release.xcconfig */,
+			);
+			name = "Pods-DreamhouseAnywhere";
+			path = "Target Support Files/Pods-DreamhouseAnywhere";
 			sourceTree = "<group>";
 		};
 		992ADDB1769F607CCEBA9137C9E5C82F /* SwiftyJSON */ = {
@@ -990,6 +1153,23 @@
 			path = SwiftlySalesforce;
 			sourceTree = "<group>";
 		};
+		AE694F5C5D67EBDA974C6A54319A78D5 /* Pods-DreamhouseAnywhere-MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D7D1181F2D0E900DAFF435E51B145298 /* Info.plist */,
+				48E7F427281D7422295F617E239C99FB /* Pods-DreamhouseAnywhere-MessagesExtension.modulemap */,
+				8134B552DCBE7D14AA670A8C18BC450C /* Pods-DreamhouseAnywhere-MessagesExtension-acknowledgements.markdown */,
+				4359A547B1C3ECB7CC154F51B58EDB92 /* Pods-DreamhouseAnywhere-MessagesExtension-acknowledgements.plist */,
+				CAF24E65ABEF0DDD5153E02B7A2EA82F /* Pods-DreamhouseAnywhere-MessagesExtension-dummy.m */,
+				835CA3E6DE5D79740CE24A50BB5A1962 /* Pods-DreamhouseAnywhere-MessagesExtension-resources.sh */,
+				54CFD9D45880563A944EEA8BA3C26D15 /* Pods-DreamhouseAnywhere-MessagesExtension-umbrella.h */,
+				7DF0FB16A6BDC0E89CFCEEA0CB907F34 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */,
+				CE612001D3C459C7A68E771876376F82 /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */,
+			);
+			name = "Pods-DreamhouseAnywhere-MessagesExtension";
+			path = "Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension";
+			sourceTree = "<group>";
+		};
 		B5AF6E8EAF03981EECC0AACBEB5B8435 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1002,6 +1182,24 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		BFE1FF692476FB0F5B1D47E081DEADB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C5D30B7D5D731114323C08582002F2 /* Alamofire.framework */,
+				EC9B84AA7826D20A305464DDD54BB240 /* Locksmith.framework */,
+				89C26549C3BFCC874EBC56E445DEAF1A /* Pods_DreamhouseAnywhere.framework */,
+				D18C825458533DE5AE3ED26217981A4A /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */,
+				F656FDDA73FFDE199F99CC7805DDD0EE /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */,
+				D1D3CE841B8F96C35CA470BABFFCD135 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */,
+				1FF081062D4497C27FA891E2DD24FD02 /* PromiseKit.framework */,
+				83747D943B1F80C75F01A1C9F36A80F6 /* SDWebImage.framework */,
+				1B963AA363713D89326743C33D427FEB /* Spring.framework */,
+				0309B7AA559F5B5FDFC45E4E390C67F8 /* SwiftlySalesforce.framework */,
+				7A669787D7DD32D010AB7046F8A24CAF /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C46E49310183E2A5D8AB37A86E3155DA /* Locksmith */ = {
@@ -1018,24 +1216,6 @@
 				3D5DB07157BA2790BE3BB14B112EEDB4 /* Support Files */,
 			);
 			path = Locksmith;
-			sourceTree = "<group>";
-		};
-		E2B301E4F4D788D64DA270AFA73B29DE /* Pods-DreamhouseAnywhere */ = {
-			isa = PBXGroup;
-			children = (
-				F4A89DC908AAB1068C3C89BBAE92770F /* Info.plist */,
-				1E5D8FCB35F5722B82A6C30068D594BA /* Pods-DreamhouseAnywhere.modulemap */,
-				EC5829E5D5750356176E34E962F2AE96 /* Pods-DreamhouseAnywhere-acknowledgements.markdown */,
-				3D1720958B48BC5F55F99BBB5697A6B2 /* Pods-DreamhouseAnywhere-acknowledgements.plist */,
-				600DB606016E0C23B392B7A7226CB9DF /* Pods-DreamhouseAnywhere-dummy.m */,
-				2B01037F98DCEC1C17CCD612893AA535 /* Pods-DreamhouseAnywhere-frameworks.sh */,
-				89F5588995A99431F5BBEA3088D16EBF /* Pods-DreamhouseAnywhere-resources.sh */,
-				12162F25E6B0BDD544D575D96C40CD80 /* Pods-DreamhouseAnywhere-umbrella.h */,
-				14A87CC434A6075451BBF7EE45EDC38B /* Pods-DreamhouseAnywhere.debug.xcconfig */,
-				3D392FF8AAE8C7A701D43950F43BDD49 /* Pods-DreamhouseAnywhere.release.xcconfig */,
-			);
-			name = "Pods-DreamhouseAnywhere";
-			path = "Target Support Files/Pods-DreamhouseAnywhere";
 			sourceTree = "<group>";
 		};
 		FC0C84FB4B661C4A86755C7E1B98ACD3 /* Support Files */ = {
@@ -1169,9 +1349,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F37DBB9CEE5A4C0EEC12BB49012E5970 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6E4C11DDF06B23274B979744BA4C0B /* Pods-DreamhouseAnywhere-MessagesExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F611815E5D2A9079A2D707463602356C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC9D2F0D306701056E6C88089DF74FD /* Pods-DreamhouseAnywhere-DreamhouseMessages-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1C840A62FB64BD16F4D254760DBB3151 /* Pods-DreamhouseAnywhere-MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3751CA99DB5F75B758A7481A903CB827 /* Build configuration list for PBXNativeTarget "Pods-DreamhouseAnywhere-MessagesExtension" */;
+			buildPhases = (
+				B2A1CB1133675DC991BF27D19BCFEAFB /* Sources */,
+				FCB5D95BDF8F84DD364445DFA5C80847 /* Frameworks */,
+				F37DBB9CEE5A4C0EEC12BB49012E5970 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A650C53828EA983DAFD382162DF16C0 /* PBXTargetDependency */,
+				6B8563F4A7F48BAAC6495395776E5617 /* PBXTargetDependency */,
+				94C7E687225D7C50BBB7B19CA3FEBCB5 /* PBXTargetDependency */,
+				D566B2D5DCD8F893C4B4350EC20D8AF6 /* PBXTargetDependency */,
+				3219C7C85AA39B03274F509541B00056 /* PBXTargetDependency */,
+				646037FB392171992B9E686408A5E6FF /* PBXTargetDependency */,
+				AA18A914A528AA913F7A90D51539F141 /* PBXTargetDependency */,
+			);
+			name = "Pods-DreamhouseAnywhere-MessagesExtension";
+			productName = "Pods-DreamhouseAnywhere-MessagesExtension";
+			productReference = D1D3CE841B8F96C35CA470BABFFCD135 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		552731B817B761E7D5DD25A36ABAA210 /* Pods-DreamhouseAnywhere-DreamhouseKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E97B804C44A8880A0D98E3CDB4A3268 /* Build configuration list for PBXNativeTarget "Pods-DreamhouseAnywhere-DreamhouseKit" */;
@@ -1193,7 +1413,7 @@
 			);
 			name = "Pods-DreamhouseAnywhere-DreamhouseKit";
 			productName = "Pods-DreamhouseAnywhere-DreamhouseKit";
-			productReference = 1CFD5CFE6D62C703F0BE34DFFB9CC04C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */;
+			productReference = D18C825458533DE5AE3ED26217981A4A /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5CCF04285611177A7322636EE21C8D50 /* PromiseKit */ = {
@@ -1210,7 +1430,7 @@
 			);
 			name = PromiseKit;
 			productName = PromiseKit;
-			productReference = 072CA8365E57511350D86965243CC95D /* PromiseKit.framework */;
+			productReference = 1FF081062D4497C27FA891E2DD24FD02 /* PromiseKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		77351BD51E31E584F52B03CA4D0E0ECD /* SDWebImage */ = {
@@ -1227,7 +1447,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = 18250719EB2DFE708625057BDB1C9A5D /* SDWebImage.framework */;
+			productReference = 83747D943B1F80C75F01A1C9F36A80F6 /* SDWebImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -1244,7 +1464,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 53E3D2001B08D788D81EC655BAD1E759 /* Alamofire.framework */;
+			productReference = 30C5D30B7D5D731114323C08582002F2 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9B04ADF80D206FA26550B2E86D256E88 /* Pods-DreamhouseAnywhere */ = {
@@ -1268,7 +1488,7 @@
 			);
 			name = "Pods-DreamhouseAnywhere";
 			productName = "Pods-DreamhouseAnywhere";
-			productReference = 847DBD253FB82140771457D6198CB560 /* Pods_DreamhouseAnywhere.framework */;
+			productReference = 89C26549C3BFCC874EBC56E445DEAF1A /* Pods_DreamhouseAnywhere.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B478850CD8C1CD86F525DABED096DBF3 /* SwiftlySalesforce */ = {
@@ -1288,7 +1508,31 @@
 			);
 			name = SwiftlySalesforce;
 			productName = SwiftlySalesforce;
-			productReference = 3B11FB2B527A404039E40A4AE8C47775 /* SwiftlySalesforce.framework */;
+			productReference = 0309B7AA559F5B5FDFC45E4E390C67F8 /* SwiftlySalesforce.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C75CE4ED0312A7457BF354998BE683DF /* Pods-DreamhouseAnywhere-DreamhouseMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB116E30A55840F5F1E83450B8BF003E /* Build configuration list for PBXNativeTarget "Pods-DreamhouseAnywhere-DreamhouseMessages" */;
+			buildPhases = (
+				ED10F82A9496D5DD43D0C52382894CAB /* Sources */,
+				637D42BE0DE4CCA42FD04976B416BC93 /* Frameworks */,
+				F611815E5D2A9079A2D707463602356C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				856C2466BDFE9E7F14051A809FD35E14 /* PBXTargetDependency */,
+				1846371FF1CABBCF9FA24B7513560CB0 /* PBXTargetDependency */,
+				D503AB3A35DF455317343036FE03BE31 /* PBXTargetDependency */,
+				3366055549747692D9AF1E1EB8ECC2AE /* PBXTargetDependency */,
+				1591025218124FB0ECEAFF9782FA36A5 /* PBXTargetDependency */,
+				0F303E34BED026F170A4CB409412C642 /* PBXTargetDependency */,
+				394831D0498830DC5E51A3393BC6D4D6 /* PBXTargetDependency */,
+			);
+			name = "Pods-DreamhouseAnywhere-DreamhouseMessages";
+			productName = "Pods-DreamhouseAnywhere-DreamhouseMessages";
+			productReference = F656FDDA73FFDE199F99CC7805DDD0EE /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */ = {
@@ -1305,7 +1549,7 @@
 			);
 			name = Locksmith;
 			productName = Locksmith;
-			productReference = 1F456AA0F9BE484ACCF1201984805E82 /* Locksmith.framework */;
+			productReference = EC9B84AA7826D20A305464DDD54BB240 /* Locksmith.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D6F224A17931FD1954491872FD5DE53C /* SwiftyJSON */ = {
@@ -1322,7 +1566,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = E6A51744134F4EAEA363833E672812A3 /* SwiftyJSON.framework */;
+			productReference = 7A669787D7DD32D010AB7046F8A24CAF /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F536CED61E973D2D22611F23FF591920 /* Spring */ = {
@@ -1340,7 +1584,7 @@
 			);
 			name = Spring;
 			productName = Spring;
-			productReference = B4490F4E2EA64B25E32DF5D6875E6E1F /* Spring.framework */;
+			productReference = 1B963AA363713D89326743C33D427FEB /* Spring.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1360,7 +1604,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 60B36DAB2567F3C9284D150CFFAD8DC4 /* Products */;
+			productRefGroup = BFE1FF692476FB0F5B1D47E081DEADB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1368,6 +1612,8 @@
 				C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */,
 				9B04ADF80D206FA26550B2E86D256E88 /* Pods-DreamhouseAnywhere */,
 				552731B817B761E7D5DD25A36ABAA210 /* Pods-DreamhouseAnywhere-DreamhouseKit */,
+				C75CE4ED0312A7457BF354998BE683DF /* Pods-DreamhouseAnywhere-DreamhouseMessages */,
+				1C840A62FB64BD16F4D254760DBB3151 /* Pods-DreamhouseAnywhere-MessagesExtension */,
 				5CCF04285611177A7322636EE21C8D50 /* PromiseKit */,
 				77351BD51E31E584F52B03CA4D0E0ECD /* SDWebImage */,
 				F536CED61E973D2D22611F23FF591920 /* Spring */,
@@ -1557,12 +1803,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2A1CB1133675DC991BF27D19BCFEAFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FBED52EA7901A062E5F7B871C56AE81 /* Pods-DreamhouseAnywhere-MessagesExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDD5E32973F1C96734AFF1394E2F4495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAB31AD9B242E877E83F086CA5C723D6 /* SwiftyJSON-dummy.m in Sources */,
 				02DFA83B81FD03B1605CD75EC2457471 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED10F82A9496D5DD43D0C52382894CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				483F9E79C08AE0D84C1A86BE5EA4F4AB /* Pods-DreamhouseAnywhere-DreamhouseMessages-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1577,11 +1839,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A650C53828EA983DAFD382162DF16C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = FA254DBE6129BF0D313260BEFD0F1CAB /* PBXContainerItemProxy */;
+		};
+		0F303E34BED026F170A4CB409412C642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftlySalesforce;
+			target = B478850CD8C1CD86F525DABED096DBF3 /* SwiftlySalesforce */;
+			targetProxy = 85D2231E716426ECA00E61AA76B7698A /* PBXContainerItemProxy */;
+		};
 		0F8D6F71AC124E6BB667EBDF58BBEE98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Locksmith;
 			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
 			targetProxy = 00E449C80A0588F9FB89AB1AB32A21A3 /* PBXContainerItemProxy */;
+		};
+		1591025218124FB0ECEAFF9782FA36A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = F536CED61E973D2D22611F23FF591920 /* Spring */;
+			targetProxy = A5D91130B288E9757312B72BB96B8821 /* PBXContainerItemProxy */;
+		};
+		1846371FF1CABBCF9FA24B7513560CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
+			targetProxy = 0FEC793A5AD52AA607493D42C3919AB7 /* PBXContainerItemProxy */;
 		};
 		2B42753C71B54B57794F9117F2488B93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1601,6 +1887,24 @@
 			target = D6F224A17931FD1954491872FD5DE53C /* SwiftyJSON */;
 			targetProxy = 963C63B909AF0268511CD63AF2FBC22F /* PBXContainerItemProxy */;
 		};
+		3219C7C85AA39B03274F509541B00056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = F536CED61E973D2D22611F23FF591920 /* Spring */;
+			targetProxy = 48673C742CBEDB0B0CCAAA23613128C8 /* PBXContainerItemProxy */;
+		};
+		3366055549747692D9AF1E1EB8ECC2AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 77351BD51E31E584F52B03CA4D0E0ECD /* SDWebImage */;
+			targetProxy = 07EB2E15BD319E14853CF1E835589E9A /* PBXContainerItemProxy */;
+		};
+		394831D0498830DC5E51A3393BC6D4D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D6F224A17931FD1954491872FD5DE53C /* SwiftyJSON */;
+			targetProxy = AC5369F27A1A29366167C3BCC3FC814E /* PBXContainerItemProxy */;
+		};
 		502AECB65163C7996FD011C11104908B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
@@ -1619,11 +1923,23 @@
 			target = 77351BD51E31E584F52B03CA4D0E0ECD /* SDWebImage */;
 			targetProxy = D356FBD063423D4761AEEAAB967301A5 /* PBXContainerItemProxy */;
 		};
+		646037FB392171992B9E686408A5E6FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftlySalesforce;
+			target = B478850CD8C1CD86F525DABED096DBF3 /* SwiftlySalesforce */;
+			targetProxy = 35EB4A92D3F8886EA9099CBCD51D7E5F /* PBXContainerItemProxy */;
+		};
 		660509569DBC37C3C5324AC989107F4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Locksmith;
 			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
 			targetProxy = EEC627EA060FEF5DA5C55DCC2D3623FA /* PBXContainerItemProxy */;
+		};
+		6B8563F4A7F48BAAC6495395776E5617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Locksmith;
+			target = C7F727D48928BF47D913AFC48BB6A978 /* Locksmith */;
+			targetProxy = A4335A505192319A4BBF90FE8A515A98 /* PBXContainerItemProxy */;
 		};
 		6F5AB877B32709A0A041AF305884A9E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1636,6 +1952,18 @@
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = 09EDE59357307FBBC6953194637ECB06 /* PBXContainerItemProxy */;
+		};
+		856C2466BDFE9E7F14051A809FD35E14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 556829B5DF5FE725724D7EBEBA566F24 /* PBXContainerItemProxy */;
+		};
+		94C7E687225D7C50BBB7B19CA3FEBCB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 5CCF04285611177A7322636EE21C8D50 /* PromiseKit */;
+			targetProxy = C7524E901C688AA45018BB503F1EADF8 /* PBXContainerItemProxy */;
 		};
 		962EFA0BBBBF832990A1E311461D6614 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1655,11 +1983,29 @@
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = 0493E9A9F02AB418E1A17EEA2800AF1C /* PBXContainerItemProxy */;
 		};
+		AA18A914A528AA913F7A90D51539F141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D6F224A17931FD1954491872FD5DE53C /* SwiftyJSON */;
+			targetProxy = 5113C98C90791CFF7B938A2EE570889D /* PBXContainerItemProxy */;
+		};
 		B6635026CF7BD6F22260CE885DDF00BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftlySalesforce;
 			target = B478850CD8C1CD86F525DABED096DBF3 /* SwiftlySalesforce */;
 			targetProxy = 57F6BA6A2129F8ACB91153D394F5EA93 /* PBXContainerItemProxy */;
+		};
+		D503AB3A35DF455317343036FE03BE31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 5CCF04285611177A7322636EE21C8D50 /* PromiseKit */;
+			targetProxy = 92DF33AD65C5CC6C6C86E987BD7FA5C1 /* PBXContainerItemProxy */;
+		};
+		D566B2D5DCD8F893C4B4350EC20D8AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 77351BD51E31E584F52B03CA4D0E0ECD /* SDWebImage */;
+			targetProxy = 495EB09E68A83DC7AC2740CA70811E4F /* PBXContainerItemProxy */;
 		};
 		D6B5BD91A23312F2C7F15328F787E20C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1761,7 +2107,7 @@
 		};
 		2CBD7C14E4121D1B1D879F14F4425FFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B96EF137B9A7C39B39FBF848A6C7E139 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */;
+			baseConfigurationReference = 6AAA7DB7B764812D820E4FDFF25843EE /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1828,9 +2174,81 @@
 			};
 			name = Release;
 		};
+		410309486544942012CF2116A1351C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE612001D3C459C7A68E771876376F82 /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Pods-DreamhouseAnywhere-MessagesExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DreamhouseAnywhere_MessagesExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		533FE4EB2EC7280BAFC5A3C365B7C9AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47FE4E16BFB23E12B0A53BB14EE80EF8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DreamhouseAnywhere_DreamhouseMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7084DD4DDF50C1EDD8BBAB7425BAEAC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A87CC434A6075451BBF7EE45EDC38B /* Pods-DreamhouseAnywhere.debug.xcconfig */;
+			baseConfigurationReference = 905E9140EC61AC2008968DDB8DEEDE21 /* Pods-DreamhouseAnywhere.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1967,7 +2385,7 @@
 		};
 		7F438EA4B20E8AF3A552670821AEE388 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D392FF8AAE8C7A701D43950F43BDD49 /* Pods-DreamhouseAnywhere.release.xcconfig */;
+			baseConfigurationReference = B225949540A43A463238A6FB73597116 /* Pods-DreamhouseAnywhere.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -2134,6 +2552,41 @@
 			};
 			name = Debug;
 		};
+		A68EC21154751529C3408C3AF90B7082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 232BB5FC5CBB9BC5109234A71880C82A /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DreamhouseAnywhere_DreamhouseMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AAE98F27EF71C8CB98E57A26A55AEFEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31E80F10F689F217813913EE39FAAAA8 /* SwiftyJSON.xcconfig */;
@@ -2201,9 +2654,46 @@
 			};
 			name = Debug;
 		};
+		BEC460BB391F00B406A1CAC4E749FF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF0FB16A6BDC0E89CFCEEA0CB907F34 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Pods-DreamhouseAnywhere-MessagesExtension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DreamhouseAnywhere_MessagesExtension;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C9EACCA6CFD7A805B5BEE57FE3016352 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0C3E94441DD5F95DA19BC76007DE54A /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */;
+			baseConfigurationReference = 2E9CAD34748805AA4235946EB04122F0 /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2417,6 +2907,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3751CA99DB5F75B758A7481A903CB827 /* Build configuration list for PBXNativeTarget "Pods-DreamhouseAnywhere-MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC460BB391F00B406A1CAC4E749FF6C /* Debug */,
+				410309486544942012CF2116A1351C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2467,6 +2966,15 @@
 			buildConfigurations = (
 				962687A082851FAD4489E7D168D9C0F0 /* Debug */,
 				93199A6B5420E10DD7E4103D562039AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB116E30A55840F5F1E83450B8BF003E /* Build configuration list for PBXNativeTarget "Pods-DreamhouseAnywhere-DreamhouseMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533FE4EB2EC7280BAFC5A3C365B7C9AB /* Debug */,
+				A68EC21154751529C3408C3AF90B7082 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
