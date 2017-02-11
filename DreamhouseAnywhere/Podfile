@@ -1,8 +1,24 @@
 platform :ios, '10.0'
 use_frameworks!
+	
+
+def shared_pods
+  pod 'SwiftyJSON'
+  pod 'SwiftlySalesforce'
+	pod 'SDWebImage'
+end
+
+
 
 target 'DreamhouseAnywhere' do
-	pod 'SwiftlySalesforce'
-	pod 'SwiftyJSON'
 	pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+	shared_pods
+
+	target 'DreamhouseKit' do
+  	shared_pods
+	end
 end
+
+
+
+
