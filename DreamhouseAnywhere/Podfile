@@ -17,6 +17,14 @@ target 'DreamhouseAnywhere' do
 	target 'DreamhouseKit' do
   	shared_pods
 	end
+
+	target 'DreamhouseMessages' do
+		shared_pods
+	end
+
+	target 'MessagesExtension' do
+		shared_pods
+	end
 end
 
 

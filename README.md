@@ -10,3 +10,4 @@ An iOS 10 and Swift 3 update to the <a href="https://github.com/quintonwall/drea
 # Building the App
 ## Cocoapods & Xcode 8
 Xcode 8 seems to like checking the "App Extensions" checkbox in the general tab of your targets. This will cause issues with 'shared' variable instances. Simply uncheck "Allow app extension API only" in Targets that called from UIKit
+You will have to do this each time you run Pod install :(
