@@ -9,26 +9,38 @@
 import Foundation
 
 
+
 public struct Property {
     public var id: String = ""
     public var title: String = ""
     public var description: String = ""
     public var price: Double = 0.0
+    public var propertyImageURLString = ""
     public var isSold: Bool = false
     public var address : Address?
-    public var mainImageName : String = ""
     
-    public init(id: String, title: String, description: String, price: Double, isSold: Bool, address: Address, mainImageName: String) {
-        self.id = id
-        self.title = title
-        self.description = description
-        self.price = price
-        self.isSold = isSold
-        self.address = address
-        self.mainImageName = mainImageName
-        
+    public init() {}
+    
+    
+    //take JSON from Salesforce REST API and convert to strongly typed object
+    public init(dictionary: [String: Any]) {
+        for(key, value) in dictionary {
+            switch key.lowercased() {
+                case "id":
+                    self.id = (value as? String)!
+                case "title__c":
+                    self.title = (value as? String)!
+                case "description__c":
+                    self.description = (value as? String)!
+                case "picture__c":
+                    self.propertyImageURLString = (value as? String)!
+                case "price__c":
+                    self.price = (value as? Double)!
+                default:
+                    continue
+            }
+        }
     }
-    
 }
 
 

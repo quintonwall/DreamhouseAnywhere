@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billiards_ball_L " translatesAutoresizingMaskIntoConstraints="NO" id="TQn-sw-HdN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="billiards_ball_L " translatesAutoresizingMaskIntoConstraints="NO" id="TQn-sw-HdN">
                                 <rect key="frame" x="127" y="172" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="50n-9H-Nex"/>

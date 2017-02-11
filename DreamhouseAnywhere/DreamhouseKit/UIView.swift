@@ -27,7 +27,7 @@ public extension UIView {
         self.layer.cornerRadius = (corner / 2);
     }
     
-    public func makeRoundWithBorder(width width: CGFloat, color: UIColor) {
+    public func makeRoundWithBorder(width: CGFloat, color: UIColor) {
         makeRound()
         layer.borderWidth = width
         layer.borderColor = color.cgColor

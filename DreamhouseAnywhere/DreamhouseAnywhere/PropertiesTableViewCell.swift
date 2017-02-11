@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class PropertiesTableViewCell: UITableViewCell {
 
@@ -15,6 +17,12 @@ class PropertiesTableViewCell: UITableViewCell {
     @IBOutlet var price:UILabel!
     @IBOutlet var longDescription:UILabel!
     @IBOutlet var hotPropertyImageView:UIImageView!
+    
+    var propertyImageURLString = "" {
+        didSet {
+            self.propertyImageView.sd_setImage(with: URL(string: propertyImageURLString))
+        }
+    }
     
     var isHotProperty: Bool = false
     

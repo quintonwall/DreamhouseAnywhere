@@ -8,16 +8,21 @@
 
 import UIKit
 import DreamhouseKit
+import SwiftlySalesforce
+
+
+
 
 class PropertiesTableViewController: UITableViewController, MenuTransitionManagerDelegate {
     
     let menuTransitionManger = MenuTransitionManager()
-    let properties = PropertyData.propertySet
+    var properties : [Property] = []
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         if(UserDefaults.standard.bool(forKey: "hasViewedWalkthrough")) {
+            fetchProperties()
             return
         }
         
@@ -42,6 +47,25 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         // Dispose of any resources that can be recreated.
     }
 
+    
+    //MARK: Salesforce data
+    
+    func fetchProperties() {
+        first {
+            PropertyData.shared.getAllProperties()
+           
+        }.then {
+                (results) -> () in
+                self.properties = results
+                self.tableView.reloadData()
+        }.catch {
+         (error) -> () in
+            print("error: \(error)")  //todo: handle this better
+        }
+        
+        
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -58,7 +82,8 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertiesTableViewCell
         
         let property : Property = properties[indexPath.row]
-        cell.propertyImageView.image = UIImage(named: property.mainImageName)
+        //cell.propertyImageView.image = UIImage(named: property.mainImageName)
+        cell.propertyImageURLString = property.propertyImageURLString
         cell.shortTitle.text = property.title
         cell.price.text = "$\(property.price)"
         cell.longDescription.text = property.description

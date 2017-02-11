@@ -13,7 +13,7 @@ import DreamhouseKit
 
 class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource,UITableViewDelegate {
     
-    private var propertySet: [Property] = PropertyData.propertySet
+   /// private var propertySet: [Property] = PropertyData.propertySet
     private var selectedProperty: Property?
     
     
@@ -87,26 +87,27 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return propertySet.count
+        return 1
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
         
+        /*
         let p = propertySet[indexPath.row]
         cell.titleLabel.text = p.title
         cell.descriptionLabel.text = p.description
         cell.priceLabel.text = "$\(p.price)"
         cell.propertyImageView.image = UIImage(named: p.mainImageName)
-        
+        */
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         requestPresentationStyle(.compact)
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        /*
         
         let p = propertySet[indexPath.row]
         if let conversation = activeConversation {
@@ -128,7 +129,7 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
                 }
             })
         }
- 
+         */
     }
 }
 

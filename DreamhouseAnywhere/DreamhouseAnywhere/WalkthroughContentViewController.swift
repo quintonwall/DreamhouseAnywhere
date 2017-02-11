@@ -45,9 +45,7 @@ class WalkthroughContentViewController: UIViewController {
     
         getStartedButton.animation = "pop"
         getStartedButton.animate()
-        //UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-        
-       salesforce.identity()
+        UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
         dismiss(animated: true, completion: nil)
     }
     
