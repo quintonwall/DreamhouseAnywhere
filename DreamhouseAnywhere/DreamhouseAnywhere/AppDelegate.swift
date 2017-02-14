@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
        let salesforceConfig : AuthManager.Configuration = AuthManager.Configuration(consumerKey: consumerKey, redirectURL: redirectURL!, loginHost: communityLoginHost, loginDelegate: self)
         salesforce.authManager.configuration = salesforceConfig
         
+        //Use app groups for sharing data between the iMessage and main app
+        let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
         
         //configureSalesforce(consumerKey: consumerKey, redirectURL: redirectURL!)
         

@@ -16,6 +16,7 @@ public struct Property {
     public var description: String = ""
     public var price: Double = 0.0
     public var propertyImageURLString = ""
+    public var thumbnailImageURLString = ""
     public var isSold: Bool = false
     public var address : Address?
     
@@ -34,6 +35,8 @@ public struct Property {
                     self.description = (value as? String)!
                 case "picture__c":
                     self.propertyImageURLString = (value as? String)!
+            case "thumbnail__c":
+                self.thumbnailImageURLString = (value as? String)!
                 case "price__c":
                     self.price = (value as? Double)!
                 default:

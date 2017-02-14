@@ -32,7 +32,7 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
     
     func fetchProperties() {
         first {
-            PropertyData.shared.getAllProperties()
+            PropertyData.shared.getPublicPropertyListings()
             
             }.then {
                 (results) -> () in
@@ -118,7 +118,7 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         cell.titleLabel.text = property.title
         cell.descriptionLabel.text = property.description
         cell.priceLabel.text =  "$\(property.price)"
-        cell.propertyImageURLString = property.propertyImageURLString
+        cell.propertyImageURLString = property.thumbnailImageURLString
         
         return cell
         

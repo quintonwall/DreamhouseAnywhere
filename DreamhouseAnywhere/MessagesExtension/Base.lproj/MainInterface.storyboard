@@ -78,6 +78,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ObA-dk-sSI" id="cjC-dX-qpE"/>
+                                    <outlet property="delegate" destination="ObA-dk-sSI" id="diZ-rJ-fgb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
