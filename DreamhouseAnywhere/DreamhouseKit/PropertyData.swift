@@ -44,12 +44,12 @@ public struct PropertyData {
     
     //
      // For many consumer app secenarios, we need to fetch data from salesforce anonymously. eg: a listing of properties, especially through bots etc.
-     // The two patterns for acheiving this is either create a named user and connect from a service running on heroku, or expose a public function direction on salesforce.
+     // The two patterns for acheiving this is either create a named user and connect from a service running on heroku, or expose a public function directly on salesforce.
     // Which one you should choose depends a lot on your use case. For example, for an amazon echo / alexa bot that requires some code to handle translating alexa skill commands to a force.com soql query,
     // it probably makes sense to write this in something like node as a microservice running on heroku. But if we are simply wanting to create an optimized API endpoint for salesforce data, 
     // ApexRest func is super fast and fully managed/secure with no additional work.
     // The other consideration should be load. Salesforce scales incredibly well, but it is not designed for elastic consumer scale. If you are targeting an app that millions of consumers will be accessing the data, you should deploy your service
-    //on heroku, then use Heroku Connect to manage the connection to salesforce. That way you can leverage all the hard work we put in HerokuConnect. :)
+    //on heroku, then use Heroku Connect to manage the connection to salesforce. That way you can leverage all the caching and batching intelligence that we put in HerokuConnect. :)
     //
     //  This func is an example of using a serverless function (called an ApexRest class in Salesforce terminology) to create a public endpoint and return a subset of property data. We want to use it from our iMessages app
     
