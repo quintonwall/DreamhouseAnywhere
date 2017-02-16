@@ -46,6 +46,15 @@ class WalkthroughContentViewController: UIViewController {
         getStartedButton.animation = "pop"
         getStartedButton.animate()
         UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
+        
+        //now they have viewed the walkthrough, we can enable 3D touch shortcuts
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+            let bundleIdentifier = Bundle.main.bundleIdentifier
+            let shortcutItem1 = UIApplicationShortcutItem(type: "\(bundleIdentifier).OpenFavorites", localizedTitle: "Show Favorites", localizedSubtitle: nil, icon: UIApplicationShortcutIcon(templateImageName: "favorite-shortcut"), userInfo: nil)
+            let shortcutItem2 = UIApplicationShortcutItem(type: "\(bundleIdentifier).OpenDiscover", localizedTitle: "Nearby Listings", localizedSubtitle: nil, icon: UIApplicationShortcutIcon(templateImageName: "discover-shortcut"), userInfo: nil)
+            UIApplication.shared.shortcutItems = [shortcutItem1, shortcutItem2]
+        }
+        
         dismiss(animated: true, completion: nil)
     }
     

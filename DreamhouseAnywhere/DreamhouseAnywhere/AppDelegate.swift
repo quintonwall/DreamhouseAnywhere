@@ -9,6 +9,21 @@
 import UIKit
 import SwiftlySalesforce
 
+
+enum QuickAction: String {
+    case OpenFavorites = "OpenFavorites"
+    case OpenDiscover = "OpenDiscover"
+
+    
+    init?(fullIdentifier: String) {
+        guard let shortcutIdentifier = fullIdentifier.components(separatedBy: ".").last else {
+        return nil
+    }
+    
+        self.init(rawValue: shortcutIdentifier)
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
 
@@ -34,12 +49,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
         //configureSalesforce(consumerKey: consumerKey, redirectURL: redirectURL!)
         
         
-        
-        
-        
         return true
     }
     
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        completionHandler(handleQuickAction(shortcutItem: shortcutItem))
+    }
+    
+    private func handleQuickAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
+        
+        let shortcutType = shortcutItem.type
+        guard let shortcutIdentifier = QuickAction(fullIdentifier: shortcutType) else {
+            return false
+        }
+        
+        switch shortcutIdentifier {
+        case .OpenFavorites:
+            print("add segue to favorites")
+         case .OpenDiscover:
+            print("add segue to discover")
+        }
+        
+        return true
+    }
+            
+            
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         handleRedirectURL(url: url)
         return true
