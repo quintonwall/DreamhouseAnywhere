@@ -84,9 +84,9 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         let property : Property = properties[indexPath.row]
         //cell.propertyImageView.image = UIImage(named: property.mainImageName)
         cell.propertyImageURLString = property.propertyImageURLString
-        cell.shortTitle.text = property.title
-        cell.price.text = "$\(property.price)"
-        cell.longDescription.text = property.description
+        cell.numBathrooms.text = "\(property.baths)"
+        cell.price.text = property.price.currencyString()
+        cell.numBedrooms.text = "\(property.baths)"
         
         return cell
     }

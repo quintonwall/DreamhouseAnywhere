@@ -28,7 +28,7 @@ public struct PropertyData {
             first {
                       salesforce.identity()
             }.then { result in
-                let soql = "SELECT Id, Title__c, Price__c, Status__c, Picture__c, Thumbnail__c, Description__c FROM Property__c"
+                let soql = "SELECT Id, Title__c, Price__c, Status__c, Picture__c, Baths__c, Beds__c, Thumbnail__c, Description__c FROM Property__c"
                 return salesforce.query(soql: soql)
             }.then {
                 (result: QueryResult) -> () in

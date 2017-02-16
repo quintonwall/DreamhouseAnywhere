@@ -13,10 +13,11 @@ import SDWebImage
 class PropertiesTableViewCell: UITableViewCell {
 
     @IBOutlet var propertyImageView:UIImageView!
-    @IBOutlet var shortTitle:UILabel!
+    @IBOutlet weak var numBedrooms: UILabel!
+    @IBOutlet weak var numBathrooms: UILabel!
     @IBOutlet var price:UILabel!
-    @IBOutlet var longDescription:UILabel!
-    @IBOutlet var hotPropertyImageView:UIImageView!
+    
+    
     
     var propertyImageURLString = "" {
         didSet {

@@ -15,6 +15,8 @@ public struct Property {
     public var title: String = ""
     public var description: String = ""
     public var price: Double = 0.0
+    public var beds: Int = 0
+    public var baths: Int = 0
     public var propertyImageURLString = ""
     public var thumbnailImageURLString = ""
     public var isSold: Bool = false
@@ -31,6 +33,10 @@ public struct Property {
                     self.id = (value as? String)!
                 case "title__c":
                     self.title = (value as? String)!
+            case "baths__c":
+                self.baths = (value as? Int)!
+            case "beds__c":
+                self.beds = (value as? Int)!
                 case "description__c":
                     self.description = (value as? String)!
                 case "picture__c":
