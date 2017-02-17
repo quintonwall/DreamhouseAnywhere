@@ -8,13 +8,41 @@
 
 import UIKit
 import NotificationCenter
+//import DreamhouseKit
+//import SwiftlySalesforce
+
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
+    @IBOutlet weak var numListingsLabel: UILabel!
+    @IBOutlet weak var numFavoritesLabel: UILabel!
+    
+    //var properties : [Property] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
+       // fetchProperties()
     }
+    
+    /*
+    func fetchProperties() {
+        first {
+            PropertyData.shared.getPublicPropertyListings()
+            
+            }.then {
+                (results) -> () in
+                self.properties = results
+                self.numListingsLabel.text = "\(self.properties.count)"
+            }.catch {
+                (error) -> () in
+                print("error: \(error)")  //todo: handle this better
+        }
+        
+        
+    }
+ */
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

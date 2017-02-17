@@ -160,7 +160,7 @@
                         <color key="backgroundColor" red="0.98418599370000004" green="0.98881345990000002" blue="0.95956486460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.98418599370000004" green="0.98881345990000002" blue="0.95956486460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="yQR-QN-sa6" customClass="PropertiesTableViewCell" customModule="DreamhouseAnywhere" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="yQR-QN-sa6" customClass="PropertiesTableViewCell" customModule="DreamhouseAnywhere" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yQR-QN-sa6" id="xlT-D2-CNt">
@@ -168,7 +168,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e2v-dL-qwv" userLabel="property-image">
-                                            <rect key="frame" x="0.0" y="8" width="375" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RxY-VK-45u" userLabel="info-banner">
                                             <rect key="frame" x="0.0" y="138" width="375" height="70"/>
@@ -240,12 +240,12 @@
                                         <constraint firstItem="e2v-dL-qwv" firstAttribute="centerX" secondItem="xlT-D2-CNt" secondAttribute="centerX" id="ROz-a2-hXU"/>
                                         <constraint firstItem="e2v-dL-qwv" firstAttribute="width" secondItem="xlT-D2-CNt" secondAttribute="width" id="dSI-0a-ee2"/>
                                         <constraint firstAttribute="bottom" secondItem="RxY-VK-45u" secondAttribute="bottom" constant="-8" id="iet-MU-oMW"/>
-                                        <constraint firstItem="e2v-dL-qwv" firstAttribute="top" secondItem="xlT-D2-CNt" secondAttribute="topMargin" id="vAx-0h-eY1"/>
-                                        <constraint firstItem="e2v-dL-qwv" firstAttribute="height" secondItem="xlT-D2-CNt" secondAttribute="height" id="xGX-Wf-jKj"/>
+                                        <constraint firstItem="e2v-dL-qwv" firstAttribute="top" secondItem="xlT-D2-CNt" secondAttribute="topMargin" constant="-8" id="vAx-0h-eY1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.98418599370000004" green="0.98881345990000002" blue="0.95956486460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="e2v-dL-qwv" firstAttribute="height" secondItem="yQR-QN-sa6" secondAttribute="height" constant="8" id="JqC-zd-XhK"/>
                                     <constraint firstItem="e2v-dL-qwv" firstAttribute="width" secondItem="yQR-QN-sa6" secondAttribute="width" id="UT0-d7-1xs"/>
                                 </constraints>
                                 <connections>
