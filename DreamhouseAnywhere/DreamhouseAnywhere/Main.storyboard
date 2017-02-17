@@ -233,13 +233,35 @@
                                                 <constraint firstItem="TAO-n9-5ot" firstAttribute="leading" secondItem="RxY-VK-45u" secondAttribute="leading" constant="20" id="uS7-Mn-QiE"/>
                                             </constraints>
                                         </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button-favorite-solid80" translatesAutoresizingMaskIntoConstraints="NO" id="4nV-fn-R0E" userLabel="favorite-animation" customClass="SpringImageView" customModule="Spring">
+                                            <rect key="frame" x="147" y="50" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="7A2-hu-hFW"/>
+                                                <constraint firstAttribute="width" constant="80" id="QG9-UM-CG9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-ki-Qi5" userLabel="favButtonIndicator" customClass="SpringButton" customModule="Spring">
+                                            <rect key="frame" x="337" y="20" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="UnY-65-408"/>
+                                                <constraint firstAttribute="height" constant="30" id="bik-q6-a1H"/>
+                                            </constraints>
+                                            <state key="normal" image="favorite-solid-red"/>
+                                            <connections>
+                                                <action selector="unfavoriteTapped:" destination="yQR-QN-sa6" eventType="touchUpInside" id="DXw-LW-VUd"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="1dE-ki-Qi5" firstAttribute="top" secondItem="xlT-D2-CNt" secondAttribute="top" constant="20" id="9Vo-fh-mx1"/>
                                         <constraint firstItem="e2v-dL-qwv" firstAttribute="leading" secondItem="RxY-VK-45u" secondAttribute="leading" id="Cus-Fk-R2M"/>
                                         <constraint firstItem="RxY-VK-45u" firstAttribute="width" secondItem="e2v-dL-qwv" secondAttribute="width" id="Oz5-8i-LcC"/>
                                         <constraint firstItem="e2v-dL-qwv" firstAttribute="centerX" secondItem="xlT-D2-CNt" secondAttribute="centerX" id="ROz-a2-hXU"/>
                                         <constraint firstItem="e2v-dL-qwv" firstAttribute="width" secondItem="xlT-D2-CNt" secondAttribute="width" id="dSI-0a-ee2"/>
+                                        <constraint firstAttribute="trailing" secondItem="1dE-ki-Qi5" secondAttribute="trailing" constant="8" id="hyd-bN-1Il"/>
                                         <constraint firstAttribute="bottom" secondItem="RxY-VK-45u" secondAttribute="bottom" constant="-8" id="iet-MU-oMW"/>
+                                        <constraint firstItem="4nV-fn-R0E" firstAttribute="centerY" secondItem="e2v-dL-qwv" secondAttribute="centerY" constant="-14" id="q8d-CN-MTR"/>
+                                        <constraint firstItem="4nV-fn-R0E" firstAttribute="centerX" secondItem="e2v-dL-qwv" secondAttribute="centerX" id="qT8-n0-tN8"/>
                                         <constraint firstItem="e2v-dL-qwv" firstAttribute="top" secondItem="xlT-D2-CNt" secondAttribute="topMargin" constant="-8" id="vAx-0h-eY1"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -249,6 +271,8 @@
                                     <constraint firstItem="e2v-dL-qwv" firstAttribute="width" secondItem="yQR-QN-sa6" secondAttribute="width" id="UT0-d7-1xs"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="favoriteAnimationImageView" destination="4nV-fn-R0E" id="zUS-XX-mVg"/>
+                                    <outlet property="favoriteIndicatorButton" destination="1dE-ki-Qi5" id="A9T-1v-1tc"/>
                                     <outlet property="numBathrooms" destination="tbj-0T-RpS" id="URT-Si-s6t"/>
                                     <outlet property="numBedrooms" destination="quM-s0-nQv" id="1Op-6l-S1E"/>
                                     <outlet property="price" destination="TAO-n9-5ot" id="iIC-CP-g0t"/>
@@ -296,6 +320,8 @@
     <resources>
         <image name="bathroom-white" width="48" height="50"/>
         <image name="bed-white" width="50" height="37"/>
+        <image name="button-favorite-solid80" width="80" height="82"/>
+        <image name="favorite-solid-red" width="30" height="31"/>
         <image name="menu" width="22" height="22"/>
     </resources>
 </document>

@@ -90,6 +90,11 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as? PropertiesTableViewCell
+
+    }
 
     
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {

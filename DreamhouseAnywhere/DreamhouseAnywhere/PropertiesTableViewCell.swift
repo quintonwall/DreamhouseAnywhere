@@ -8,6 +8,8 @@
 
 import UIKit
 import SDWebImage
+import Spring
+
 
 
 class PropertiesTableViewCell: UITableViewCell {
@@ -16,37 +18,66 @@ class PropertiesTableViewCell: UITableViewCell {
     @IBOutlet weak var numBedrooms: UILabel!
     @IBOutlet weak var numBathrooms: UILabel!
     @IBOutlet var price:UILabel!
-    
-    
-    
+    @IBOutlet weak var favoriteIndicatorButton: SpringButton!
+    @IBOutlet weak var favoriteAnimationImageView: SpringImageView!
+    var isFavorite : Bool = false  {
+        didSet {
+            if(self.isFavorite == true) {
+                self.favoriteIndicatorButton.isHidden = false
+                favoriteIndicatorButton.animation = "fadeIn"
+                favoriteIndicatorButton.duration = 2
+                favoriteIndicatorButton.animate()
+            } else {
+                favoriteIndicatorButton.animation = "fadeOut"
+                favoriteIndicatorButton.duration = 2
+                favoriteIndicatorButton.animate()
+                //self.favoriteIndicatorButton.isHidden = true
+
+            }
+        }
+    }
+
     var propertyImageURLString = "" {
         didSet {
             self.propertyImageView.sd_setImage(with: URL(string: propertyImageURLString))
         }
     }
     
-    var isHotProperty: Bool = false
-    
-    var numOfFavorites  = 0 {
-        didSet {
-            if (numOfFavorites > 5) {
-                isHotProperty = true
-            }
+
+
+     func doubleTappedForFavorite() {
+        
+        if(!isFavorite) {
+            self.isFavorite = true
+            self.favoriteAnimationImageView.isHidden = false
+            favoriteAnimationImageView.duration = 1
+            favoriteAnimationImageView.animation = "zoomOut"
+            favoriteAnimationImageView.animate()
         }
+       
+        
     }
+    
+    @IBAction func unfavoriteTapped(_ sender: Any) {
+        self.isFavorite = false
+    }
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // Initialization code
-        //hotPropertyImageView.layer.cornerRadius = hotPropertyImageView.frame.width / 2
-       // hotPropertyImageView.layer.masksToBounds = true
+         favoriteAnimationImageView.isHidden = true
+        favoriteIndicatorButton.isHidden = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTappedForFavorite))
+        tap.numberOfTapsRequired = 2
+        self.addGestureRecognizer(tap)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }
