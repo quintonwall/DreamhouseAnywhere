@@ -32,6 +32,12 @@ class PropertiesTableViewCell: UITableViewCell {
                 favoriteIndicatorButton.duration = 2
                 favoriteIndicatorButton.animate()
                 //self.favoriteIndicatorButton.isHidden = true
+                
+                //dont actually show the animation, but reset to zoomedIn size
+                self.favoriteAnimationImageView.isHidden = true
+                favoriteAnimationImageView.duration = 1
+                favoriteAnimationImageView.animation = "zoomIn"
+                favoriteAnimationImageView.animate()
 
             }
         }
