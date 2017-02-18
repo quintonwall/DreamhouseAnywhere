@@ -39,5 +39,7 @@ extension UIImageView {
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight] // for supporting device rotation
         self.addSubview(blurEffectView)
     }
+    
+
 }
 

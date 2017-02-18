@@ -32,6 +32,8 @@
 		5A10AC791E53803900782991 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A10AC761E53803900782991 /* JSON.swift */; };
 		5A10AC7A1E53803900782991 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A10AC771E53803900782991 /* Date.swift */; };
 		5A10AC7F1E53A97B00782991 /* SalesforceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A10AC7E1E53A97B00782991 /* SalesforceObject.swift */; };
+		5A6002921E579E8F00892D2E /* PropertyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6002911E579E8F00892D2E /* PropertyDetailsViewController.swift */; };
+		5A6002941E57B44B00892D2E /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6002931E57B44B00892D2E /* Globals.swift */; };
 		5A6787FD1E4E8185001AC9F0 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
 		5A6788001E4E81FF001AC9F0 /* DreamhouseKit.framework in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A6AD4971E4A38DC00D5AA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6AD4921E4A38DC00D5AA30 /* Main.storyboard */; };
@@ -149,6 +151,8 @@
 		5A10AC7C1E53861200782991 /* DreamhouseAnywhere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DreamhouseAnywhere.entitlements; sourceTree = "<group>"; };
 		5A10AC7D1E53863D00782991 /* MessagesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessagesExtension.entitlements; sourceTree = "<group>"; };
 		5A10AC7E1E53A97B00782991 /* SalesforceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesforceObject.swift; sourceTree = "<group>"; };
+		5A6002911E579E8F00892D2E /* PropertyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailsViewController.swift; sourceTree = "<group>"; };
+		5A6002931E57B44B00892D2E /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		5A6787FE1E4E81C1001AC9F0 /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftlySalesforce.framework; path = "../../../Library/Developer/Xcode/DerivedData/DreamhouseAnywhere-gvffktlhklkbdfgbhlufnortzemb/Build/Products/Debug-iphonesimulator/SwiftlySalesforce/SwiftlySalesforce.framework"; sourceTree = "<group>"; };
 		5A6AD4921E4A38DC00D5AA30 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5A6AD4931E4A38DC00D5AA30 /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				5A6AD4941E4A38DC00D5AA30 /* PropertiesTableViewCell.swift */,
 				5A107C8C1E452D8D006C847A /* LaunchScreen.storyboard */,
 				5A107C8F1E452D8D006C847A /* Info.plist */,
+				5A6002911E579E8F00892D2E /* PropertyDetailsViewController.swift */,
+				5A6002931E57B44B00892D2E /* Globals.swift */,
 			);
 			path = DreamhouseAnywhere;
 			sourceTree = "<group>";
@@ -769,6 +775,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6002921E579E8F00892D2E /* PropertyDetailsViewController.swift in Sources */,
 				5A6AD4981E4A38DC00D5AA30 /* PropertiesTableViewController.swift in Sources */,
 				5A6AD49D1E4A406000D5AA30 /* MenuTransitionManager.swift in Sources */,
 				5A6AD4A31E4A50D400D5AA30 /* WalkthroughPageViewController.swift in Sources */,
@@ -776,6 +783,7 @@
 				5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */,
 				5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */,
 				5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */,
+				5A6002941E57B44B00892D2E /* Globals.swift in Sources */,
 				5A6AD4991E4A38DC00D5AA30 /* PropertiesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

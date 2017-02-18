@@ -9,11 +9,14 @@
 import UIKit
 import SDWebImage
 import Spring
+import DreamhouseKit
 
 
 
 class PropertiesTableViewCell: UITableViewCell {
 
+    var property : Property!
+    
     @IBOutlet var propertyImageView:UIImageView!
     @IBOutlet weak var numBedrooms: UILabel!
     @IBOutlet weak var numBathrooms: UILabel!
@@ -83,6 +86,7 @@ class PropertiesTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
 
     }
 

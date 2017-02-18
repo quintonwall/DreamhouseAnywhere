@@ -17,6 +17,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     let menuTransitionManger = MenuTransitionManager()
     var properties : [Property] = []
+    var selectedProperty : Property!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -82,7 +83,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertiesTableViewCell
         
         let property : Property = properties[indexPath.row]
-        //cell.propertyImageView.image = UIImage(named: property.mainImageName)
+        cell.property = property
         cell.propertyImageURLString = property.propertyImageURLString
         cell.numBathrooms.text = "\(property.baths)"
         cell.price.text = property.price.currencyString()
@@ -93,6 +94,8 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as? PropertiesTableViewCell
+        selectedProperty = cell?.property
+        performSegue(withIdentifier: "showproperty", sender: self)
 
     }
 
@@ -102,12 +105,12 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         self.title = sourceController.currentItem
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let menuTableViewController = segue.destination as! MenuTableViewController
-        menuTableViewController.currentItem = self.title!
-        menuTransitionManger.delegate = self
-        menuTableViewController.transitioningDelegate = menuTransitionManger
+        let detailsController = segue.destination as! PropertyDetailsViewController
+        detailsController.property = selectedProperty
         
     }
+ 
 
 }

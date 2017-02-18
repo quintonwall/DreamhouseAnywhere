@@ -16,6 +16,9 @@ import SwiftyJSON
 public struct PropertyData {
     
     public static let shared = PropertyData()
+    
+     //static let soqlGetMyFavorites = String("select Property__r.Address__c, Property__r.Baths__c, Property__r.Beds__c, Property__r.Broker__c, Property__r.Broker__r.Title__c, Property__r.Broker__r.Name, Property__r.Broker__r.Picture__c, Property__r.City__c, Property__r.Description__c, Property__r.Id, Property__r.Location__c, Property__r.Name, Property__r.OwnerId, Property__r.Picture__c, Property__r.Price__c, Property__r.State__c, Property__r.Thumbnail__c, Property__r.Title__c, Property__r.Zip__c from Favorite__c where User__c = '\(AppDefaults.getUserId())'")
+    
 
     public func getAllProperties() -> Promise<[Property]> {
         
@@ -28,7 +31,7 @@ public struct PropertyData {
             first {
                       salesforce.identity()
             }.then { result in
-                let soql = "SELECT Id, Title__c, Price__c, Status__c, Picture__c, Baths__c, Beds__c, Thumbnail__c, Description__c FROM Property__c"
+                let soql = "select Address__c, Baths__c, Beds__c, Broker__c, Broker__r.Title__c, Broker__r.Name, Broker__r.Picture__c, City__c, Description__c, Id, Location__c, Name, OwnerId, Picture__c, Price__c, State__c, Thumbnail__c, Title__c, Zip__c, (select id, Property__c from Favorites__r) from Property__c"
                 return salesforce.query(soql: soql)
             }.then {
                 (result: QueryResult) -> () in
