@@ -79,9 +79,9 @@ class PropertiesTableViewCell: UITableViewCell {
          favoriteAnimationImageView.isHidden = true
         favoriteIndicatorButton.isHidden = true
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTappedForFavorite))
-        tap.numberOfTapsRequired = 2
-        self.addGestureRecognizer(tap)
+       // let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTappedForFavorite))
+       // tap.numberOfTapsRequired = 2
+        //self.addGestureRecognizer(tap)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

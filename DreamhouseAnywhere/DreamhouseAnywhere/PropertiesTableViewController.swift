@@ -13,6 +13,7 @@ import SwiftlySalesforce
 
 
 
+
 class PropertiesTableViewController: UITableViewController, MenuTransitionManagerDelegate {
     
     let menuTransitionManger = MenuTransitionManager()
@@ -21,6 +22,18 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
+        //cant use selectedRowAtIndex because it messes up the double tap in our cell
+        let doubletaps = UITapGestureRecognizer(target: self, action: #selector(doubleTapDetected))
+        doubletaps.numberOfTapsRequired = 2
+        self.tableView.addGestureRecognizer(doubletaps)
+        
+        let singletap = UITapGestureRecognizer(target: self, action: #selector(singleTapDetected))
+        singletap.numberOfTapsRequired = 1
+        singletap.require(toFail: doubletaps) //otherwidr singletap always gets called.
+        self.tableView.addGestureRecognizer(singletap)
+        
+        
         
         if(UserDefaults.standard.bool(forKey: "hasViewedWalkthrough")) {
             fetchProperties()
@@ -92,12 +105,33 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         return cell
     }
     
+    func singleTapDetected(sender : UITapGestureRecognizer) {
+        let cell = getCellFromTap(sender: sender)
+        selectedProperty = cell.property
+        performSegue(withIdentifier: "showproperty", sender: self)
+    }
+    
+    func doubleTapDetected(sender: UITapGestureRecognizer) {
+        let cell = getCellFromTap(sender: sender)
+        cell.doubleTappedForFavorite()
+    }
+    
+    private func getCellFromTap(sender: UITapGestureRecognizer) -> PropertiesTableViewCell {
+        let position: CGPoint =  sender.location(in: self.tableView)
+        let indexPath: IndexPath = self.tableView.indexPathForRow(at: position)!
+        let cell = tableView.cellForRow(at: indexPath) as? PropertiesTableViewCell
+        
+        return cell!
+    }
+    
+    /*
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as? PropertiesTableViewCell
         selectedProperty = cell?.property
         performSegue(withIdentifier: "showproperty", sender: self)
 
     }
+ */
 
     
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
