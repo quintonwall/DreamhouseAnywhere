@@ -8,6 +8,25 @@
 
 import Foundation
 import UIKit
+import ServiceSOS
+import ServiceCore
+
+
+public class Globals {
+    
+    static func getSOSOptions() -> SOSOptions {
+        let options = SOSOptions(liveAgentPod: "d.la4-c1-was.salesforceliveagent.com",
+                                 orgId: "00D36000000kFKB",
+                                 deploymentId: "0NW36000000Gmxc")
+        
+        options?.featureClientFrontCameraEnabled = true
+        options?.featureClientBackCameraEnabled = true
+        //options.initialCameraType = SOSCameraType.FrontFacing
+        options?.featureClientScreenSharingEnabled = true
+        
+        return options!
+    }
+}
 
 public struct ColorPallete {
     public let flatMustard = UIColor(hex: "EBDE8E")

@@ -350,6 +350,9 @@
                                             <constraint firstAttribute="height" constant="30" id="tEa-Re-brt"/>
                                         </constraints>
                                         <state key="normal" image="livechat"/>
+                                        <connections>
+                                            <action selector="liveAgentTapped:" destination="MgF-x0-fng" eventType="touchUpInside" id="52k-l5-Qor"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98418599370000004" green="0.98881345990000002" blue="0.95956486460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

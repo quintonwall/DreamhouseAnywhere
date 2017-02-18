@@ -10,8 +10,12 @@ import UIKit
 import DreamhouseKit
 import MapKit
 import SDWebImage
+import ServiceCore
+import ServiceSOS
 
-class PropertyDetailsViewController: UIViewController {
+
+
+class PropertyDetailsViewController: UIViewController, SOSDelegate {
     
     @IBOutlet weak var propertyImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -39,6 +43,10 @@ class PropertyDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SCServiceCloud.sharedInstance().sos.add(self)
+        
+        
+        
         agentImageView.makeRoundWithBorder(width: 1, color: ColorPallete().flatGreen)
         mapView.makeRoundWithBorder(width: 1, color: ColorPallete().flatGreen)
         
@@ -76,6 +84,10 @@ class PropertyDetailsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func liveAgentTapped(_ sender: Any) {
+        SCServiceCloud.sharedInstance().sos.startSession(with: Globals.getSOSOptions())
     }
     
 
