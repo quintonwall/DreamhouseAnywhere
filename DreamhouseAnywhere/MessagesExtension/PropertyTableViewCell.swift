@@ -15,7 +15,13 @@ class PropertyTableViewCell: UITableViewCell {
     @IBOutlet var propertyImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
+    @IBOutlet weak var numBedrooms: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet weak var numBathrooms: UILabel!
+    
+    
+
+    
     var propertyImageURLString = "" {
         didSet {
             self.propertyImageView.sd_setImage(with: URL(string: propertyImageURLString))

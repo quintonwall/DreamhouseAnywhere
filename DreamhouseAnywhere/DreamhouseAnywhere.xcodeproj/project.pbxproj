@@ -114,6 +114,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A84BC2B1E5B674000BD6809 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -413,6 +423,7 @@
 				5A107CDD1E452EF3006C847A /* Embed Frameworks */,
 				7E31F94B524F6330DD4424CD /* [CP] Embed Pods Frameworks */,
 				434A0A8680BE48EACA28ABD0 /* [CP] Copy Pods Resources */,
+				5A84BC2B1E5B674000BD6809 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);

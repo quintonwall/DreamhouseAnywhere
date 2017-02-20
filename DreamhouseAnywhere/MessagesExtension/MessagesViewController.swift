@@ -10,6 +10,7 @@ import UIKit
 import Messages
 import DreamhouseKit
 import SwiftlySalesforce
+import SDWebImage
 
 
 class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource,UITableViewDelegate {
@@ -115,11 +116,10 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         
         
         let property : Property = properties[indexPath.row]
-        cell.titleLabel.text = property.title
-        cell.descriptionLabel.text = property.description
-        cell.priceLabel.text =  "$\(property.price)"
-        cell.propertyImageURLString = property.thumbnailImageURLString
-        
+        cell.numBedrooms.text = "\(property.beds)"
+        cell.numBathrooms.text = "\(property.baths)"
+         cell.priceLabel.text =  property.price.currencyString()
+        cell.propertyImageURLString = property.propertyImageURLString
         return cell
         
     }
@@ -128,16 +128,19 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         requestPresentationStyle(.compact)
         tableView.deselectRow(at: indexPath, animated: true)
        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
+       // let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
         
         
        let p : Property = properties[indexPath.row]
         if let conversation = activeConversation {
             let messageLayout = MSMessageTemplateLayout()
-            messageLayout.caption = p.title
-            messageLayout.subcaption = "$\(p.price)"
-            messageLayout.image = cell.propertyImageView.image
-        
+            messageLayout.caption = "\(p.title!) - \(p.price.currencyString())"
+            messageLayout.subcaption = p.description
+            
+    
+            let data = try? Data(contentsOf: URL(string: p.propertyImageURLString)!)
+            messageLayout.image = UIImage(data: data!)
+            
             let message = MSMessage()
             message.layout = messageLayout
             
