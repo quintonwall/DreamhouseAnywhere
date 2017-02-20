@@ -13,7 +13,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     var pageHeadings = ["Diamond in the Rough?", "Shop Smart", "Let's Get Started"]
     var pageImages = ["diamond_welcome", "map_welcome", "key_welcome"]
-    var pageContent = ["Whatever home are looking for, Dreamhouse will find that hidden gem!",
+    var pageContent = ["Whatever home you are looking for, Dreamhouse will find that hidden gem!",
         "We use state of the art artificial intelligence to have your dream home find you.",
         "Tap Get Started below to login."]
     

@@ -108,7 +108,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     func singleTapDetected(sender : UITapGestureRecognizer) {
         let cell = getCellFromTap(sender: sender)
         selectedProperty = cell.property
-        performSegue(withIdentifier: "showproperty", sender: self)
+        performSegue(withIdentifier: "propertydetails", sender: self)
     }
     
     func doubleTapDetected(sender: UITapGestureRecognizer) {
@@ -141,8 +141,11 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let detailsController = segue.destination as! PropertyDetailsViewController
-        detailsController.property = selectedProperty
+        
+        if segue.identifier == "propertydetails" {
+            let detailsController = segue.destination as! PropertyDetailsViewController
+            detailsController.property = selectedProperty
+        }
         
     }
  

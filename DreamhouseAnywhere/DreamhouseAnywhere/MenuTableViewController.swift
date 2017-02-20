@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import SwiftlySalesforce
 
 class MenuTableViewController: UITableViewController {
 
@@ -45,11 +46,40 @@ class MenuTableViewController: UITableViewController {
 
         return cell
     }
+   
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as? MenuTableViewCell
+        let whichpage = cell?.textLabel!.text
+        switch whichpage!.lowercased() {
+            case "loguot":
+                logout()
+            default:
+                break
+        }
+        
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let menuTableViewController = segue.source as! MenuTableViewController
         if let selectedIndexPath = menuTableViewController.tableView.indexPathForSelectedRow {
             currentItem = menuItems[selectedIndexPath.row]
+        }
+    }
+    
+    private func logout() {
+    // Call this when your app's "Log Out" button is tapped, for example
+        if let app = UIApplication.shared.delegate as? LoginDelegate {
+            app.logout().then {
+                () -> () in
+                // Clear any cached data and reset the UI
+                    UserDefaults.standard.removeObject(forKey: "hasViewedWalkthrough")
+                return
+                }.catch {
+                    error in
+                    debugPrint(error)
+            }
         }
     }
 }

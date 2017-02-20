@@ -294,7 +294,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="MgF-x0-fng" kind="show" identifier="showproperty" id="jAw-Ol-bVB"/>
+                        <segue destination="MgF-x0-fng" kind="show" identifier="propertydetails" id="AKy-Ii-l30"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kab-1o-DQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>

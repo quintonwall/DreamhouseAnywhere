@@ -44,6 +44,7 @@
 		5A6AD49D1E4A406000D5AA30 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */; };
 		5A6AD4A11E4A4FE500D5AA30 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */; };
 		5A6AD4A31E4A50D400D5AA30 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */; };
+		5A84BC301E5B887300BD6809 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */; };
 		5AB0FBFC1E56453B00257350 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
 		5AD0AD9D1E4CEAE8003A00E5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */; };
 		5AD0AD9F1E4CEAE8003A00E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */; };
@@ -172,6 +173,7 @@
 		5A6AD49C1E4A406000D5AA30 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 		5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		5AB0FBFE1E5645A400257350 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/DreamhouseAnywhere-gvffktlhklkbdfgbhlufnortzemb/Build/Products/Debug-iphonesimulator/PromiseKit/PromiseKit.framework"; sourceTree = "<group>"; };
 		5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84BC301E5B887300BD6809 /* UserNotifications.framework in Frameworks */,
 				5A10AC711E4E8BEE00782991 /* SDWebImage.framework in Frameworks */,
 				5A107CF61E454451006C847A /* DreamhouseKit.framework in Frameworks */,
 				17AA5E44D218F7DC9DE80938 /* Pods_DreamhouseAnywhere.framework in Frameworks */,
@@ -289,6 +292,7 @@
 		5A107C9A1E452DB1006C847A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */,
 				5AB0FBFE1E5645A400257350 /* PromiseKit.framework */,
 				5AD56BDD1E563F32000B851C /* SwiftlySalesforce.framework */,
 				5A10AC701E4E8BEE00782991 /* SDWebImage.framework */,
@@ -529,6 +533,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};

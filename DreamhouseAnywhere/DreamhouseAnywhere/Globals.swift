@@ -26,6 +26,19 @@ public class Globals {
         
         return options!
     }
+    
+        
+    static func getPushNotificationMessageFromAPS(userInfo: NSDictionary) -> String {
+        var alertMsg = ""
+        if let aps = userInfo["aps"] as? NSDictionary {
+            if let alert = aps["alert"] as? NSDictionary {
+                if let message = alert["message"] as? NSString {
+                    alertMsg = message as String
+                }
+            }
+        }
+        return alertMsg
+    }
 }
 
 public struct ColorPallete {

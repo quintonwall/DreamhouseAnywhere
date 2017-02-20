@@ -8,6 +8,9 @@
 
 import UIKit
 import SwiftlySalesforce
+import SalesforceKit
+import UserNotifications
+
 
 
 enum QuickAction: String {
@@ -25,7 +28,7 @@ enum QuickAction: String {
 }
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
+class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNotificationCenterDelegate  {
 
     var window: UIWindow?
     
@@ -46,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
         //Use app groups for sharing data between the iMessage and main app
         let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
         
-        //configureSalesforce(consumerKey: consumerKey, redirectURL: redirectURL!)
+       registerForRemoteNotification()
         
         
         return true
@@ -80,7 +83,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate  {
         handleRedirectURL(url: url)
         return true
     }
+    
+    
+    func registerForRemoteNotification() {
+        if #available(iOS 10.0, *) {
+            let center  = UNUserNotificationCenter.current()
+            center.delegate = self
+            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
+                if error == nil{
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+        }
+        else {
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+            UIApplication.shared.registerForRemoteNotifications()
+        }
+        
+        SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
+        UIApplication.shared.applicationIconBadgeNumber = 0
+    }
 
+    
+    
+    //MARK: Push notifications
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
+        
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        print("Registered for push with device token: \(deviceTokenString)")
+    }
+
+
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("did receive notification")
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("will present")
+    }
+
+    
+    
+    //MARK: app lifecycle
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
