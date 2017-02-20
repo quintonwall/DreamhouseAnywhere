@@ -12,7 +12,7 @@ import SwiftlySalesforce
 
 class MenuTableViewController: UITableViewController {
 
-    var menuItems = ["Home", "For Sale", "Recommended", "Favorites", "How to Save Trail", "Store", "Settings", "About"]
+    var menuItems = ["Home", "For Sale", "Recommended", "Favorites", "How to Save Trail", "Store", "Settings", "About", "Logout"]
     var currentItem = "Home"
     
     override func viewDidLoad() {
@@ -50,9 +50,9 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as? MenuTableViewCell
-        let whichpage = cell?.textLabel!.text
-        switch whichpage!.lowercased() {
-            case "loguot":
+        let whichpage = menuItems[indexPath.item]
+        switch whichpage.lowercased() {
+            case "logout":
                 logout()
             default:
                 break

@@ -100,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
             UIApplication.shared.registerForRemoteNotifications()
         }
         
-        SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
+       SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
         UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
