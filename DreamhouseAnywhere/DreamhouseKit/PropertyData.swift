@@ -30,6 +30,7 @@ public struct PropertyData {
             fulfill, reject in
             first {
                       salesforce.identity()
+                
             }.then { result in
                 let soql = "select Address__c, Baths__c, Beds__c, Broker__c, Broker__r.Title__c, Broker__r.Name, Broker__r.Picture__c, City__c, Description__c, Id, Location__c, Name, OwnerId, Picture__c, Price__c, State__c, Thumbnail__c, Title__c, Zip__c, (select id, Property__c from Favorites__r) from Property__c"
                 return salesforce.query(soql: soql)
@@ -44,6 +45,25 @@ public struct PropertyData {
         }
     }
     
+    
+    public func registerForSalesforceNotifications(devicetoken: String, instanceUrl: String) {
+        
+        let theurl = URL(string: "\(instanceUrl)/services/data/v36.0/sobjects/MobilePushServiceDevice")
+        let headers = ["Authorization" : "Bearer \(salesforce.authManager.authData!.accessToken)", "Content-Type" : "application/json"]
+        let params = ["ConnectionToken" : devicetoken, "ServiceType" : "Apple" ]
+        
+        Alamofire.request(theurl!, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseString { response in
+            switch response.result {
+            case .success(let result):
+                print("registered for salesforce notifications")
+            case .failure(let error):
+                print("failed to register for salesforce notfications..wa-wahh")
+            }
+
+        }
+    }
+ 
+
     
     //
      // For many consumer app secenarios, we need to fetch data from salesforce anonymously. eg: a listing of properties, especially through bots etc.

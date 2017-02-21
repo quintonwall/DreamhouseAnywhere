@@ -23,6 +23,9 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
+        
+
+        
         //cant use selectedRowAtIndex because it messes up the double tap in our cell
         let doubletaps = UITapGestureRecognizer(target: self, action: #selector(doubleTapDetected))
         doubletaps.numberOfTapsRequired = 2
@@ -39,7 +42,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
             fetchProperties()
             return
         }
-        
+
         if let pageViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughController") as? WalkthroughPageViewController {
             
             present(pageViewController, animated: true, completion: nil)
@@ -67,7 +70,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     func fetchProperties() {
         first {
             PropertyData.shared.getAllProperties()
-           
+            
         }.then {
                 (results) -> () in
                 self.properties = results

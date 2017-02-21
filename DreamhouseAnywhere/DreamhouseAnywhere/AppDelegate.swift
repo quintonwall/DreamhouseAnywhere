@@ -10,6 +10,7 @@ import UIKit
 import SwiftlySalesforce
 import SalesforceKit
 import UserNotifications
+import DreamhouseKit
 
 
 
@@ -49,7 +50,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         //Use app groups for sharing data between the iMessage and main app
         let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
         
-       registerForRemoteNotification()
+        registerForRemoteNotification()
+        
+        /*
+        //do some voodoo magic to map swiftlysalesforce back to mobilesdk so we can register for salesforce push notifications
+        let token = salesforce.authManager.authData!.accessToken
+        print("==>\(token)")
+        
+
+        print("==>\(SFAuthenticationManager.shared().coordinator.credentials)")
+        var cred = SFOAuthCredentials(identifier: "dreamhouseanywhere-sfdc-authid", clientId: salesforce.authManager.configuration.consumerKey, encrypted: true)
+        cred?.accessToken = token
+        cred?.instanceUrl = instanceUrl
+        SFAuthenticationManager.shared().coordinator.credentials = cred
+
+        print("==+>\(SFAuthenticationManager.shared().coordinator.credentials)")
+        //SFAuthenticationManager.shared().coordinator.credentials.accessToken = token
+        // SFAuthenticationManager.shared().coordinator.credentials.identifier = (salesforce.authManager.authData?.userID)!
+        
+        SFPushNotificationManager.sharedInstance().registerForSalesforceNotifications()
+       */
+        
+        
         
         
         return true
@@ -99,9 +121,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
             UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
             UIApplication.shared.registerForRemoteNotifications()
         }
-        
-       SFPushNotificationManager.sharedInstance().registerForRemoteNotifications()
-        UIApplication.shared.applicationIconBadgeNumber = 0
+                UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     
@@ -113,10 +133,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         SFPushNotificationManager.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: deviceToken)
         
         let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+
+        PropertyData.shared.registerForSalesforceNotifications(devicetoken: deviceTokenString, instanceUrl: "https://\(communityLoginHost)")
+        
         print("Registered for push with device token: \(deviceTokenString)")
     }
 
 
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+         print("remote notification baby")
+    }
+   
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print("did receive notification")
