@@ -7,6 +7,7 @@
 //
 
 import UserNotifications
+import MobileCoreServices
 
 class NotificationService: UNNotificationServiceExtension {
 
@@ -19,8 +20,22 @@ class NotificationService: UNNotificationServiceExtension {
         
         if let bestAttemptContent = bestAttemptContent {
             // Modify the notification content here...
-            bestAttemptContent.title = "Price changed!"
-            bestAttemptContent.body = bestAttemptContent.body+"xxxx"
+           // bestAttemptContent.title = bestAttemptContent.title+'add if you want'
+            //bestAttemptContent.subtitle = bestAttemptContent.subtitle
+            //bestAttemptContent.body = bestAttemptContent.body
+            
+            if let urlString = request.content.userInfo["media-attachment"] as? String, let fileUrl = URL(string: urlString) {
+                URLSession.shared.downloadTask(with: fileUrl) { (location, response, error) in
+                    if let location = location {
+                        let options = [UNNotificationAttachmentOptionsTypeHintKey: kUTTypeJPEG]
+                        if let attachment = try? UNNotificationAttachment(identifier: "", url: location, options: options) {
+                            self.bestAttemptContent?.attachments = [attachment]
+                        }
+                    }
+                    
+                    self.contentHandler!(self.bestAttemptContent!)
+                    }.resume()
+            }
             
             /*
              * Salesforce push doesnt currently support setting of the mutable-content aps flag, so this will never get called. Im adding it here for futurenessification
@@ -37,7 +52,7 @@ class NotificationService: UNNotificationServiceExtension {
             //content?.body = notification.request.content.body.substring(to: delim!)
         */
             
-            contentHandler(bestAttemptContent)
+           // contentHandler(bestAttemptContent)
         }
     }
     
