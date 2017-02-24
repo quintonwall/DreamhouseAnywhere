@@ -43,12 +43,16 @@ public struct Property {
     //favorite
     public var favoriteId: String = ""
     
+    //save dictionary representation as we need to pass that to watchos apps
+    public var asDictionary: [String : Any]?
     
     public init() {}
     
     
     //take JSON from Salesforce REST API and convert to strongly typed object
     public init(dictionary: [String: Any]) {
+        asDictionary = dictionary
+        
         for(key, value) in dictionary {
             switch key.lowercased() {
                 case "id":

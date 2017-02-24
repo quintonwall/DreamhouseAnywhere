@@ -63,6 +63,7 @@
 		5AE3422F1E5F4F59009616E2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3422E1E5F4F59009616E2 /* NotificationController.swift */; };
 		5AE342311E5F4F59009616E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE342301E5F4F59009616E2 /* Assets.xcassets */; };
 		5AE342351E5F4F59009616E2 /* DreamhouseAnywhereWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5AE342171E5F4F59009616E2 /* DreamhouseAnywhereWatch.app */; };
+		5AE342401E5F5BF1009616E2 /* PropertyTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3423F1E5F5BF1009616E2 /* PropertyTableRow.swift */; };
 		8420DED3BABDA06F999DEC6C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58BA7926BDC7D346E4DC90 /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */; };
 		CB08C367B86FEB42EDADEE75 /* Pods_DreamhouseAnywhere_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */; };
 		F253AE92EBDAE5000561B98D /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */; };
@@ -243,6 +244,7 @@
 		5AE3422E1E5F4F59009616E2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5AE342301E5F4F59009616E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AE342321E5F4F59009616E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE3423F1E5F5BF1009616E2 /* PropertyTableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTableRow.swift; sourceTree = "<group>"; };
 		5D66A1F499337770D6B6F495 /* Pods_DreamhouseAnywhere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_MessagesExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795D052FF9AB1B5721B67145 /* Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages.release.xcconfig"; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 				5AE342301E5F4F59009616E2 /* Assets.xcassets */,
 				5AE342321E5F4F59009616E2 /* Info.plist */,
 				5AE342281E5F4F59009616E2 /* Supporting Files */,
+				5AE3423F1E5F5BF1009616E2 /* PropertyTableRow.swift */,
 			);
 			path = "DreamhouseAnywhereWatch Extension";
 			sourceTree = "<group>";
@@ -1078,6 +1081,7 @@
 			files = (
 				5AE3422F1E5F4F59009616E2 /* NotificationController.swift in Sources */,
 				5AE3422D1E5F4F59009616E2 /* ExtensionDelegate.swift in Sources */,
+				5AE342401E5F5BF1009616E2 /* PropertyTableRow.swift in Sources */,
 				5AE3422B1E5F4F59009616E2 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1408,6 +1412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.DreamhouseKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1435,6 +1440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.DreamhouseKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

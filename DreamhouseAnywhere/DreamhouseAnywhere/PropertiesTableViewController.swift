@@ -9,6 +9,7 @@
 import UIKit
 import DreamhouseKit
 import SwiftlySalesforce
+import WatchConnectivity
 
 
 
@@ -19,6 +20,11 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     let menuTransitionManger = MenuTransitionManager()
     var properties : [Property] = []
     var selectedProperty : Property!
+    
+    lazy var notificationCenter: NotificationCenter = {
+        return NotificationCenter.default
+    }()
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
@@ -117,6 +123,14 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     func doubleTapDetected(sender: UITapGestureRecognizer) {
         let cell = getCellFromTap(sender: sender)
         cell.doubleTappedForFavorite()
+        sendFavoriteToWatch(property: cell.property)
+        
+        /*
+        DispatchQueue.main.async { () -> Void in
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.post(name: Notification.Name(rawValue: NotificationPropertyFavoritedOnPhone), object: cell.property)
+        }
+ */
     }
     
     private func getCellFromTap(sender: UITapGestureRecognizer) -> PropertiesTableViewCell {
@@ -127,15 +141,6 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         return cell!
     }
     
-    /*
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as? PropertiesTableViewCell
-        selectedProperty = cell?.property
-        performSegue(withIdentifier: "showproperty", sender: self)
-
-    }
- */
-
     
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         let sourceController = segue.source as! MenuTableViewController
@@ -154,3 +159,25 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
  
 
 }
+
+// MARK: - Watch Connectivity
+extension PropertiesTableViewController {
+    func sendFavoriteToWatch(property : Property){
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            if session.isWatchAppInstalled {
+              
+                //let userInfo = ["favorite-id":property.id, "property":pr]
+                session.transferUserInfo(property.asDictionary!)
+            }
+    
+        }
+    }
+}
+
+
+
+
+
+
+

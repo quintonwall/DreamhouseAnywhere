@@ -7,11 +7,46 @@
 //
 
 import WatchKit
+import WatchConnectivity
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate,  WCSessionDelegate {
 
+    
+    
+    //MARK: WC Connectivity
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if let error = error {
+            print("WC Session activation failed with error: \(error.localizedDescription)")
+            return
+        }
+        print("WC Session activated with state: \(activationState.rawValue)")
+    }
+    
+    
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        //if let movieID = userInfo["movie_id"] as? String,
+          //  let rating = userInfo["rating"] as? String {
+            //TicketOffice.sharedInstance.rateMovie(movieID,
+            //                                      rating: rating)
+        print("received user info")
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext:[String:Any]) {
+        print("received \(applicationContext)")
+    }
+    
+    func setupWatchConnectivity() {
+        if WCSession.isSupported() {
+            let session  = WCSession.default()
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
+    //MARK: Lifecycle
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        setupWatchConnectivity()
     }
 
     func applicationDidBecomeActive() {

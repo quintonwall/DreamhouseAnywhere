@@ -19,6 +19,7 @@ public struct PropertyData {
     
      //static let soqlGetMyFavorites = String("select Property__r.Address__c, Property__r.Baths__c, Property__r.Beds__c, Property__r.Broker__c, Property__r.Broker__r.Title__c, Property__r.Broker__r.Name, Property__r.Broker__r.Picture__c, Property__r.City__c, Property__r.Description__c, Property__r.Id, Property__r.Location__c, Property__r.Name, Property__r.OwnerId, Property__r.Picture__c, Property__r.Price__c, Property__r.State__c, Property__r.Thumbnail__c, Property__r.Title__c, Property__r.Zip__c from Favorite__c where User__c = '\(AppDefaults.getUserId())'")
     
+    var fetchedProperties : [Property]?
 
     public func getAllProperties() -> Promise<[Property]> {
         

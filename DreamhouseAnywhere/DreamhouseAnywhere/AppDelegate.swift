@@ -11,6 +11,7 @@ import SwiftlySalesforce
 import SalesforceKit
 import UserNotifications
 import DreamhouseKit
+import WatchConnectivity
 
 
 
@@ -28,10 +29,16 @@ enum QuickAction: String {
     }
 }
 
+let NotificationPropertyFavoritedOnPhone = "PropertyFavoritedOnPhone"
+
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNotificationCenterDelegate  {
+class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNotificationCenterDelegate, WCSessionDelegate  {
 
     var window: UIWindow?
+    
+    lazy var notificationCenter: NotificationCenter = {
+        return NotificationCenter.default
+    }()
     
     //salesforce connected app properties
     let consumerKey = "3MVG9uudbyLbNPZORlx5pdNbXe.eo_dVK0WlmqUuSbXszEw7gEIKzXkMdZC2IRCPPAJZYZkdeB.Ed0JDG8YSv"
@@ -51,29 +58,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
         
         registerForRemoteNotification()
-        
-        /*
-        //do some voodoo magic to map swiftlysalesforce back to mobilesdk so we can register for salesforce push notifications
-        let token = salesforce.authManager.authData!.accessToken
-        print("==>\(token)")
-        
-
-        print("==>\(SFAuthenticationManager.shared().coordinator.credentials)")
-        var cred = SFOAuthCredentials(identifier: "dreamhouseanywhere-sfdc-authid", clientId: salesforce.authManager.configuration.consumerKey, encrypted: true)
-        cred?.accessToken = token
-        cred?.instanceUrl = instanceUrl
-        SFAuthenticationManager.shared().coordinator.credentials = cred
-
-        print("==+>\(SFAuthenticationManager.shared().coordinator.credentials)")
-        //SFAuthenticationManager.shared().coordinator.credentials.accessToken = token
-        // SFAuthenticationManager.shared().coordinator.credentials.identifier = (salesforce.authManager.authData?.userID)!
-        
-        SFPushNotificationManager.sharedInstance().registerForSalesforceNotifications()
-       */
-        
-        
-        
-        
+        setupWatchConnectivity()
+        setupNotificationCenter()
+   
         return true
     }
     
@@ -126,7 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
 
     
     
-    //MARK: Push notifications
+    //MARK: - Push notifications
     
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
@@ -137,12 +124,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         print("Registered for push with device token: \(deviceTokenString)")
     }
 
-/*
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        print("User Info = ",application.applicationIconBadgeNumber)
-        completionHandler()
-    }*/
-   
    
     
     //Called when a notification is delivered to a foreground app.
@@ -165,8 +146,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
 
     }
     
+    //MARK: - Notification Center
+    private func setupNotificationCenter() {
+        notificationCenter.addObserver(forName: NSNotification.Name(rawValue: NotificationPropertyFavoritedOnPhone), object: nil, queue: nil) { (notification:Notification) -> Void in
+            //self.senFavoritePropertiesToWatch(notification)
+        }
+    }
     
-    //MARK: app lifecycle
+    
+    //MARK: - WatchKit
+    
+    func setupWatchConnectivity() {
+     
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("WC Session did become inactive")
+    }
+
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("WC Session did deactivate")
+        WCSession.default().activate()
+    }
+   
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+         if let error = error {
+            print("WC Session activation failed with error: \(error.localizedDescription)")
+            return
+        }
+        print("WC Session activated with state: " + "\(activationState.rawValue)")
+    }
+    
+    
+    /*
+    func sendPropertiesToWatch(_ notification: Notification) {
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            if session.isWatchAppInstalled {
+                print("sending to watch")
+                do {
+                     try session.updateApplicationContext(["properties" : "test"])
+                } catch {
+                    print("ERROR: \(error)")
+                }
+            }
+        }
+    }
+ */
+    
+    //MARK: -  app lifecycle
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

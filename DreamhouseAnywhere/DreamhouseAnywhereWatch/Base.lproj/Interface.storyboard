@@ -9,29 +9,64 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Properties-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DreamhouseAnywhereWatch" customModuleProvider="target">
+                <controller identifier="PropertyList" title="Properties" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DreamhouseAnywhereWatch" customModuleProvider="target">
                     <items>
                         <table alignment="left" id="nVZ-vP-WPe">
                             <items>
-                                <tableRow id="7T8-Y8-ezR">
-                                    <group key="rootItem" width="1" alignment="left" layout="vertical" id="VWZ-lY-QWN" userLabel="group">
+                                <tableRow identifier="cell" id="7T8-Y8-ezR" customClass="PropertyTableRow" customModule="DreamhouseAnywhereWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="VWZ-lY-QWN" userLabel="group">
                                         <items>
-                                            <imageView width="1" height="50" alignment="left" id="cDo-Sm-y6h"/>
+                                            <imageView width="1" height="80" alignment="left" id="cDo-Sm-y6h"/>
                                             <label alignment="center" verticalAlignment="bottom" text="Price" id="cgb-DA-doi">
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="priceLabel" destination="cgb-DA-doi" id="vbw-UH-lXk"/>
+                                        <outlet property="propertyImage" destination="cDo-Sm-y6h" id="4Xa-hD-Dl3"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="tableView" destination="nVZ-vP-WPe" id="Lwl-mY-UkT"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Property Details-->
+        <scene sceneID="qji-7m-aDw">
+            <objects>
+                <controller identifier="PropertyDetails" title="Property Details" id="qIH-dk-UOp">
+                    <items>
+                        <imageView height="80" alignment="left" id="rcr-yp-iLj"/>
+                        <group width="130" alignment="center" id="Cht-a9-NTZ">
+                            <items>
+                                <group width="70" alignment="left" id="ubV-Cf-VJ1" userLabel="beds-group">
+                                    <items>
+                                        <imageView width="25" height="25" alignment="left" image="bed-white" contentMode="scaleAspectFit" id="Lqc-6i-rbl"/>
+                                        <label alignment="left" verticalAlignment="center" text="99" textAlignment="left" id="1Ka-mg-EDk"/>
+                                    </items>
+                                </group>
+                                <group width="80" alignment="left" id="hzb-3x-puW" userLabel="baths-group">
+                                    <items>
+                                        <imageView width="25" height="25" alignment="left" image="bathroom-white" contentMode="scaleAspectFit" id="Igw-Kb-ShV"/>
+                                        <label alignment="left" verticalAlignment="center" text="99" textAlignment="left" id="owe-0n-3bL"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" alpha="0.69999999999999996" id="6Jy-Ht-kSm"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="482" y="352"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

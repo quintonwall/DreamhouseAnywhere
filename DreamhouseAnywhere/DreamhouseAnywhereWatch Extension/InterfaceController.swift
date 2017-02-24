@@ -12,10 +12,20 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var tableView: WKInterfaceTable!
+    
+    
+    
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        //let property = properties[rowIndex]
+        //presentController(withName: "PropertyDetails", context: property)
     }
     
     override func willActivate() {
