@@ -19,6 +19,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     let menuTransitionManger = MenuTransitionManager()
     var properties : [Property] = []
+  
     var selectedProperty : Property!
     
     lazy var notificationCenter: NotificationCenter = {
@@ -88,6 +89,8 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         
         
     }
+    
+    
     
     // MARK: - Table view data source
 

@@ -12,10 +12,11 @@ import MapKit
 import SDWebImage
 import ServiceCore
 import ServiceSOS
+import SwiftlySalesforce
 
 
 
-class PropertyDetailsViewController: UIViewController, SOSDelegate {
+class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var propertyImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -37,7 +38,7 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate {
     var propertyLocation : CLLocation?
     let locationManger:CLLocationManager = CLLocationManager()
     
-    
+      var recProperties : [Property] = []
     
     var property : Property!
 
@@ -67,6 +68,10 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate {
             centerMapOnLocation(location: propertyLocation!)
 
         }
+        
+        recommendedPropertiesCollectionView.delegate = self
+        recommendedPropertiesCollectionView.dataSource = self
+        fetchRecommendations()
     }
 
     
@@ -90,6 +95,36 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate {
         SCServiceCloud.sharedInstance().sos.startSession(with: Globals.getSOSOptions())
     }
     
+    // MARK: - Salesforce
+    func fetchRecommendations() {
+        first {
+            PropertyData.shared.getRecommendedProperties()
+            
+            }.then {
+                (results) -> () in
+                self.recProperties = results
+                self.recommendedPropertiesCollectionView.reloadData()
+            }.catch {
+                (error) -> () in
+                print("error: \(error)")  //todo: handle this better
+        }
+    }
+
+    
+    // MARK: - Collection View
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return recProperties.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = recommendedPropertiesCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RecommendPropertiesCollectionViewCell
+        
+        let property : Property = recProperties[indexPath.row]
+        cell.property = property
+        cell.propertyImageURLString = property.propertyImageURLString
+        return cell
+        
+    }
 
     /*
     // MARK: - Navigation

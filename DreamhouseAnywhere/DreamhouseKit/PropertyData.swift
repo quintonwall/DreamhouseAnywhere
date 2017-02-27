@@ -46,6 +46,12 @@ public struct PropertyData {
         }
     }
     
+    public func getRecommendedProperties() -> Promise<[Property]> {
+    
+        //temp..until we implement the real recommendations
+        return getAllProperties()
+    }
+    
     
     
 
