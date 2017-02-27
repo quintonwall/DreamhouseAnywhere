@@ -45,6 +45,7 @@
 		5A6AD4A11E4A4FE500D5AA30 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */; };
 		5A6AD4A31E4A50D400D5AA30 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */; };
 		5A84BC301E5B887300BD6809 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */; };
+		5A992AB11E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */; };
 		5AB0FBFC1E56453B00257350 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
 		5AD0AD9D1E4CEAE8003A00E5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */; };
 		5AD0AD9F1E4CEAE8003A00E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */; };
@@ -221,6 +222,7 @@
 		5A6AD4A01E4A4FE500D5AA30 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		5A6AD4A21E4A50D400D5AA30 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendPropertiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AB0FBFE1E5645A400257350 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/DreamhouseAnywhere-gvffktlhklkbdfgbhlufnortzemb/Build/Products/Debug-iphonesimulator/PromiseKit/PromiseKit.framework"; sourceTree = "<group>"; };
 		5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -369,6 +371,7 @@
 				5A107C8F1E452D8D006C847A /* Info.plist */,
 				5A6002911E579E8F00892D2E /* PropertyDetailsViewController.swift */,
 				5A6002931E57B44B00892D2E /* Globals.swift */,
+				5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */,
 			);
 			path = DreamhouseAnywhere;
 			sourceTree = "<group>";
@@ -1027,6 +1030,7 @@
 				5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */,
 				5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */,
 				5A6002941E57B44B00892D2E /* Globals.swift in Sources */,
+				5A992AB11E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift in Sources */,
 				5A6AD4991E4A38DC00D5AA30 /* PropertiesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1607,6 +1611,7 @@
 				5AE342141E5CB4FC009616E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AE342361E5F4F59009616E2 /* Build configuration list for PBXNativeTarget "DreamhouseAnywhereWatch Extension" */ = {
 			isa = XCConfigurationList;
@@ -1615,6 +1620,7 @@
 				5AE342381E5F4F59009616E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AE3423A1E5F4F59009616E2 /* Build configuration list for PBXNativeTarget "DreamhouseAnywhereWatch" */ = {
 			isa = XCConfigurationList;
@@ -1623,6 +1629,7 @@
 				5AE3423C1E5F4F59009616E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
