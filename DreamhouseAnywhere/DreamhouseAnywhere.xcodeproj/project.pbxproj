@@ -47,6 +47,7 @@
 		5A84BC301E5B887300BD6809 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */; };
 		5A992AB11E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */; };
 		5AB0FBFC1E56453B00257350 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
+		5AC4F82A1E65E40A00C42E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C8A1E452D8D006C847A /* Assets.xcassets */; };
 		5AD0AD9D1E4CEAE8003A00E5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */; };
 		5AD0AD9F1E4CEAE8003A00E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */; };
 		5AD0ADA01E4CEAE8003A00E5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */; };
@@ -809,6 +810,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC4F82A1E65E40A00C42E05 /* Assets.xcassets in Resources */,
 				5A107CA21E452DB1006C847A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
