@@ -9,6 +9,7 @@
 
 import UIKit
 import SwiftlySalesforce
+import DreamhouseKit
 
 class MenuTableViewController: UITableViewController {
 
@@ -74,6 +75,7 @@ class MenuTableViewController: UITableViewController {
             app.logout().then {
                 () -> () in
                 // Clear any cached data and reset the UI
+                PropertyData.shared.clear()
                     UserDefaults.standard.removeObject(forKey: "hasViewedWalkthrough")
                 return
                 }.catch {

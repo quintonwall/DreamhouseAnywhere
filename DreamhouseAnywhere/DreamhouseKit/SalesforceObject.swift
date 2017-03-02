@@ -9,8 +9,6 @@
 import Foundation
 
 
-import Foundation
-
 class SalesforceObject: NSObject {
     
     class func getType(sfdcid: NSString) -> String {

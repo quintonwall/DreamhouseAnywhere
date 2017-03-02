@@ -82,6 +82,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
                 (results) -> () in
                 self.properties = results
                 self.tableView.reloadData()
+                self.sendPropertiesToWatch(properties: self.properties)
         }.catch {
          (error) -> () in
             print("error: \(error)")  //todo: handle this better
@@ -165,6 +166,24 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
 
 // MARK: - Watch Connectivity
 extension PropertiesTableViewController {
+    
+    func sendPropertiesToWatch(properties : [Property] ) {
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            if session.isWatchAppInstalled {
+                
+                //let userInfo = ["favorite-id":property.id, "property":pr]
+                
+                var allProperties = Dictionary<String, Any>()
+                for prop in properties {
+                    allProperties[prop.id] = prop.asDictionary!
+                }
+                session.transferUserInfo(allProperties)
+            }
+            
+        }
+    }
+    
     func sendFavoriteToWatch(property : Property){
         if WCSession.isSupported() {
             let session = WCSession.default()

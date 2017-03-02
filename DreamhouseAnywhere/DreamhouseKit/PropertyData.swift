@@ -6,20 +6,20 @@
 //  Copyright © 2017 me.quinton. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 import SwiftlySalesforce
 import Alamofire
 import SwiftyJSON
 
 
 
-public struct PropertyData {
+public final class PropertyData {
     
     public static let shared = PropertyData()
     
-     //static let soqlGetMyFavorites = String("select Property__r.Address__c, Property__r.Baths__c, Property__r.Beds__c, Property__r.Broker__c, Property__r.Broker__r.Title__c, Property__r.Broker__r.Name, Property__r.Broker__r.Picture__c, Property__r.City__c, Property__r.Description__c, Property__r.Id, Property__r.Location__c, Property__r.Name, Property__r.OwnerId, Property__r.Picture__c, Property__r.Price__c, Property__r.State__c, Property__r.Thumbnail__c, Property__r.Title__c, Property__r.Zip__c from Favorite__c where User__c = '\(AppDefaults.getUserId())'")
+    let recommendationServiceURLString = "http://dreamhouseany-pio-recserver.herokuapp.com/queries.json"
     
-    var fetchedProperties : [Property]?
+    public fileprivate(set) var cachedProperties : [Property]?
 
     public func getAllProperties() -> Promise<[Property]> {
         
@@ -38,6 +38,7 @@ public struct PropertyData {
             }.then {
                 (result: QueryResult) -> () in
                 let properties = result.records.map { Property(dictionary: $0) }
+                self.cachedProperties = properties
                 fulfill(properties)
             }.catch { error in
                 reject(error)
@@ -46,13 +47,51 @@ public struct PropertyData {
         }
     }
     
-    public func getRecommendedProperties() -> Promise<[Property]> {
     
-        //temp..until we implement the real recommendations
-        return getAllProperties()
+    /**
+     * Example of using predictionIO recommendations.
+     * See https://github.com/quintonwall/dreamhouse-pio/tree/salesforce-rest for the PIO service.
+     * Unlike the PIO service for the main dreamhouse app, which relies on Heroku Connect to sync data to a Heroku Postgres instance (for the mobile web app to retrieve data from) and fetch favorites, the recommendation service
+     * used in DreamhouseAnywhere fetches favorites directly from Salesforce via REST APIs. 
+     */
+    public func getRecommendedProperties(userid: String) -> Promise<[Property]> {
+    
+        return Promise<[Property]> {
+            fulfill, reject in
+            
+                let theurl = URL(string: self.recommendationServiceURLString)
+                let headers = ["Content-Type" : "application/json"]
+                let params = ["userId" : userid, "numResults" : "10" ]
+                
+                var recommendations : [Property] = []
+                
+               Alamofire.request(theurl!, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers)
+                .validate()
+                .responseJSON { response in
+                    switch response.result {
+                        case .success(let json):
+                           let res = json as? [String: Any]
+                           let props = res?["propertyRatings"] as? [String: Any]
+                           
+                           //resonses come back with the sfdc propertyid as the key in the array.
+                           //lets check the cache and pull from there to save another network call.
+                           for(key, val) in props! {
+                                for p in self.cachedProperties!  {
+                                    print("cached prop id: \(p.id)")
+                                    if (p.id == key) {
+                                        recommendations.append(p)
+                                        print("adding recommended property: \(key)")
+                                    }
+                                }
+                           }
+                           fulfill(recommendations)
+                        case .failure(let error):
+                            reject(error)
+                    }
+                }
+        }
     }
-    
-    
+
     
 
     
@@ -117,6 +156,10 @@ public struct PropertyData {
                     }
             }
         }
+    }
+    
+    public func clear() {
+        cachedProperties = nil
     }
     
 }

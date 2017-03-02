@@ -29,6 +29,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,  WCSessionDelegate {
             //TicketOffice.sharedInstance.rateMovie(movieID,
             //                                      rating: rating)
         print("received user info")
+       // let p = Property(dictionary: userInfo)
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext:[String:Any]) {
