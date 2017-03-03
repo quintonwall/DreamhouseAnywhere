@@ -36,23 +36,6 @@ class NotificationService: UNNotificationServiceExtension {
                     self.contentHandler!(self.bestAttemptContent!)
                     }.resume()
             }
-            
-            /*
-             * Salesforce push doesnt currently support setting of the mutable-content aps flag, so this will never get called. Im adding it here for futurenessification
-             see: https://code.tutsplus.com/tutorials/ios-10-notification-service-extensions--cms-27550
-             
-            let rawbody = bestAttemptContent.body
-            //let delim = rawbody.characters.index(of: "|")
-            //let imageurlstring = rawbody.substring(from: rawbody.index(delim!, offsetBy: 1))
-            
-            //bestAttemptContent.body = rawbody.substring(to: delim!)+"xxxx"
-            
-            //var content : UNMutableNotificationContent?
-            //content = notification.request.content.mutableCopy() as! UNMutableNotificationContent
-            //content?.body = notification.request.content.body.substring(to: delim!)
-        */
-            
-           // contentHandler(bestAttemptContent)
         }
     }
     

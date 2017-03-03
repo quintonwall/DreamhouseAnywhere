@@ -29,10 +29,9 @@ enum QuickAction: String {
     }
 }
 
-let NotificationPropertyFavoritedOnPhone = "PropertyFavoritedOnPhone"
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNotificationCenterDelegate, WCSessionDelegate  {
+class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
     
@@ -55,11 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         salesforce.authManager.configuration = salesforceConfig
         
         //Use app groups for sharing data between the iMessage and main app
-        let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
-        
-        registerForRemoteNotification()
+        //let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
         setupWatchConnectivity()
-        setupNotificationCenter()
+        registerForRemoteNotification()
    
         return true
     }
@@ -132,10 +129,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         print("User Info = ",notification.request.content.userInfo)
         completionHandler([.alert, .badge, .sound])
     }
-    
-    //Called to let your app know which action was selected by the user for a given notification.
-    
-  
 
     
     @available(iOS 10.0, *)
@@ -146,58 +139,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
 
     }
     
-    //MARK: - Notification Center
-    private func setupNotificationCenter() {
-        notificationCenter.addObserver(forName: NSNotification.Name(rawValue: NotificationPropertyFavoritedOnPhone), object: nil, queue: nil) { (notification:Notification) -> Void in
-            //self.senFavoritePropertiesToWatch(notification)
-        }
-    }
-    
-    
-    //MARK: - WatchKit
-    
-    func setupWatchConnectivity() {
-     
-        if WCSession.isSupported() {
-            let session = WCSession.default()
-            session.delegate = self
-            session.activate()
-        }
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("WC Session did become inactive")
-    }
-
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("WC Session did deactivate")
-        WCSession.default().activate()
-    }
-   
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-         if let error = error {
-            print("WC Session activation failed with error: \(error.localizedDescription)")
-            return
-        }
-        print("WC Session activated with state: " + "\(activationState.rawValue)")
-    }
-    
-    
-    /*
-    func sendPropertiesToWatch(_ notification: Notification) {
-        if WCSession.isSupported() {
-            let session = WCSession.default()
-            if session.isWatchAppInstalled {
-                print("sending to watch")
-                do {
-                     try session.updateApplicationContext(["properties" : "test"])
-                } catch {
-                    print("ERROR: \(error)")
-                }
-            }
-        }
-    }
- */
     
     //MARK: -  app lifecycle
     
@@ -223,6 +164,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
+
+// MARK: - Watch Connectivity
+extension AppDelegate: WCSessionDelegate {
+    // 1
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("WC Session did become inactive")
+    }
+    
+    // 2
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("WC Session did deactivate")
+        WCSession.default().activate()
+    }
+    
+    // 3
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if let error = error {
+            print("WC Session activation failed with error: \(error.localizedDescription)")
+            return
+        }
+        print("WC Session activated with state: \(activationState.rawValue)")
+    }
+    
+    func setupWatchConnectivity() {
+ 
+        if WCSession.isSupported() {
+            let session = WCSession.default()
+            session.delegate = self
+            session.activate()
+        }
+    }
+    
+    // 1
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("received app context")
+        /*
+        // 2
+        if let movies = applicationContext["movies"] as? [String] {
+            // 3
+            TicketOffice.sharedInstance.purchaseTicketsForMovies(movies)
+            //4
+            DispatchQueue.main.async(execute: { 
+                let notificationCenter = NotificationCenter.default
+                notificationCenter.post(
+                    name: NSNotification.Name(rawValue: NotificaitonPurchasedMovieOnWatch), object: nil)
+            })
+        }
+         */
+    }
+    
+}
+
 

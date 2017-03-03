@@ -20,7 +20,6 @@
 		5A107CBB1E452DDB006C847A /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CBA1E452DDB006C847A /* Messages.framework */; };
 		5A107CBE1E452DDB006C847A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CBD1E452DDB006C847A /* MessagesViewController.swift */; };
 		5A107CC11E452DDB006C847A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CBF1E452DDB006C847A /* MainInterface.storyboard */; };
-		5A107CC31E452DDB006C847A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CC21E452DDB006C847A /* Assets.xcassets */; };
 		5A107CE51E453924006C847A /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CE41E453924006C847A /* PropertyTableViewCell.swift */; };
 		5A107CF31E454451006C847A /* DreamhouseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A107CF11E454451006C847A /* DreamhouseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A107CF61E454451006C847A /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
@@ -48,6 +47,10 @@
 		5A992AB11E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */; };
 		5AB0FBFC1E56453B00257350 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
 		5AC4F82A1E65E40A00C42E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107C8A1E452D8D006C847A /* Assets.xcassets */; };
+		5AC4F82E1E65E6CE00C42E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CAF1E452DDB006C847A /* Assets.xcassets */; };
+		5AC4F82F1E65E7EF00C42E05 /* DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A107CEF1E454451006C847A /* DreamhouseKit.framework */; };
+		5AC4F8301E65E97A00C42E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A107CC21E452DDB006C847A /* Assets.xcassets */; };
+		5AC4F8341E65F89F00C42E05 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A107CE01E452F96006C847A /* Property.swift */; };
 		5AD0AD9D1E4CEAE8003A00E5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */; };
 		5AD0AD9F1E4CEAE8003A00E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */; };
 		5AD0ADA01E4CEAE8003A00E5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */; };
@@ -225,6 +228,8 @@
 		5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendPropertiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		5AB0FBFE1E5645A400257350 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/DreamhouseAnywhere-gvffktlhklkbdfgbhlufnortzemb/Build/Products/Debug-iphonesimulator/PromiseKit/PromiseKit.framework"; sourceTree = "<group>"; };
+		5AC4F8361E68F16700C42E05 /* DreamhouseAnywhereWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DreamhouseAnywhereWatch.entitlements; sourceTree = "<group>"; };
+		5AC4F8371E68F17900C42E05 /* DreamhouseAnywhereWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DreamhouseAnywhereWatch Extension.entitlements"; sourceTree = "<group>"; };
 		5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -285,6 +290,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC4F82F1E65E7EF00C42E05 /* DreamhouseKit.framework in Frameworks */,
 				5A107CBB1E452DDB006C847A /* Messages.framework in Frameworks */,
 				CB08C367B86FEB42EDADEE75 /* Pods_DreamhouseAnywhere_MessagesExtension.framework in Frameworks */,
 			);
@@ -360,6 +366,7 @@
 		5A107C7E1E452D8D006C847A /* DreamhouseAnywhere */ = {
 			isa = PBXGroup;
 			children = (
+				5AC4F8321E65F66000C42E05 /* Extensions */,
 				5A10AC7C1E53861200782991 /* DreamhouseAnywhere.entitlements */,
 				5A6AD49F1E4A4FC600D5AA30 /* Walkthrough */,
 				5A6AD49E1E4A446B00D5AA30 /* Menu */,
@@ -459,18 +466,25 @@
 			name = Walkthrough;
 			sourceTree = "<group>";
 		};
+		5AC4F8321E65F66000C42E05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		5AD0AD971E4CEAD8003A00E5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5A10AC761E53803900782991 /* JSON.swift */,
-				5A10AC771E53803900782991 /* Date.swift */,
 				5AD0AD981E4CEAE8003A00E5 /* UIColor.swift */,
 				5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */,
 				5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */,
 				5AD0AD9C1E4CEAE8003A00E5 /* UIView.swift */,
+				5AE342021E5C9DE0009616E2 /* UNNotificationAttachment.swift */,
+				5A10AC761E53803900782991 /* JSON.swift */,
+				5A10AC771E53803900782991 /* Date.swift */,
 				5A10AC7E1E53A97B00782991 /* SalesforceObject.swift */,
 				5AD56BDB1E562FA0000B851C /* Double.swift */,
-				5AE342021E5C9DE0009616E2 /* UNNotificationAttachment.swift */,
 				5AE342041E5CA640009616E2 /* String.swift */,
 			);
 			name = Extensions;
@@ -488,6 +502,7 @@
 		5AE342181E5F4F59009616E2 /* DreamhouseAnywhereWatch */ = {
 			isa = PBXGroup;
 			children = (
+				5AC4F8361E68F16700C42E05 /* DreamhouseAnywhereWatch.entitlements */,
 				5AE342191E5F4F59009616E2 /* Interface.storyboard */,
 				5AE3421C1E5F4F59009616E2 /* Assets.xcassets */,
 				5AE3421E1E5F4F59009616E2 /* Info.plist */,
@@ -498,6 +513,7 @@
 		5AE342271E5F4F59009616E2 /* DreamhouseAnywhereWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5AC4F8371E68F17900C42E05 /* DreamhouseAnywhereWatch Extension.entitlements */,
 				5AE3422A1E5F4F59009616E2 /* InterfaceController.swift */,
 				5AE3422C1E5F4F59009616E2 /* ExtensionDelegate.swift */,
 				5AE3422E1E5F4F59009616E2 /* NotificationController.swift */,
@@ -762,11 +778,27 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4X564CR95Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 0;
+							};
+						};
 					};
 					5AE342221E5F4F59009616E2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4X564CR95Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -827,7 +859,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A107CC31E452DDB006C847A /* Assets.xcassets in Resources */,
+				5AC4F82E1E65E6CE00C42E05 /* Assets.xcassets in Resources */,
+				5AC4F8301E65E97A00C42E05 /* Assets.xcassets in Resources */,
 				5A107CC11E452DDB006C847A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1085,6 +1118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC4F8341E65F89F00C42E05 /* Property.swift in Sources */,
 				5AE3422F1E5F4F59009616E2 /* NotificationController.swift in Sources */,
 				5AE3422D1E5F4F59009616E2 /* ExtensionDelegate.swift in Sources */,
 				5AE342401E5F5BF1009616E2 /* PropertyTableRow.swift in Sources */,
@@ -1340,7 +1374,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9652542C030741F91821D6D6 /* Pods-DreamhouseAnywhere-MessagesExtension.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
@@ -1357,7 +1391,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBA9F24A987B87F4100C9EFD /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = MessagesExtension/MessagesExtension.entitlements;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
@@ -1403,7 +1437,7 @@
 			baseConfigurationReference = A34987584F42DF89D77D0DF4 /* Pods-DreamhouseAnywhere-DreamhouseKit.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1431,7 +1465,7 @@
 			baseConfigurationReference = 34B5F937FF70072E97D77866 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1483,6 +1517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DreamhouseAnywhereWatch Extension/DreamhouseAnywhereWatch Extension.entitlements";
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = "DreamhouseAnywhereWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1500,6 +1535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DreamhouseAnywhereWatch Extension/DreamhouseAnywhereWatch Extension.entitlements";
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = "DreamhouseAnywhereWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1518,6 +1554,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DreamhouseAnywhereWatch/DreamhouseAnywhereWatch.entitlements;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				IBSC_MODULE = DreamhouseAnywhereWatch_Extension;
 				INFOPLIST_FILE = DreamhouseAnywhereWatch/Info.plist;
@@ -1536,6 +1573,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DreamhouseAnywhereWatch/DreamhouseAnywhereWatch.entitlements;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				IBSC_MODULE = DreamhouseAnywhereWatch_Extension;
 				INFOPLIST_FILE = DreamhouseAnywhereWatch/Info.plist;

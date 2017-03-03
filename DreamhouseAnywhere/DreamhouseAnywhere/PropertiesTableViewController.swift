@@ -15,6 +15,7 @@ import WatchConnectivity
 
 
 
+
 class PropertiesTableViewController: UITableViewController, MenuTransitionManagerDelegate {
     
     let menuTransitionManger = MenuTransitionManager()
@@ -22,16 +23,11 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
   
     var selectedProperty : Property!
     
-    lazy var notificationCenter: NotificationCenter = {
-        return NotificationCenter.default
-    }()
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        
-
         
         //cant use selectedRowAtIndex because it messes up the double tap in our cell
         let doubletaps = UITapGestureRecognizer(target: self, action: #selector(doubleTapDetected))
@@ -47,6 +43,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         
         if(UserDefaults.standard.bool(forKey: "hasViewedWalkthrough")) {
             fetchProperties()
+            sendPropertiesToWatch()
             return
         }
 
@@ -82,13 +79,24 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
                 (results) -> () in
                 self.properties = results
                 self.tableView.reloadData()
-                self.sendPropertiesToWatch(properties: self.properties)
         }.catch {
          (error) -> () in
             print("error: \(error)")  //todo: handle this better
         }
         
         
+    }
+    func sendPropertiesToWatch() {
+        let session = WCSession.default()
+        if session.isWatchAppInstalled {
+            do {
+                let dictionary = ["movies": "hello2"]
+                print("sending to watch")
+                try session.updateApplicationContext(dictionary)
+            } catch {
+                print("ERROR: \(error)")
+            }
+        }
     }
     
     
@@ -127,15 +135,8 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     func doubleTapDetected(sender: UITapGestureRecognizer) {
         let cell = getCellFromTap(sender: sender)
         cell.doubleTappedForFavorite()
-        sendFavoriteToWatch(property: cell.property)
-        
-        /*
-        DispatchQueue.main.async { () -> Void in
-            let notificationCenter = NotificationCenter.default
-            notificationCenter.post(name: Notification.Name(rawValue: NotificationPropertyFavoritedOnPhone), object: cell.property)
-        }
- */
-    }
+        //sendFavoriteToWatch(property: cell.property)
+     }
     
     private func getCellFromTap(sender: UITapGestureRecognizer) -> PropertiesTableViewCell {
         let position: CGPoint =  sender.location(in: self.tableView)
@@ -166,35 +167,8 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
 
 // MARK: - Watch Connectivity
 extension PropertiesTableViewController {
+   
     
-    func sendPropertiesToWatch(properties : [Property] ) {
-        if WCSession.isSupported() {
-            let session = WCSession.default()
-            if session.isWatchAppInstalled {
-                
-                //let userInfo = ["favorite-id":property.id, "property":pr]
-                
-                var allProperties = Dictionary<String, Any>()
-                for prop in properties {
-                    allProperties[prop.id] = prop.asDictionary!
-                }
-                session.transferUserInfo(allProperties)
-            }
-            
-        }
-    }
-    
-    func sendFavoriteToWatch(property : Property){
-        if WCSession.isSupported() {
-            let session = WCSession.default()
-            if session.isWatchAppInstalled {
-              
-                //let userInfo = ["favorite-id":property.id, "property":pr]
-                session.transferUserInfo(property.asDictionary!)
-            }
-    
-        }
-    }
 }
 
 
