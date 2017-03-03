@@ -55,6 +55,7 @@
 		5AD0AD9F1E4CEAE8003A00E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */; };
 		5AD0ADA01E4CEAE8003A00E5 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */; };
 		5AD0ADA11E4CEAE8003A00E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9C1E4CEAE8003A00E5 /* UIView.swift */; };
+		5AD51D191E6A2CEF003AD9C2 /* WKInterfaceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD51D181E6A2CEF003AD9C2 /* WKInterfaceImage.swift */; };
 		5AD56BDC1E562FA0000B851C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD56BDB1E562FA0000B851C /* Double.swift */; };
 		5AE342031E5C9DE0009616E2 /* UNNotificationAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE342021E5C9DE0009616E2 /* UNNotificationAttachment.swift */; };
 		5AE342051E5CA640009616E2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE342041E5CA640009616E2 /* String.swift */; };
@@ -234,6 +235,7 @@
 		5AD0AD9A1E4CEAE8003A00E5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		5AD0AD9B1E4CEAE8003A00E5 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		5AD0AD9C1E4CEAE8003A00E5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5AD51D181E6A2CEF003AD9C2 /* WKInterfaceImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceImage.swift; sourceTree = "<group>"; };
 		5AD56BDB1E562FA0000B851C /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		5AD56BDD1E563F32000B851C /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftlySalesforce.framework; path = "../../../Library/Developer/Xcode/DerivedData/DreamhouseAnywhere-gvffktlhklkbdfgbhlufnortzemb/Build/Products/Debug-iphoneos/SwiftlySalesforce/SwiftlySalesforce.framework"; sourceTree = "<group>"; };
 		5AE342021E5C9DE0009616E2 /* UNNotificationAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNNotificationAttachment.swift; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 				5AE342321E5F4F59009616E2 /* Info.plist */,
 				5AE342281E5F4F59009616E2 /* Supporting Files */,
 				5AE3423F1E5F5BF1009616E2 /* PropertyTableRow.swift */,
+				5AD51D181E6A2CEF003AD9C2 /* WKInterfaceImage.swift */,
 			);
 			path = "DreamhouseAnywhereWatch Extension";
 			sourceTree = "<group>";
@@ -1119,6 +1122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AC4F8341E65F89F00C42E05 /* Property.swift in Sources */,
+				5AD51D191E6A2CEF003AD9C2 /* WKInterfaceImage.swift in Sources */,
 				5AE3422F1E5F4F59009616E2 /* NotificationController.swift in Sources */,
 				5AE3422D1E5F4F59009616E2 /* ExtensionDelegate.swift in Sources */,
 				5AE342401E5F5BF1009616E2 /* PropertyTableRow.swift in Sources */,

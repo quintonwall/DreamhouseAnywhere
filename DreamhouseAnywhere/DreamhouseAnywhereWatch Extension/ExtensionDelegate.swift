@@ -70,7 +70,22 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext:[String:Any]) {
-        print("finally received \(applicationContext)")
+     
+        //TODO: I can probably clean this up...its kinda inefficient, but watchkit is kind of annoying at times, with
+        //its ability to only pass primivate types.
+        var context  = [[String:String]]()
+        
+        for(key, value) in applicationContext {
+            
+            context.append(value as! [String : String])
+        }
+        print("About to use context of \(context.count) properties")
+        
+        UserDefaults.standard.set(context, forKey: "properties-list")
+        DispatchQueue.main.async(execute: {
+            WKInterfaceController.reloadRootControllers(
+                withNames: ["PropertiesList"], contexts: ["properties-list"] )
+        })
     }
     
     

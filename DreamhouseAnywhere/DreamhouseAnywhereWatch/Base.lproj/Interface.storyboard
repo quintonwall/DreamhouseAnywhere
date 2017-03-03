@@ -12,11 +12,11 @@
         <!--Properties-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="PropertyList" title="Properties" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DreamhouseAnywhereWatch" customModuleProvider="target">
+                <controller identifier="PropertiesList" title="Properties" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DreamhouseAnywhereWatch" customModuleProvider="target">
                     <items>
                         <table alignment="left" id="nVZ-vP-WPe">
                             <items>
-                                <tableRow identifier="cell" id="7T8-Y8-ezR" customClass="PropertyTableRow" customModule="DreamhouseAnywhereWatch_Extension">
+                                <tableRow identifier="PropertyRowType" id="7T8-Y8-ezR" customClass="PropertyTableRow" customModule="DreamhouseAnywhereWatch_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="VWZ-lY-QWN" userLabel="group">
                                         <items>
                                             <imageView width="1" height="80" alignment="left" id="cDo-Sm-y6h"/>

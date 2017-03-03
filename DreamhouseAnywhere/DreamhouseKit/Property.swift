@@ -9,6 +9,7 @@
 import Foundation
 
 
+
 //static let soqlGetAllProperties =  City__c, Description__c, Id, Location__c, Name, OwnerId, Picture__c, Price__c, State__c, Thumbnail__c, Title__c, Zip__c, (select id, Property__c from Favorites__r) from Property__c")
 
 
@@ -107,6 +108,28 @@ public struct Property {
                     continue
             }
         }
+    }
+    
+    /**
+     * WatchOS can only handle simple structure. let's cast down and only send what we need
+     */
+    public func getPropertyForWatchTransfer() -> [String : String] {
+        var payload = [String : String]()
+        payload["id"] = self.id
+        payload["price"] = currencyString(d: self.price)
+        payload["photo"] = self.propertyImageURLString
+        
+        return payload
+    }
+    
+    func currencyString(d : Double) -> String{
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 0;
+        formatter.locale = Locale(identifier: Locale.current.identifier)
+        let result = formatter.string(from: NSNumber(value: d))
+        return result!
     }
 }
 

@@ -43,7 +43,6 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         
         if(UserDefaults.standard.bool(forKey: "hasViewedWalkthrough")) {
             fetchProperties()
-            sendPropertiesToWatch()
             return
         }
 
@@ -78,6 +77,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         }.then {
                 (results) -> () in
                 self.properties = results
+                self.sendPropertiesToWatch()
                 self.tableView.reloadData()
         }.catch {
          (error) -> () in
@@ -90,9 +90,21 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         let session = WCSession.default()
         if session.isWatchAppInstalled {
             do {
-                let dictionary = ["movies": "hello2"]
-                print("sending to watch")
-                try session.updateApplicationContext(dictionary)
+                var payload = [String : Any]()
+
+                print("sending \(properties.count) records to watch")
+                
+                //TODO: I can probably clean this up...its kinda inefficient, but watchkit is kind of annoying at times, 
+                //with its ability to only pass primivate types and some funcs taking [String:Any], but then the
+                //next leg in the lifecycle it only takes [Any]... oh well, it's friday. take a chill pill
+                for p: Property in properties {
+                    payload[p.id] = p.getPropertyForWatchTransfer()
+                }
+                //note: if payloads stop getting received by watch, it is because watchconnectivity has
+                // the 'smarts' to not resend the same payload that has been successfully processed. It makes sense,
+                // but is a pain during dev. To reset just send a dummy payload like ["hello" : "quinton"]
+                //and it will start working again.. 
+                try session.updateApplicationContext(payload)
             } catch {
                 print("ERROR: \(error)")
             }
