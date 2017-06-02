@@ -57,6 +57,7 @@
 		5AD0ADA11E4CEAE8003A00E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0AD9C1E4CEAE8003A00E5 /* UIView.swift */; };
 		5AD51D191E6A2CEF003AD9C2 /* WKInterfaceImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD51D181E6A2CEF003AD9C2 /* WKInterfaceImage.swift */; };
 		5AD56BDC1E562FA0000B851C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD56BDB1E562FA0000B851C /* Double.swift */; };
+		5AE19BAC1EE1AEE200ACEA70 /* MapBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE19BAB1EE1AEE200ACEA70 /* MapBoxViewController.swift */; };
 		5AE342031E5C9DE0009616E2 /* UNNotificationAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE342021E5C9DE0009616E2 /* UNNotificationAttachment.swift */; };
 		5AE342051E5CA640009616E2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE342041E5CA640009616E2 /* String.swift */; };
 		5AE3420D1E5CB4FC009616E2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3420C1E5CB4FC009616E2 /* NotificationService.swift */; };
@@ -238,6 +239,7 @@
 		5AD51D181E6A2CEF003AD9C2 /* WKInterfaceImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKInterfaceImage.swift; sourceTree = "<group>"; };
 		5AD56BDB1E562FA0000B851C /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		5AD56BDD1E563F32000B851C /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftlySalesforce.framework; path = "../../../Library/Developer/Xcode/DerivedData/DreamhouseAnywhere-gvffktlhklkbdfgbhlufnortzemb/Build/Products/Debug-iphoneos/SwiftlySalesforce/SwiftlySalesforce.framework"; sourceTree = "<group>"; };
+		5AE19BAB1EE1AEE200ACEA70 /* MapBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapBoxViewController.swift; sourceTree = "<group>"; };
 		5AE342021E5C9DE0009616E2 /* UNNotificationAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNNotificationAttachment.swift; sourceTree = "<group>"; };
 		5AE342041E5CA640009616E2 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		5AE3420A1E5CB4FC009616E2 /* DreamhouseNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DreamhouseNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,6 +270,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		13AA57903EFC310AE2E190F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A107C791E452D8D006C847A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +391,7 @@
 				5A6002911E579E8F00892D2E /* PropertyDetailsViewController.swift */,
 				5A6002931E57B44B00892D2E /* Globals.swift */,
 				5A992AB01E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift */,
+				5AE19BAB1EE1AEE200ACEA70 /* MapBoxViewController.swift */,
 			);
 			path = DreamhouseAnywhere;
 			sourceTree = "<group>";
@@ -692,6 +702,7 @@
 			buildPhases = (
 				5AE342151E5F4F59009616E2 /* Resources */,
 				5AE342391E5F4F59009616E2 /* Embed App Extensions */,
+				13AA57903EFC310AE2E190F9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1066,6 +1077,7 @@
 				5A6AD4A11E4A4FE500D5AA30 /* WalkthroughContentViewController.swift in Sources */,
 				5A107C801E452D8D006C847A /* AppDelegate.swift in Sources */,
 				5A6AD49B1E4A38DC00D5AA30 /* MenuTableViewController.swift in Sources */,
+				5AE19BAC1EE1AEE200ACEA70 /* MapBoxViewController.swift in Sources */,
 				5A6AD49A1E4A38DC00D5AA30 /* MenuTableViewCell.swift in Sources */,
 				5A6002941E57B44B00892D2E /* Globals.swift in Sources */,
 				5A992AB11E6487AC00E80636 /* RecommendPropertiesCollectionViewCell.swift in Sources */,
