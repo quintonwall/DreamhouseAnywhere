@@ -1322,6 +1322,7 @@
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1339,6 +1340,7 @@
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative;
 				PRODUCT_NAME = "$(TARGET_NAME)";

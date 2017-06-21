@@ -170,6 +170,9 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         if segue.identifier == "propertydetails" {
             let detailsController = segue.destination as! PropertyDetailsViewController
             detailsController.property = selectedProperty
+        } else if segue.identifier == "mapview" {
+            let mapController = segue.destination as! MapBoxViewController
+            mapController.properties = properties
         }
         
     }
