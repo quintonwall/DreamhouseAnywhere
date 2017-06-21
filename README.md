@@ -7,7 +7,7 @@ An iOS 10 and Swift 3 update to the <a href="https://github.com/quintonwall/drea
 <img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/iMessages.png?raw=true" width=270/> 
 <img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/AppleWatch.png?raw=true" width=270/> 
 
-##Supported Features
+## Supported Features
 
 ### Rich Media Push Notifications
 
@@ -40,7 +40,7 @@ func plotPropertyLocations() {
     }
 
 ```
-rc="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/mapview.png?raw=true" width=270/>
+<img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/mapview.png?raw=true" width=270/>
 
 
 
