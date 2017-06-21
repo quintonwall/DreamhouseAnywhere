@@ -26,6 +26,22 @@ An iOS 10 and Swift 3 update to the <a href="https://github.com/quintonwall/drea
 ### Property Recommendations from PredictionIO
 
 ### Geo-location address fields
+Properties use the Saleforce geo-location fields, and mapped to a strongly typed property struct in Swift. By mapping to a struct, it makes it super easy for the creation of beautiful geo-based apps. DreamhouseAnywhere uses MapBox to plot property locations on a map using a simple for loop
+```swift
+func plotPropertyLocations() {
+        for p in properties {
+            let point = MGLPointAnnotation()
+            point.coordinate = CLLocationCoordinate2D(latitude: p.latitude, longitude: p.longitude)
+            point.title = p.title
+            point.subtitle = p.description
+            
+            mapView.addAnnotation(point)
+        }
+    }
+
+```
+rc="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/mapview.png?raw=true" width=270/>
+
 
 
 
