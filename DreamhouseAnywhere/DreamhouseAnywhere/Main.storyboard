@@ -301,7 +301,8 @@
                                 <segue destination="sdy-jk-Qms" kind="presentation" id="DHw-dS-ZSQ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Map" id="ZES-n2-3iT">
+                        <barButtonItem key="rightBarButtonItem" image="menuMap" id="ZES-n2-3iT">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="o4O-uf-z5n" kind="show" identifier="mapview" id="u71-aJ-yVD"/>
                             </connections>
@@ -666,7 +667,7 @@
                             <userDefinedRuntimeAttribute type="number" keyPath="longitude">
                                 <real key="value" value="-71.057083000000006"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/satellite-streets-v9"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/traffic-day-v2"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems/>
@@ -708,6 +709,7 @@
         <image name="livechat" width="30" height="20"/>
         <image name="malibu" width="800" height="618"/>
         <image name="menu" width="22" height="22"/>
+        <image name="menuMap" width="22" height="20"/>
         <image name="qfur" width="500" height="500"/>
         <image name="tub-black" width="48" height="50"/>
     </resources>
