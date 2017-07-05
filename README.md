@@ -33,7 +33,7 @@ The app uses the Service Cloud SOS SnapIns to enable real-time video and screens
 * Configure you mobile app using the variables above and following [the instructions for iOS or Android] (https://resources.docs.salesforce.com/servicesdk/1/0/en-us/pdf/service_sdk_ios.pdf)
 
 ### Social Sign On
-Social sign on in the DreamhouseAnywhere mobile app relies on Salesforce communities login. The following sets are required to configure the backend Salesforce org. Unfortunately it is a little tricky, especially if it is the first time you have to do it. 
+Social sign on in the DreamhouseAnywhere mobile app relies on Salesforce communities login. The following sets are required to configure the backend Salesforce org. Unfortunately it is a little tricky, especially if it is the first time you have to do it.
 
 #### 1. Create API Enabled Profile or Permission Set
 (I prefer the profile as then I know I can use it in my social auth handler in step 2)
@@ -54,14 +54,13 @@ Social sign on in the DreamhouseAnywhere mobile app relies on Salesforce communi
 * save
 
 #### 4. Setup social login.
-* follow the steps [here.] (https://developer.salesforce.com/page/Login_with_Twitter)
+* follow the steps [here.](https://developer.salesforce.com/page/Login_with_Twitter)
 * once you get to creating your own handler, paste in the sample handler from the docs above, but then change to use your new profiles and accounts created.
 
 
 #### 5. Set up communities in your org
 
- * Make sure you check the ability to use your [Twitter Auth Provider]
-(https://developer.salesforce.com/docs/atlas.en-us.noversion.mobile_sdk.meta/mobile_sdk/communities_tutorial.htm)
+ * Make sure you check the ability to use your [Twitter Auth Provider](https://developer.salesforce.com/docs/atlas.en-us.noversion.mobile_sdk.meta/mobile_sdk/communities_tutorial.htm)
 * create community name something like COMMUNITY-URL/dreamhousecustomers. eg: dreamhousenative-developer-edition.na30.force.com/dreamhousecustomers  (copy this url as you will need it soon)
 * add the profile you created in step 1 to the allowed profiles of the community.
 * customize your community login with a nice icon etc. (you have to check "show all settings" for the branding menu to show up)
