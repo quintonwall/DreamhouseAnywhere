@@ -4,16 +4,18 @@ An iOS 10 and Swift 3 update to the <a href="https://github.com/quintonwall/drea
 <img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/Menu.png?raw=true" width=270/>
 <img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/Property%20Details.png?raw=true" width=270/>
 <img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/Property%20List.png?raw=true" width=270/>
-<img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/iMessages.png?raw=true" width=270/>
-<img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/AppleWatch.png?raw=true" width=270/>
+
+
 
 ## Supported Features
 
 ### Rich Media Push Notifications
 
 ### Apple Watch
+<img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/AppleWatch.png?raw=true" width=270/>
 
 ### iMessages
+<img src="https://github.com/quintonwall/DreamhouseAnywhere/blob/master/graphics/screenshots/iMessages.png?raw=true" width=270/>
 
 ### Real-time Video & Screen sharing
 The app uses the Service Cloud SOS SnapIns to enable real-time video and screensharing. To use this feature, you need to perform the following config steps. Note: SOS SnapIns may require an additional license from Salesforce.
