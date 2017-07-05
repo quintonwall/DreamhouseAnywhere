@@ -30,7 +30,7 @@ The app uses the Service Cloud SOS SnapIns to enable real-time video and screens
  - DeployementID :000000xxxx
  - SOS Access URL: https://x.xx.com/sosagentxxx/
 
-* Configure you mobile app using the variables above and following [the instructions for iOS or Android] (https://resources.docs.salesforce.com/servicesdk/1/0/en-us/pdf/service_sdk_ios.pdf)
+* Configure you mobile app using the variables above and following [the instructions for iOS or Android](https://resources.docs.salesforce.com/servicesdk/1/0/en-us/pdf/service_sdk_ios.pdf)
 
 ### Social Sign On
 Social sign on in the DreamhouseAnywhere mobile app relies on Salesforce communities login. The following sets are required to configure the backend Salesforce org. Unfortunately it is a little tricky, especially if it is the first time you have to do it.
