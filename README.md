@@ -113,6 +113,31 @@ func plotPropertyLocations() {
 
 
 # Building the App
-## Cocoapods & Xcode 8
-Xcode 8 seems to like checking the "App Extensions" checkbox in the general tab of your targets. This will cause issues with 'shared' variable instances. Simply uncheck "Allow app extension API only" in Targets that called from UIKit
+
+## Cocoapods & Xcode 8+
+The app uses cocoapods for dependencies. Xcode 8+ seems to like checking the "App Extensions" checkbox in the general tab of your targets. This will cause issues with 'shared' variable instances. Simply uncheck "Allow app extension API only" in Targets that called from UIKit.
+
 You will have to do this each time you run Pod install :(
+
+## Configure your App ID
+If you are deploying to a device, you will need to create an app-id in your Apple Developer Portal, and enable push notifications. Instructions can be found [here](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html).
+
+Once you have you unique app-id, change the Bundle Identifiers in each of the project targets in Xcode, and ensure that your signing team is set to your apple developer account. You may have to click "Fix Issue" to have Xcode automatically sign your project.
+
+Finally in each target, click the Capabilities tab, scroll down and make sure you select your bundle-id app group. It is currently set to group.com.quintonwall.dreamhouseanywhere. App Groups are used to share data between the watch and the phone.
+
+## Configure Apple Sandbox Push Notification Certificate
+Once you have your app-id and bundle settings configured, follow these steps:
+1. add push capabilities via your project target in xcode and check "remote notifications and background fetch"
+Inside Apple's Developer Portal:
+2. Add Push Notification as a Application Service.
+3. When prompted, follow the cert request process. Eventually you'll get a file like aps_development.cer. Save that somewhere safe.
+4.Double-click your aps_development.cer to add it your local keychain
+5. Once its added, find it under "Certificates" making sure you are using the cert that matches your bundle identifier.
+6. Right click the cert and choose "Export". Follow the prompts and add a password. This process creates a .p12 cert. This is the format that Salesforce Connected apps require.
+
+## Configure Salesforce Push Notifications
+Inside Salesforce setup:
+1. Create your connected app and check "Push Messaging Enabled", set platform to "Apple", and choose either Sandbox or Production
+2. Choose the .p12 file you just created and add the certificate password. Save. You're done!
+3. Deploy your app on your phone and click the "send test notification" link next to the "supported Push Platform" to test. (You can use something like [Easy APN Tester](https://itunes.apple.com/us/app/easy-apns-provider-push-notification-service-testing-tool/id989622350?mt=12) to help with testing push in your app too.)
