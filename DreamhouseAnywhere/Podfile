@@ -4,7 +4,7 @@ use_frameworks!
 
 def shared_pods
   pod 'SwiftyJSON'
-  pod 'SwiftlySalesforce'
+  pod 'SwiftlySalesforce', '3.3.1'
 	pod 'SDWebImage'
 end
 
