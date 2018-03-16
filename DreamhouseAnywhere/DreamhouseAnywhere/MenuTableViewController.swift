@@ -72,7 +72,7 @@ class MenuTableViewController: UITableViewController {
     private func logout() {
     // Call this when your app's "Log Out" button is tapped, for example
         if let app = UIApplication.shared.delegate as? LoginDelegate {
-            app.logout().then {
+            app.logout(from: salesforce.connectedApp).then {
                 () -> () in
                 // Clear any cached data and reset the UI
                 PropertyData.shared.clear()

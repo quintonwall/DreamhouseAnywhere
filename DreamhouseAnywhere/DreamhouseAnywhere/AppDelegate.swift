@@ -12,6 +12,11 @@ import SalesforceKit
 import UserNotifications
 import DreamhouseKit
 import WatchConnectivity
+import Simplytics
+
+
+public var salesforce: Salesforce!
+public var simplytics: Simplytics!
 
 
 
@@ -34,6 +39,7 @@ enum QuickAction: String {
 class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
+    var appeventid : String = ""
     
     lazy var notificationCenter: NotificationCenter = {
         return NotificationCenter.default
@@ -49,9 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        salesforce = configureSalesforce(consumerKey: consumerKey, callbackURL: redirectURL!, loginHost: communityLoginHost)
+        simplytics = Simplytics()
+        simplytics.logApp(Bundle.main.bundleIdentifier!)
+        appeventid = simplytics.logEvent("App Active")
+       
         
-       let salesforceConfig : AuthManager.Configuration = AuthManager.Configuration(consumerKey: consumerKey, redirectURL: redirectURL!, loginHost: communityLoginHost, loginDelegate: self)
-        salesforce.authManager.configuration = salesforceConfig
         
         //Use app groups for sharing data between the iMessage and main app
         //let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")
@@ -86,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
             
             
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        handleRedirectURL(url: url)
+        handleCallbackURL(url, for: salesforce.connectedApp)
         return true
     }
     
@@ -143,8 +152,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoginDelegate, UNUserNoti
     //MARK: -  app lifecycle
     
     func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        simplytics.endEvent(appeventid)
+        simplytics.writeToSalesforce(salesforce)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {

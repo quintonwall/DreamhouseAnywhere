@@ -49,9 +49,9 @@ public class Globals {
      */
     static func registerForSalesforceNotifications(devicetoken: String, instanceUrl: String) {
         
-        if(salesforce.authManager.authData != nil) {
+        if(salesforce.connectedApp.accessToken != nil) {
             let theurl = URL(string: "\(instanceUrl)/services/data/v36.0/sobjects/MobilePushServiceDevice")
-            let headers = ["Authorization" : "Bearer \(salesforce.authManager.authData!.accessToken)", "Content-Type" : "application/json"]
+            let headers = ["Authorization" : "Bearer \(salesforce.connectedApp.accessToken)", "Content-Type" : "application/json"]
             let params = ["ConnectionToken" : devicetoken, "ServiceType" : "Apple" ]
             
             Alamofire.request(theurl!, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseString { response in

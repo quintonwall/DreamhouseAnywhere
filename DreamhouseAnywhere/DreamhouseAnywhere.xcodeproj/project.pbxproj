@@ -74,6 +74,7 @@
 		5AE342401E5F5BF1009616E2 /* PropertyTableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE3423F1E5F5BF1009616E2 /* PropertyTableRow.swift */; };
 		8420DED3BABDA06F999DEC6C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58BA7926BDC7D346E4DC90 /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */; };
 		CB08C367B86FEB42EDADEE75 /* Pods_DreamhouseAnywhere_MessagesExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */; };
+		E7492C1E205B383300E3427C /* SwiftlySalesforce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7492C1F205B383300E3427C /* SwiftlySalesforce.framework */; };
 		F253AE92EBDAE5000561B98D /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,7 @@
 /* Begin PBXFileReference section */
 		16CC69CCD2742401EA759180 /* Pods-DreamhouseAnywhere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.debug.xcconfig"; sourceTree = "<group>"; };
 		16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFEF146FCB3DF1AC0DEF126 /* Pods_DreamhouseAnywhere_DreamhouseAnywhereWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseAnywhere_DreamhouseAnywhereWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B5F937FF70072E97D77866 /* Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseKit/Pods-DreamhouseAnywhere-DreamhouseKit.release.xcconfig"; sourceTree = "<group>"; };
 		5A107C7C1E452D8D006C847A /* DreamhouseAnywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamhouseAnywhere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A107C7F1E452D8D006C847A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		B5A544C227661B49424938D4 /* Pods_DreamhouseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamhouseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF32C951F3F112A71D1ABD8 /* Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages.debug.xcconfig"; sourceTree = "<group>"; };
 		E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere.release.xcconfig"; sourceTree = "<group>"; };
+		E7492C1F205B383300E3427C /* SwiftlySalesforce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftlySalesforce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA9F24A987B87F4100C9EFD /* Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-DreamhouseAnywhere-MessagesExtension/Pods-DreamhouseAnywhere-MessagesExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -313,6 +316,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7492C1E205B383300E3427C /* SwiftlySalesforce.framework in Frameworks */,
 				8420DED3BABDA06F999DEC6C /* Pods_DreamhouseAnywhere_DreamhouseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +406,7 @@
 		5A107C9A1E452DB1006C847A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7492C1F205B383300E3427C /* SwiftlySalesforce.framework */,
 				5A84BC2F1E5B887300BD6809 /* UserNotifications.framework */,
 				5AB0FBFE1E5645A400257350 /* PromiseKit.framework */,
 				5AD56BDD1E563F32000B851C /* SwiftlySalesforce.framework */,
@@ -414,6 +419,7 @@
 				8B58BA7926BDC7D346E4DC90 /* Pods_DreamhouseAnywhere_DreamhouseKit.framework */,
 				16D800CCEDD0FB0D31F3A070 /* Pods_DreamhouseAnywhere_DreamhouseMessages.framework */,
 				5D91FD9E93625F06B418C894 /* Pods_DreamhouseAnywhere_MessagesExtension.framework */,
+				2EFEF146FCB3DF1AC0DEF126 /* Pods_DreamhouseAnywhere_DreamhouseAnywhereWatch_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -937,9 +943,38 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere-DreamhouseMessages/Pods-DreamhouseAnywhere-DreamhouseMessages-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/ServiceSDK/Frameworks/ServiceSOS.framework",
+				"${PODS_ROOT}/ServiceSDK/Frameworks/ServiceCore.framework",
+				"${PODS_ROOT}/ServiceSDK/Frameworks/SalesforceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Simplytics/Simplytics.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftlySalesforce/SwiftlySalesforce.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ServiceSOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ServiceCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesforceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Simplytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftlySalesforce.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -952,13 +987,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamhouseAnywhere-DreamhouseMessages-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		434A0A8680BE48EACA28ABD0 /* [CP] Copy Pods Resources */ = {
@@ -997,9 +1035,38 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DreamhouseAnywhere/Pods-DreamhouseAnywhere-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/ServiceSDK/Frameworks/ServiceSOS.framework",
+				"${PODS_ROOT}/ServiceSDK/Frameworks/ServiceCore.framework",
+				"${PODS_ROOT}/ServiceSDK/Frameworks/SalesforceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Simplytics/Simplytics.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftlySalesforce/SwiftlySalesforce.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ServiceSOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ServiceCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SalesforceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Simplytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftlySalesforce.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1012,13 +1079,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamhouseAnywhere-DreamhouseKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B0D879D24196EE4095122647 /* [CP] Check Pods Manifest.lock */ = {
@@ -1027,13 +1097,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamhouseAnywhere-MessagesExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B1FF08F7E103216806DBEDE8 /* [CP] Check Pods Manifest.lock */ = {
@@ -1042,13 +1115,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamhouseAnywhere-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF7ED5AB8798B9521E64C971 /* [CP] Copy Pods Resources */ = {
@@ -1321,15 +1397,18 @@
 			baseConfigurationReference = 16CC69CCD2742401EA759180 /* Pods-DreamhouseAnywhere.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2018;
 				CODE_SIGN_ENTITLEMENTS = DreamhouseAnywhere/DreamhouseAnywhere.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1339,15 +1418,18 @@
 			baseConfigurationReference = E64BD1FB99F2CD0E93CEFBE4 /* Pods-DreamhouseAnywhere.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2018;
 				CODE_SIGN_ENTITLEMENTS = DreamhouseAnywhere/DreamhouseAnywhere.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DreamhouseAnywhere/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1432,10 +1514,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseMessages/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.DreamhouseMessages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1446,10 +1531,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = DreamhouseMessages/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.DreamhouseMessages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1470,6 +1558,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DreamhouseKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.DreamhouseKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1498,6 +1587,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DreamhouseKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.DreamhouseKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1540,11 +1630,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "DreamhouseAnywhereWatch Extension/DreamhouseAnywhereWatch Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = "DreamhouseAnywhereWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1558,11 +1651,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "DreamhouseAnywhereWatch Extension/DreamhouseAnywhereWatch Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				INFOPLIST_FILE = "DreamhouseAnywhereWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gyspycode.dreamhousenative.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1575,7 +1671,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2018;
 				CODE_SIGN_ENTITLEMENTS = DreamhouseAnywhereWatch/DreamhouseAnywhereWatch.entitlements;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				IBSC_MODULE = DreamhouseAnywhereWatch_Extension;
@@ -1594,7 +1690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon2018;
 				CODE_SIGN_ENTITLEMENTS = DreamhouseAnywhereWatch/DreamhouseAnywhereWatch.entitlements;
 				DEVELOPMENT_TEAM = 4X564CR95Y;
 				IBSC_MODULE = DreamhouseAnywhereWatch_Extension;

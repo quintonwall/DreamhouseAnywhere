@@ -72,7 +72,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     func fetchProperties() {
         first {
-            PropertyData.shared.getAllProperties()
+            PropertyData.shared.getAllProperties(salesforce: salesforce, simplytics: simplytics)
             
         }.then {
                 (results) -> () in
@@ -141,6 +141,8 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     func singleTapDetected(sender : UITapGestureRecognizer) {
         let cell = getCellFromTap(sender: sender)
         selectedProperty = cell.property
+        simplytics.logEvent("Property selected", funnel: "View Property", withProperties: ["Property Id": cell.property.id, "From Screen" : "Properties Table View]"])
+        simplytics.writeToSalesforce(salesforce)
         performSegue(withIdentifier: "propertydetails", sender: self)
     }
     

@@ -10,11 +10,73 @@ import Foundation
 
 
 
+
 //static let soqlGetAllProperties =  City__c, Description__c, Id, Location__c, Name, OwnerId, Picture__c, Price__c, State__c, Thumbnail__c, Title__c, Zip__c, (select id, Property__c from Favorites__r) from Property__c")
 
+public struct Broker: Decodable {
+    
+    public var id: String = ""
+    public var brokerName: String = ""
+    public var brokerTitle: String = ""
+    public var brokerImageURL: String = ""
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "Id"
+        case brokerName = "Name"
+        case brokerTitle = "Title__c"
+        case brokerImageURL = "Picture__c"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(String.self, forKey: .id)
+        brokerName = try values.decode(String.self, forKey: .brokerName)
+        brokerTitle = try values.decode(String.self, forKey: .brokerTitle)
+        brokerImageURL = try values.decode(String.self, forKey: .brokerImageURL)
+        
+    }
+    
+}
+
+public struct PropertyLocation: Decodable {
+    
+    public var longitude: Double = 0
+    public var latitude: Double = 0
+    
+    enum CodingKeys: String, CodingKey {
+        case longitude = "longitude"
+        case latitude = "latitude"
+       
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        longitude = try values.decode(Double.self, forKey: .longitude)
+        latitude = try values.decode(Double.self, forKey: .latitude)
+    }
+    
+}
+
+public struct Favorite: Decodable {
+    
+    public var id: String = ""
+    public var PropertyId: String = ""
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case property = "Property__c"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(String.self, forKey: .id)
+        PropertyId = try values.decode(String.self, forKey: .property)
+    }
+    
+}
 
 
-public struct Property {
+public final class Property : Decodable {
     
     public var id: String = ""
     public var propertyImageURLString = ""
@@ -32,23 +94,73 @@ public struct Property {
     public var baths: Int = 0
     public var beds: Int = 0
     public var longitude: Double = 0
+    
+    //property geo
+    public var proplocation : PropertyLocation?
     public var latitude: Double = 0
     public var isFavorite: Bool = false
     
+    
     //broker info
+    public var broker: Broker?
     public var brokerId: String = ""
     public var brokerName: String = ""
     public var brokerTitle: String = ""
     public var brokerImageURL: String = ""
     
-    //favorite
-    public var favoriteId: String = ""
     
     //save dictionary representation as we need to pass that to watchos apps
     public var asDictionary: [String : Any]?
     
     public init() {}
     
+    //take SwiftlySalesforce record and map.
+     enum CodingKeys: String, CodingKey {
+        case id = "Id"
+        case title = "Title__c"
+        
+        case broker = "Broker__r"
+        case proplocation = "Location__c"
+        
+        case city = "City__c"
+        case favorites = "Favorites__r"
+        
+        case baths = "Baths__c"
+        case beds = "Beds__c"
+        case description = "Description__c"
+        case propertyImageURLString = "Picture__c"
+        case thumbnailImageURLString = "Thumbnail__c"
+        case price = "Price__c"
+        
+    }
+    
+    required public init(from decoder:Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(String.self, forKey: .id)
+        title = try values.decode(String.self, forKey: .title)
+         city = try values.decode(String.self, forKey: .city)
+       // var favs = try values.decode(Favorite.self, forKey: .favorites)
+        //todo: loop through favs and flag as isFavorite if I find a match
+        
+        broker  = try values.decode(Broker.self, forKey: .broker)
+        brokerId = broker!.id
+        brokerName = broker!.brokerName
+        brokerTitle = broker!.brokerTitle
+        brokerImageURL = broker!.brokerImageURL
+        
+        //location
+        proplocation = try values.decode(PropertyLocation.self, forKey: .proplocation)
+        longitude = proplocation!.longitude
+        latitude = proplocation!.latitude
+        
+        baths = try values.decode(Int.self, forKey: .baths)
+        beds = try values.decode(Int.self, forKey: .beds)
+        description = try values.decode(String.self, forKey: .description)
+        propertyImageURLString = try values.decode(String.self, forKey: .propertyImageURLString)
+        thumbnailImageURLString = try values.decode(String.self, forKey: .thumbnailImageURLString)
+        price = try values.decode(Double.self, forKey: .price)
+       
+    }
     
     //take JSON from Salesforce REST API and convert to strongly typed object
     public init(dictionary: [String: Any]) {

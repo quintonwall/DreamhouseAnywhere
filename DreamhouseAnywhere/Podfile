@@ -1,25 +1,25 @@
-platform :ios, '10.0'
+platform :ios, '11.2'
 use_frameworks!
 	
 
 def shared_pods
   pod 'SwiftyJSON'
-  pod 'SwiftlySalesforce', '3.3.1'
-	pod 'SDWebImage'
+  pod 'SwiftlySalesforce'
+  pod 'SDWebImage'
+  pod 'Alamofire'
 end
 
 
 
 target 'DreamhouseAnywhere' do
-	source 'https://github.com/goinstant/pods-specs-public'
+  source 'https://github.com/goinstant/pods-specs-public'
   source 'https://github.com/CocoaPods/Specs.git'
-#source 'https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Specs.git' 
-
-	pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
-#	pod 'SalesforceSDKCore'
-	pod 'ServiceSDK/SOS', '1.1.0'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+  #pod 'SalesforceSDKCore'
+  pod 'ServiceSDK/SOS', '1.1.0'
   pod 'Mapbox-iOS-SDK', '~> 3.5'
-	shared_pods
+  pod 'Simplytics'
+  shared_pods
 
 	target 'DreamhouseKit' do
   	shared_pods
@@ -33,7 +33,6 @@ target 'DreamhouseAnywhere' do
 		shared_pods
 	end
 end
-
 
 
 

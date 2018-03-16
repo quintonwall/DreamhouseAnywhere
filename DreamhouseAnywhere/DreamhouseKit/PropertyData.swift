@@ -10,6 +10,7 @@
 import SwiftlySalesforce
 import Alamofire
 import SwiftyJSON
+import Simplytics
 
 
 
@@ -21,26 +22,33 @@ public final class PropertyData {
     
     public fileprivate(set) var cachedProperties : [Property]?
 
-    public func getAllProperties() -> Promise<[Property]> {
+    public func getAllProperties(salesforce : Salesforce, simplytics : Simplytics) -> Promise<[Property]> {
         
+       
         //let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")!
         //if let sfdcconfig = defaults.value(forKey: "saleforceconfig") as? AuthManager.Configuration {
         //    salesforce.authManager.configuration = sfdcconfig
         //}
+        let eventid = simplytics.logEvent("Query Properties from Salesforce")
+        
         return Promise<[Property]> {
             fulfill, reject in
             first {
-                      salesforce.identity()
-                
-            }.then { result in
-                let soql = "select Address__c, Baths__c, Beds__c, Broker__c, Broker__r.Title__c, Broker__r.Name, Broker__r.Picture__c, City__c, Description__c, Id, Location__c, Name, OwnerId, Picture__c, Price__c, State__c, Thumbnail__c, Title__c, Zip__c, (select id, Property__c from Favorites__r) from Property__c"
+                    salesforce.identity()
+                }.then {
+                    userInfo -> Promise<QueryResult<Property>> in
+                        let soql = "select Address__c, Baths__c, Beds__c, Broker__r.Id, Broker__r.Title__c, Broker__r.Name, Broker__r.Picture__c, City__c, Description__c, Id, Location__c, Name, OwnerId, Picture__c, Price__c, State__c, Thumbnail__c, Title__c, Zip__c, (select id, Property__c from Favorites__r) from Property__c"
                 return salesforce.query(soql: soql)
+    
             }.then {
                 (result: QueryResult) -> () in
-                let properties = result.records.map { Property(dictionary: $0) }
-                self.cachedProperties = properties
-                fulfill(properties)
+                let c = result.records
+                self.cachedProperties = c
+                simplytics.endEvent(eventid)
+                fulfill(c)
+                
             }.catch { error in
+                simplytics.logError("Error fetching properties", message: error.localizedDescription, error: error)
                 reject(error)
             }
             
@@ -54,8 +62,10 @@ public final class PropertyData {
      * Unlike the PIO service for the main dreamhouse app, which relies on Heroku Connect to sync data to a Heroku Postgres instance (for the mobile web app to retrieve data from) and fetch favorites, the recommendation service
      * used in DreamhouseAnywhere fetches favorites directly from Salesforce via REST APIs. 
      */
-    public func getRecommendedProperties(userid: String) -> Promise<[Property]> {
+    public func getRecommendedProperties(userid: String, salesforce : Salesforce, simplytics : Simplytics) -> Promise<[Property]> {
     
+         let eventid = simplytics.logEvent("Query Recommentations from Einstein")
+        
         return Promise<[Property]> {
             fulfill, reject in
             
@@ -84,8 +94,10 @@ public final class PropertyData {
                                     }
                                 }
                            }
+                           simplytics.endEvent(eventid)
                            fulfill(recommendations)
                         case .failure(let error):
+                            simplytics.logError("Error fetching recommendations", message: error.localizedDescription, error: error)
                             reject(error)
                     }
                 }
@@ -136,7 +148,7 @@ public final class PropertyData {
      //
  public func getPublicPropertyListings() -> Promise<[Property]> {
     
-    
+  
     return Promise<[Property]> {
         fulfill, reject in
             Alamofire.request("https://publicdreamhouse-developer-edition.na30.force.com/api/services/apexrest/PropertiesForSale")
@@ -152,7 +164,7 @@ public final class PropertyData {
                         }
                         fulfill(properties)
                     case .failure(let error):
-                            reject(error)
+                        reject(error)
                     }
             }
         }

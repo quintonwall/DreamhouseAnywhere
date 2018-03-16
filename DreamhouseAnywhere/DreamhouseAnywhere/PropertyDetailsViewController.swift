@@ -16,7 +16,7 @@ import SwiftlySalesforce
 
 
 
-class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollectionViewDataSource, UICollectionViewDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var propertyImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -41,9 +41,14 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollection
       var recProperties : [Property] = []
     
     var property : Property!
+    
+    var pagedurationeventid = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pagedurationeventid = simplytics.logEvent("Property Details screen active", funnel: "View Property", withProperties: ["Property Id": property.id, "User Id" : salesforce.connectedApp.userID!])
+        
         SCServiceCloud.sharedInstance().sos.add(self)
         
         
@@ -66,12 +71,21 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollection
             
             propertyLocation = CLLocation(latitude: self.property!.latitude, longitude: self.property!.longitude)
             centerMapOnLocation(location: propertyLocation!)
+            
+            //add the delegate after we center the map on load. This way we are only watching for user interactions on the map
+            mapView.delegate = self
 
         }
         
         recommendedPropertiesCollectionView.delegate = self
         recommendedPropertiesCollectionView.dataSource = self
         fetchRecommendations()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        simplytics.endEvent(pagedurationeventid)
+        simplytics.writeToSalesforce(salesforce)
     }
 
     
@@ -83,6 +97,8 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollection
         self.mapView.addAnnotation(objectAnnotation)
         
         mapView.setRegion(coordinateRegion, animated: true)
+        
+        
     }
     
     
@@ -92,15 +108,15 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollection
     }
     
     @IBAction func liveAgentTapped(_ sender: Any) {
+        simplytics.logEvent("Live Agent Tapped", funnel: "View Property", withProperties: ["Property Id": property.id, "User Id" : salesforce.connectedApp.userID!])
         SCServiceCloud.sharedInstance().sos.startSession(with: Globals.getSOSOptions())
     }
     
     // MARK: - Salesforce
     func fetchRecommendations() {
         first {
-            PropertyData.shared.getRecommendedProperties(userid: (salesforce.authManager.authData?.userID)!)
-            
-            }.then {
+            PropertyData.shared.getRecommendedProperties(userid: (salesforce.connectedApp.userID)!, salesforce: salesforce, simplytics: simplytics)
+             }.then {
                 (results) -> () in
                 self.recProperties = results
                 self.recommendedPropertiesCollectionView.reloadData()
@@ -136,4 +152,10 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollection
     }
     */
 
+    // MARK: MapView Delegates
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        //if a user interacts with the map it is a good sign they are more interested in a property. We want to log this
+        simplytics.logEvent("MapView Region Changed", funnel: "View Property", withProperties: ["Property Id": property.id, "User Id" : salesforce.connectedApp.userID!])
+        
+    }
 }
