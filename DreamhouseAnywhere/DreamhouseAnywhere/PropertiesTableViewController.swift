@@ -72,7 +72,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
     
     func fetchProperties() {
         first {
-            PropertyData.shared.getAllProperties(salesforce: salesforce, simplytics: simplytics)
+            PropertyData.shared.getAllProperties(salesforce: salesforce)
             
         }.then {
                 (results) -> () in
@@ -86,6 +86,7 @@ class PropertiesTableViewController: UITableViewController, MenuTransitionManage
         
         
     }
+    
     func sendPropertiesToWatch() {
         let session = WCSession.default()
         if session.isWatchAppInstalled {

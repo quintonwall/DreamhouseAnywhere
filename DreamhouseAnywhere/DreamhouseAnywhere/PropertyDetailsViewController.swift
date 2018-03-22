@@ -115,7 +115,7 @@ class PropertyDetailsViewController: UIViewController, SOSDelegate, UICollection
     // MARK: - Salesforce
     func fetchRecommendations() {
         first {
-            PropertyData.shared.getRecommendedProperties(userid: (salesforce.connectedApp.userID)!, salesforce: salesforce, simplytics: simplytics)
+            PropertyData.shared.getRecommendedProperties(userid: (salesforce.connectedApp.userID)!, salesforce: salesforce)
              }.then {
                 (results) -> () in
                 self.recProperties = results

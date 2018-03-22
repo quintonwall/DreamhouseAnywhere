@@ -1,26 +1,23 @@
 //
 //  MessagesViewController.swift
-//  MessagesExtension
+//  DreamhouseBot MessagesExtension
 //
-//  Created by QUINTON WALL on 2/3/17.
-//  Copyright © 2017 me.quinton. All rights reserved.
+//  Created by Quinton Wall on 3/21/18.
+//  Copyright © 2018 me.quinton. All rights reserved.
 //
 
 import UIKit
 import Messages
 import DreamhouseKit
 import SwiftlySalesforce
-import SDWebImage
 
 
 class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource,UITableViewDelegate {
     
     private var selectedProperty: Property?
     var properties : [Property] = []
-    
-    
-    
-    @IBOutlet var tableView: UITableView!
+
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +43,79 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         
         
     }
+    
+    
+    //MARK: Table and Data
+    //MARK: UITableViewDataSource methods
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return properties.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BotCell", for: indexPath) as! BotPropertyTableCell
+        
+        
+        let property : Property = properties[indexPath.row]
+        cell.numBedrooms.text = "\(property.beds)"
+        cell.numBathrooms.text = "\(property.baths)"
+        cell.titleLabel.text = property.title
+        cell.priceLabel.text =  property.price.currencyString()
+        cell.propertyImageURLString = property.propertyImageURLString
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        requestPresentationStyle(.compact)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
+        
+        
+        let p : Property = properties[indexPath.row]
+        if let conversation = activeConversation {
+            let messageLayout = MSMessageTemplateLayout()
+            messageLayout.caption = "\(p.title!) - \(p.price.currencyString())"
+            messageLayout.subcaption = p.description
+            
+            
+            let data = try? Data(contentsOf: URL(string: p.propertyImageURLString)!)
+            messageLayout.image = UIImage(data: data!)
+            
+            let message = MSMessage()
+            message.layout = messageLayout
+            
+            //if var components = URLComponents(string: "http://dreamhouseapp.io") {
+            //   components.queryItems
+            // }
+            
+            conversation.insert(message, completionHandler: { (error) in
+                if let error = error {
+                    print(error)
+                }
+            })
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //MARK: Lifecycle
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -100,67 +170,4 @@ class MessagesViewController: MSMessagesAppViewController, UITableViewDataSource
         // Use this method to finalize any behaviors associated with the change in presentation style.
     }
 
-    
-    //MARK: UITableViewDataSource methods
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return properties.count
-        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
-        
-        
-        let property : Property = properties[indexPath.row]
-        cell.numBedrooms.text = "\(property.beds)"
-        cell.numBathrooms.text = "\(property.baths)"
-         cell.priceLabel.text =  property.price.currencyString()
-        cell.propertyImageURLString = property.propertyImageURLString
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        requestPresentationStyle(.compact)
-        tableView.deselectRow(at: indexPath, animated: true)
-       
-       // let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PropertyTableViewCell
-        
-        
-       let p : Property = properties[indexPath.row]
-        if let conversation = activeConversation {
-            let messageLayout = MSMessageTemplateLayout()
-            messageLayout.caption = "\(p.title!) - \(p.price.currencyString())"
-            messageLayout.subcaption = p.description
-            
-    
-            let data = try? Data(contentsOf: URL(string: p.propertyImageURLString)!)
-            messageLayout.image = UIImage(data: data!)
-            
-            let message = MSMessage()
-            message.layout = messageLayout
-            
-            //if var components = URLComponents(string: "http://dreamhouseapp.io") {
-             //   components.queryItems
-           // }
-       
-            conversation.insert(message, completionHandler: { (error) in
-                if let error = error {
-                    print(error)
-                }
-            })
-        }
-      
-    }
 }
-
-
-
-
-
-
-

@@ -10,7 +10,7 @@
 import SwiftlySalesforce
 import Alamofire
 import SwiftyJSON
-import Simplytics
+//import Simplytics
 
 
 
@@ -22,14 +22,10 @@ public final class PropertyData {
     
     public fileprivate(set) var cachedProperties : [Property]?
 
-    public func getAllProperties(salesforce : Salesforce, simplytics : Simplytics) -> Promise<[Property]> {
+    public func getAllProperties(salesforce : Salesforce) -> Promise<[Property]> {
         
        
-        //let defaults = UserDefaults(suiteName: "group.com.quintonwall.dreamhouseanywhere")!
-        //if let sfdcconfig = defaults.value(forKey: "saleforceconfig") as? AuthManager.Configuration {
-        //    salesforce.authManager.configuration = sfdcconfig
-        //}
-        let eventid = simplytics.logEvent("Query Properties from Salesforce")
+       //  let eventid = simplytics.logEvent("Query Properties from Salesforce")
         
         return Promise<[Property]> {
             fulfill, reject in
@@ -44,11 +40,11 @@ public final class PropertyData {
                 (result: QueryResult) -> () in
                 let c = result.records
                 self.cachedProperties = c
-                simplytics.endEvent(eventid)
+               // simplytics.endEvent(eventid)
                 fulfill(c)
                 
             }.catch { error in
-                simplytics.logError("Error fetching properties", message: error.localizedDescription, error: error)
+               // simplytics.logError("Error fetching properties", message: error.localizedDescription, error: error)
                 reject(error)
             }
             
@@ -62,9 +58,9 @@ public final class PropertyData {
      * Unlike the PIO service for the main dreamhouse app, which relies on Heroku Connect to sync data to a Heroku Postgres instance (for the mobile web app to retrieve data from) and fetch favorites, the recommendation service
      * used in DreamhouseAnywhere fetches favorites directly from Salesforce via REST APIs. 
      */
-    public func getRecommendedProperties(userid: String, salesforce : Salesforce, simplytics : Simplytics) -> Promise<[Property]> {
+    public func getRecommendedProperties(userid: String, salesforce : Salesforce) -> Promise<[Property]> {
     
-         let eventid = simplytics.logEvent("Query Recommentations from Einstein")
+       //  let eventid = simplytics.logEvent("Query Recommentations from Einstein")
         
         return Promise<[Property]> {
             fulfill, reject in
@@ -94,10 +90,10 @@ public final class PropertyData {
                                     }
                                 }
                            }
-                           simplytics.endEvent(eventid)
+                          // simplytics.endEvent(eventid)
                            fulfill(recommendations)
                         case .failure(let error):
-                            simplytics.logError("Error fetching recommendations", message: error.localizedDescription, error: error)
+                           // simplytics.logError("Error fetching recommendations", message: error.localizedDescription, error: error)
                             reject(error)
                     }
                 }
