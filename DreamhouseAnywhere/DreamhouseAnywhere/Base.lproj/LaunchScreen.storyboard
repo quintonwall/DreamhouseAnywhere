@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-screen2018" translatesAutoresizingMaskIntoConstraints="NO" id="iBH-hE-SVS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                <rect key="frame" x="0.0" y="-15" width="375" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="D4e-dW-7qi"/>
                                 </constraints>
@@ -64,7 +64,7 @@
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="L6g-Ja-CTv" secondAttribute="bottom" constant="10" id="axG-1I-C4S"/>
                             <constraint firstItem="HEp-mk-XVC" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.75" id="iWo-ie-GCk"/>
                             <constraint firstItem="agn-le-ygV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nyo-Oq-Mx4"/>
-                            <constraint firstItem="iBH-hE-SVS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="qx5-Yy-znJ"/>
+                            <constraint firstItem="iBH-hE-SVS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-35" id="qx5-Yy-znJ"/>
                         </constraints>
                     </view>
                 </viewController>
