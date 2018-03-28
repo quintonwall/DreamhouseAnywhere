@@ -43,28 +43,7 @@ public class Globals {
     }
     
     
-    /**
-     * Instead of using the mobile sdk register, all you need to do is insert into the MobilePushServiceDevice table
-     TODO: refactor out into a cocoapod
-     */
-    static func registerForSalesforceNotifications(devicetoken: String, instanceUrl: String) {
-        
-        if(salesforce.connectedApp.accessToken != nil) {
-            let theurl = URL(string: "\(instanceUrl)/services/data/v36.0/sobjects/MobilePushServiceDevice")
-            let headers = ["Authorization" : "Bearer \(salesforce.connectedApp.accessToken)", "Content-Type" : "application/json"]
-            let params = ["ConnectionToken" : devicetoken, "ServiceType" : "Apple" ]
-            
-            Alamofire.request(theurl!, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseString { response in
-                switch response.result {
-                case .success(let result):
-                    print("registered for salesforce notifications")
-                case .failure(let error):
-                    print("failed to register for salesforce notfications..wa-wahh")
-                }
-                
-            }
-        }
-    }
+  
 
 }
 
